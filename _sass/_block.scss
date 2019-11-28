@@ -1,0 +1,36 @@
+// Core variables and mixins
+@import "stylesheets/bootstrap/variables";
+@import "stylesheets/bootstrap/mixins";
+
+// Reset and dependencies
+@import "stylesheets/bootstrap/normalize";
+@import "stylesheets/bootstrap/print";
+
+// Core CSS
+@import "stylesheets/bootstrap/scaffolding";
+@import "stylesheets/bootstrap/type";
+@import "stylesheets/bootstrap/grid";
+
+// Utility classes
+@import "stylesheets/bootstrap/utilities";
+@import "stylesheets/bootstrap/responsive-utilities";
+
+
+.block-image, {
+  width: auto;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  // Invocation des mixins du système de grille
+  @include make-sm-column(6);
+  @include make-md-column(6);
+  @include make-lg-column(6);
+
+}
+
+.block-content, {
+  // Invocation des mixins du système de grille
+  @include make-sm-column(6);
+  @include make-md-column(6);
+  @include make-lg-column(6);
+}
