@@ -3,21 +3,18 @@
 
   {% include head.html %}
 
-  <body>
-
-    <!-- {% include header.html %} -->
-
-    <div class="page-content">
+  <body class="default">
+    {% include navbar.html %}
+    {% include hero.html %}
+    <div class="">
+      {% include block-collage.html %}
       {{ content }}
     </div>
-<!--     <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div> -->
-
-    <!-- {% include footer.html %} -->
-
+    {% include footer.html %}
+    {% if jekyll.environment == "production" %}
+      {% include analytics.html %}
+      {% include cookie-consent.html %}
+    {% endif %}
   </body>
 
 </html>
