@@ -1,0 +1,63 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@import "stylesheets/bootstrap";
+
+// Our variables
+$base-font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+$size-plus-1:			1.33333334em;
+$size-plus-2:			1.777777796em;
+$size-plus-3:			2.370370406em;
+$size-plus-4:			3.16049389em;
+$size-plus-5:			4.213991875em;
+$size-plus-6:			5.618655861em;
+$size-plus-7:			7.491541186em;
+$size-plus-8:			9.988721631em;
+$size-plus-9:			13.31829557em;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "mixins",
+        "syntax-highlighting",
+        "custom"
+;
