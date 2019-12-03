@@ -1,3 +1,16 @@
 .navbar-container {
   background-color: #44F0AD;
 }
+
+.navbar {
+  margin-bottom: 0;
+}
+
+// MOBILE
+
+.navbar-logo {
+  @media (max-width: 767px) {
+  max-width: 130px;
+  }
+}
+

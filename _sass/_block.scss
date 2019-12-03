@@ -16,21 +16,43 @@
 @import "stylesheets/bootstrap/responsive-utilities";
 
 
-.block-image, {
+.block, .block-color {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.block-color {
+  background-color: #48EAAB;
+}
+
+.block-image {
+  // Invocation des mixins du système de grille
+  @include make-sm-column(6);
   width: auto;
-  height: auto;
+  height: 345px;
   position: relative;
   overflow: hidden;
-  // Invocation des mixins du système de grille
-  @include make-sm-column(6);
-  @include make-md-column(6);
-  @include make-lg-column(6);
-
 }
 
-.block-content, {
+.block-content {
   // Invocation des mixins du système de grille
   @include make-sm-column(6);
-  @include make-md-column(6);
-  @include make-lg-column(6);
 }
+
+.block-slogan {
+  @include f1-xs;
+}
+
+.block-text {
+  @include f4-xs;
+}
+
+// MOBILE
+
+/* .block, .block-color {
+  @media (max-width: 767px) {
+    .block-slogan {
+      font-size: 50px;
+    }
+  }
+} */

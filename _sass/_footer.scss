@@ -1,0 +1,46 @@
+footer {
+  color: white;
+  background-color: #44F0AD;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  .footer-titre {
+    @include f1-xs;
+  }  
+  .footer-text {
+    @include f3-xs;
+  }
+  a {
+    @include mb3-xs;
+  }
+  span {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+  .footer-social {
+    margin-top: 2rem;
+  }
+  ul {
+    margin-left: 0;
+    @include f1-xs;
+  }
+  .footer-bottom {
+    margin-bottom: 2rem;
+  }
+  .footer-credits {
+
+  }
+}
+
+
+// MOBILE
+
+.footer {
+  @media (max-width: 767px) {
+    .cta {
+      font-size: 50px;
+    }
+  }
+}

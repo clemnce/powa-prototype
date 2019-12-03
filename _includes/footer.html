@@ -1,3 +1,55 @@
-<footer class="site-footer">
-
-</footer>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="footer-titre">{{ site.data.footer.cta }}</h2>
+          <p class="footer-text">{{ site.data.footer.cta-text }}</p>
+          <h3 class="localisation">{{ site.data.footer.localisation }}</h3>
+          <h3 class="email">{{ site.data.footer.email }}</h3>
+        </div>
+        <div class="col-md-6">
+          <form>
+            <fieldset class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </fieldset>
+            <fieldset class="form-group">
+                <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
+            </fieldset>
+            <fieldset class="form-group text-xs-right">
+                <button type="button" class="btn btn-secondary-outline btn-lg">Send</button>
+            </fieldset>
+          </form>
+      </div>
+    </div>
+  </div>
+    <hr>
+    <div class="footer-bottom">
+    <div class="row">
+      <div class="col-md-6">
+        <a class="navbar-brand mx-auto" href="/">
+          <img src="{{ site.url }}/assets/img/logo-powa-blanc.png" height="50">
+        </a>
+        <div class="hashtag">
+          <span>{{ site.data.footer.hashtag1 }}</span>
+          <span>{{ site.data.footer.hashtag2 }}</span>
+        </div>
+        </div>
+      <div class="col-md-3 offset-md-3">
+        <div class="footer-social">
+          <ul class="list-unstyled">
+            {% for social-links in site.data.footer.social-links %}
+            <li class="">
+                <a href="{{ social-links.href }}" target="{{ social-links.target }}">{{ social-links.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+      <div class="footer-credits">
+          <a href="{{ social-links.href }}" target="{{ social-links.target }}">mentions légales</a>
+      </div>
+    </div>
+    </div>
