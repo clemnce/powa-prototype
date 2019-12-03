@@ -1,10 +1,46 @@
-# jekyll-template
+# POWA Site (prototype)
+
+## Prerequisites
+
+Make sure you have a recent version of `ruby` (2.6.x) with `gem` and `bundler`
+installed.
+
+## Installation
+
+Install project dependencies
+
+    $ bundle install
+
+
+## Usage 
+
+### Configuration
 
 * Main config: `_config.yml`
 * Development config: `config-dev.yml`
 
-Dev server:
+### Run development server
 
-```
-jekyll serve -w --config _config.yml,_config-dev.yml
-```
+Type the following command:
+
+    $ bundle jekyll serve
+
+### Build static site
+
+Type the command below:
+
+    $ bundle jekyll build
+
+The resulting files will be located in the `_site` directory.
+
+
+## Credits
+
+* Author : Clémence PIETOT 
+* Contributors:
+  * Glenn ROLLAND <glenux@glenux.net>
+
+## Licence
+
+FIXME
+
