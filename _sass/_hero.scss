@@ -1,34 +1,38 @@
-// Core variables and mixins
-@import "stylesheets/bootstrap/variables";
-@import "stylesheets/bootstrap/mixins";
 
-// Reset and dependencies
-@import "stylesheets/bootstrap/normalize";
-@import "stylesheets/bootstrap/print";
-
-// Core CSS
-@import "stylesheets/bootstrap/scaffolding";
-@import "stylesheets/bootstrap/type";
-@import "stylesheets/bootstrap/grid";
-
-// Utility classes
-@import "stylesheets/bootstrap/utilities";
-@import "stylesheets/bootstrap/responsive-utilities";
 
 #hero {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
   background-color: #44F0AD;
 }
-
-.hero-baseline, {
+.hero-top {
   // Invocation des mixins du système de grille
-  @include make-sm-column(3);
-  @include make-md-column(6);
-  @include make-lg-column(6);
+  @include make-sm-column(12);
 }
 
-.hero-text, {
+.hero-bottom {
   // Invocation des mixins du système de grille
-  @include make-sm-column(3);
-  @include make-md-column(6);
-  @include make-lg-column(6);
+  @include make-sm-column(12);
 }
+
+.hero-baseline {
+  @include f1-xs;
+  margin-bottom: 3.75rem;
+}
+
+.hero-text {
+  @include f3-xs;
+  margin-bottom: 3.75rem;
+}
+
+
+/* // MOBILE
+
+#hero {
+  @media (max-width: 767px) {
+    .hero-baseline {
+      font-size: 50px;
+    }
+  }
+} */
