@@ -1,3 +1,50 @@
+// MARGIN
+
+@mixin mb3-xs()
+{
+margin-bottom: 20px;
+}
+
+
+
+// TYPOGRAPHY
+
+@mixin f1-xs()
+{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+@mixin f2-xs()
+{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+@mixin f3-xs()
+{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+
+@mixin f4-xs()
+{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+
+// MIXIN
+
 @mixin background-gradient($first-color, $second-color)
 {
   background: $second-color; /* For browsers that do not support gradients */
