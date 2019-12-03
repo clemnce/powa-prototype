@@ -8,8 +8,6 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
-
 /**
  * Basic styling
  */
@@ -24,8 +22,6 @@ body {
     font-feature-settings: "kern" 1;
     font-kerning: normal;
 }
-
-
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -48,8 +44,6 @@ figcaption {
     font-size: $small-font-size;
 }
 
-
-
 /**
  * Lists
  */
@@ -64,16 +58,12 @@ li {
     }
 }
 
-
-
 /**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
 }
-
-
 
 /**
  * Links
@@ -92,8 +82,6 @@ a {
     }
 }
 
-
-
 /**
  * Blockquotes
  */
@@ -107,88 +95,5 @@ blockquote {
 
     > :last-child {
         margin-bottom: 0;
-    }
-}
-
-
-
-/**
- * Code formatting
- */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
-}
-
-code {
-    padding: 1px 5px;
-}
-
-pre {
-    padding: 8px 12px;
-    overflow-x: auto;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-
-
-
-/**
- * Wrapper
- */
-.wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
-}
-
-
-
-/**
- * Clearfix
- */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-
-
-
-/**
- * Icons
- */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
     }
 }
