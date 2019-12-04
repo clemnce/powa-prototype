@@ -3,7 +3,7 @@
 ---
 @charset "utf-8";
 
-@import "stylesheets/bootstrap";
+// @import "stylesheets/bootstrap/bootstrap";
 
 // Our variables
 $base-font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -53,21 +53,49 @@ $size-plus-9:			13.31829557em;
 
 
 // Core variables and mixins
+@import "stylesheets/bootstrap/functions";
 @import "stylesheets/bootstrap/variables";
 @import "stylesheets/bootstrap/mixins";
 
-// Reset and dependencies
-@import "stylesheets/bootstrap/normalize";
-@import "stylesheets/bootstrap/print";
-
-// Core CSS
-@import "stylesheets/bootstrap/scaffolding";
+ // Reset and dependencies + core CSS
+@import "stylesheets/bootstrap/root";
+@import "stylesheets/bootstrap/reboot";
 @import "stylesheets/bootstrap/type";
-// @import "stylesheets/bootstrap/grid";
 
-// Utility classes
+// Content layout
+@import "stylesheets/bootstrap/images";
+@import "stylesheets/bootstrap/code";
+@import "stylesheets/bootstrap/tables";
+@import "stylesheets/bootstrap/forms";
+@import "stylesheets/bootstrap/grid";
+
+// Basic content style
+@import "stylesheets/bootstrap/buttons";
+@import "stylesheets/bootstrap/transitions";
+@import "stylesheets/bootstrap/dropdown";
+@import "stylesheets/bootstrap/button-group";
+@import "stylesheets/bootstrap/input-group";
+@import "stylesheets/bootstrap/custom-forms";
+@import "stylesheets/bootstrap/nav";
+@import "stylesheets/bootstrap/navbar";
+@import "stylesheets/bootstrap/card";
+@import "stylesheets/bootstrap/breadcrumb";
+@import "stylesheets/bootstrap/pagination";
+@import "stylesheets/bootstrap/badge";
+@import "stylesheets/bootstrap/jumbotron";
+@import "stylesheets/bootstrap/alert";
+@import "stylesheets/bootstrap/progress";
+@import "stylesheets/bootstrap/media";
+@import "stylesheets/bootstrap/list-group";
+@import "stylesheets/bootstrap/close";
+@import "stylesheets/bootstrap/toasts";
+@import "stylesheets/bootstrap/modal";
+@import "stylesheets/bootstrap/tooltip";
+@import "stylesheets/bootstrap/popover";
+@import "stylesheets/bootstrap/carousel";
+@import "stylesheets/bootstrap/spinners";
 @import "stylesheets/bootstrap/utilities";
-@import "stylesheets/bootstrap/responsive-utilities";
+@import "stylesheets/bootstrap/print";
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -80,6 +108,23 @@ $size-plus-9:			13.31829557em;
         "block",
         "hero",
         "navbar",
-        "footer"
+        "footer",
+        "contact"
 ;
 
+
+@include media-breakpoint-up(sm) {
+  /*
+  @import
+        "base_sm",
+        "layout_sm",
+        "mixins_sm",
+      //  "syntax-highlighting_sm",
+        "custom_sm",
+        "block_sm",
+        "hero_sm",
+        "navbar_sm",
+        "footer_sm",
+        "contact_sm"
+;*/
+}
