@@ -4,17 +4,20 @@
 
 .navbar {
   margin-bottom: 0;
+  a {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
+
+.navbar-logo {
+  height: 50px;
+}
+
 
 .navbar-toggler {
   border: none;
 }
 
-// MOBILE
 
-.navbar-logo {
-  @media (max-width: 767px) {
-  max-width: 130px;
-  }
-}
 
