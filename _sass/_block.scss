@@ -47,6 +47,8 @@
   position: absolute;
   top: -90px;
   z-index: 2;
+  text-transform: lowercase;
+
   &::after {
     content: "";
     display: block;
