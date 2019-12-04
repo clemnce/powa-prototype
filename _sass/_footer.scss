@@ -1,8 +1,21 @@
 footer {
+  border-top: 1px solid white;
   color: white;
   background-color: #44F0AD;
   padding-top: 5rem;
   padding-bottom: 2rem;
+  .footer-community {
+    @include make-col-ready();
+    @include make-col(12);
+  }
+  .footer-social {
+    @include make-col-ready();
+    @include make-col(12);
+  }
+  .footer-credits {
+    @include make-col-ready();
+    @include make-col(12);
+  }
   .footer-titre {
     @include f1-xs;
   }  
@@ -12,10 +25,9 @@ footer {
   a {
     @include mb3-xs;
   }
-  span {
+  .footer-hashtag span {
     display: block;
-    font-size: 28px;
-    font-weight: 700;
+    @include f2-xs;
     padding-top: 0rem;
     padding-bottom: 0rem;
   }
@@ -30,10 +42,17 @@ footer {
     margin-bottom: 2rem;
   }
   .footer-credits {
+   a {
+     text-decoration: underline;
+   }
 
   }
 }
 
+.footer-social-links {
+  @include f1-xs;
+  color: white;
+}
 
 // MOBILE
 
