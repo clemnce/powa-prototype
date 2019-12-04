@@ -1,0 +1,37 @@
+.contact {
+  color: white;
+  background-color: #44F0AD;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  .contact-informations {
+    @include make-col-ready();
+    @include make-col(12);
+  }
+  .contact-titre {
+    @include f1-xs; 
+  }
+  .contact-text {
+    @include f3-xs; 
+  }
+  .contact-localisation {
+    @include f2-xs; 
+  }
+  .contact-email {
+    @include f2-xs; 
+  }
+}
+
+.contact-form {
+  @include make-col-ready();
+  @include make-col(12);
+  label {
+  @include f3-xs; 
+  }
+  .contact-send {
+    text-align: center;
+  }
+  button {
+  @include f3-xs;
+  background-color: purple;
+  }
+}

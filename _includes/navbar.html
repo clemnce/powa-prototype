@@ -34,22 +34,22 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-body">
-          <nav class='list-group'>
-              <!-- Réseaux sociaux et Contact -->
-    <div class="right-links">
-        <a class="navbar-brand" href="/">
-          <img src="{{ site.url }}/assets/icons/facebook-icon.svg" height="15">
-        </a>
-        <a class="navbar-brand" href="/">
-          <img src="{{ site.url }}/assets/icons/twitter-icon.svg" height="15">
-        </a>
-        <a class="navbar-brand" href="/">
-          <img src="{{ site.url }}/assets/icons/linkedin-icon.svg" height="15">
-        </a>
-        <a class="navbar-brand" href="/">
-          <span>contact</span>
-        </a>
-      </div> 
+          <!-- Réseaux sociaux et Contact -->
+          <nav class='right-links footer-social'>
+          <ul class="menu-links">
+              {% for menu in site.data.menu.menu %}
+              <li class="">
+                  <a class="footer-social-links" href="{{ menu.href }}" target="{{ menu.target }}">{{ menu.title }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          <ul class="menu-social">
+              {% for social-links in site.data.footer.social-links %}
+              <li class="">
+                  <a class="footer-social-links" href="{{ social-links.href }}" target="{{ social-links.target }}">{{ social-links.title }}</a>
+              </li>
+              {% endfor %}
+            </ul>
           </nav>
         </div>
       </div>

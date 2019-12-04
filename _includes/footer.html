@@ -1,108 +1,24 @@
 <footer class="footer">
-  	<div class="container">
-    	<div class="footer-top">
-      		<div class="row">
-        		<div class="col-md-6">
-          			<h2 class="footer-titre">{{ site.data.footer.cta }}</h2>
-          			<p class="footer-text">{{ site.data.footer.cta-text }}</p>
-          			<h3 class="localisation">{{ site.data.footer.localisation }}</h3>
-          			<h3 class="email">{{ site.data.footer.email }}</h3>
-        		</div>
-        		<div class="col-md-6">
-          			<form>
-            			<fieldset class="form-group">
-                			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-            			</fieldset>
-            			<fieldset class="form-group">
-                			<textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
-            			</fieldset>
-            			<fieldset class="form-group text-xs-right">
-                			<button type="button" class="btn btn-secondary-outline btn-lg">Send</button>
-            			</fieldset>
-          			</form>
-      			</div>
-    		</div>
-  		</div>
-    	<hr> <!-- FIXME: please remove that f*cking semantic element -->
-    	<div class="footer-bottom">
-    		<div class="row">
-      			<div class="col-md-6">
-        			<a class="navbar-brand mx-auto" href="/">
-          				<img src="{{ site.url }}/assets/img/logo-powa-blanc.png" height="50">
-        			</a>
-        			<div class="hashtag">
-          				<span>{{ site.data.footer.hashtag1 }}</span>
-          				<span>{{ site.data.footer.hashtag2 }}</span>
-        			</div>
-        		</div>
-      			<div class="col-md-3 offset-md-3">
-        			<div class="footer-social">
-          				<ul class="list-unstyled">
-            				{% for social-links in site.data.footer.social-links %}
-            				<li class="">
-                				<a href="{{ social-links.href }}" target="{{ social-links.target }}">{{ social-links.title }}</a>
-            				</li>
-            				{% endfor %}
-          				</ul>
-        			</div>
-      			</div>
-    		</div>
-  		</div>
-      	<div class="footer-credits">
-          	<a href="{{ social-links.href }}" target="{{ social-links.target }}">mentions légales</a>
-      	</div>
+  <div class="footer-community">
+    <a class="" href="/">
+      <img src="{{ site.url }}/assets/img/logo-powa-blanc.png" height="50">
+    </a>
+    <div class="footer-hashtag">
+      <span>{{ site.data.footer.hashtag1 }}</span>
+      <span>{{ site.data.footer.hashtag2 }}</span>
     </div>
+  </div>
+  <div class="footer-social">
+    <ul>
+      {% for social-links in site.data.footer.social-links %}
+      <li class="">
+          <a class="footer-social-links" href="{{ social-links.href }}" target="{{ social-links.target }}">{{ social-links.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="footer-credits">
+      <a href="{{ social-links.href }}" target="{{ social-links.target }}">mentions légales</a>
+      <a href="{{ social-links.href }}" target="{{ social-links.target }}">charte de confidentialité</a>
+  </div>
 </footer>
-<!--
-<script src="assets/javascript/glfx.js"></script>
-<script>
-
-window.onload = function() {
-	document.querySelectorAll('.block-image > img').forEach((image) => {
-    	// try to create a WebGL canvas (will fail if WebGL isn't supported)
-    	
-    	try {
-        	var canvas = fx.canvas();
-    	} catch (e) {
-        	alert(e);
-        	return;
-    	}
-    	// dans votre HTML, cet élément apparaît comme <canvas id="monCanevas"></canvas>
-    	//var canvasElem = document.createElement('canvas');
-		//var canvas = canvasElem.getContext('2d');
-
-    	// convert the image to a texture
-    	// var image = document.getElementById('image');
-    	var texture = canvas.texture(image);
-
-    	// apply the ink filter
-    	canvas.draw(texture)
-    		.dotScreen(320, 239.5, 1.5707963267948966, 3.96)
-    		.update()
-    		.hueSaturation(0.47, 0)
-    		.update();
-
-    	// replace the image with the canvas
-    	image.parentNode.insertBefore(canvas, image);
-    	image.parentNode.removeChild(image);
-
-	});
-
-    // Note: instead of swapping the <canvas> tag with the <img> tag
-    // as done above, we could have just transferred the contents of
-    // the image directly:
-    //
-    //     image.src = canvas.toDataURL('image/png');
-    //
-    // This has two disadvantages. First, it is much slower, so it
-    // would be a bad idea to do this repeatedly. If you are going
-    // to be repeatedly updating a filter it's much better to use
-    // the <canvas> tag directly. Second, this requires that the
-    // image is hosted on the same domain as the script because
-    // JavaScript has direct access to the image contents. When the
-    // two tags were swapped using the previous method, JavaScript
-    // actually doesn't have access to the image contents and this
-    // does not violate the same origin policy.
-};
-</script>
--->
