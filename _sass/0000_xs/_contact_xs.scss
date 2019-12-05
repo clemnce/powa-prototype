@@ -26,12 +26,13 @@
   @include make-col(12);
   label {
   @include f3-xs; 
+  color: black;
   }
   .contact-send {
     text-align: center;
   }
   button {
   @include f3-xs;
-  background-color: purple;
+  background-color: white;
   }
 }

@@ -49,9 +49,10 @@ footer {
   }
 }
 
-.footer-social-links {
+.footer-social-list {
   @include f1-xs;
   color: white;
+  line-height: 1;
 }
 
 // MOBILE
