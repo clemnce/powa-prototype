@@ -7,6 +7,10 @@
   background-color: #48EAAB;
 }
 
+.block {
+  @include make-container;
+}
+
 .block-image {
   // Invocation des mixins du système de grille
   @include make-col-ready();
@@ -16,7 +20,6 @@
   position: relative;
   overflow: hidden;
   padding: 0;
-  margin: 0 15px;
 
   & > img {
     opacity: 0.5;
