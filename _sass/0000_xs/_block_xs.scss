@@ -5,6 +5,12 @@
 
 .block-color {
   background-color: #48EAAB;
+  color: white;
+  .block-slogan {
+    &::after {
+    content: none;
+    }
+  }
 }
 
 .block {
