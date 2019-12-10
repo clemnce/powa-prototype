@@ -1,7 +1,7 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
+// @charset "utf-8";
 
 // @import "stylesheets/bootstrap/bootstrap";
 
@@ -99,22 +99,9 @@ $size-plus-9:			13.31829557em;
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-$enable-sm: true;
-$enable-md: true;
-$enable-lg: true;
-$enable-xl: true;
-
 @import "0000_xs";
-
-// @if ($enable-sm) {
 @import "0576_sm";
-// }
-// @if ($enable-md) {
-@import "0768_md";
-//}
-// @if ($enable-lg) {
-@import "0992_lg";
-// }
-// @if ($enable-xl) {
-@import "1200_xl";
-// }
+
+// @import "0768_md";
+// @import "0992_lg";
+// @import "1200_xl";
