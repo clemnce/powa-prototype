@@ -9,7 +9,7 @@
   padding-top: 60px;
 }
 
-.block-content1 {
+#block6 .block-content {
   // Invocation des mixins du système de grille
   @include make-col(6);
   padding-top: 60px;

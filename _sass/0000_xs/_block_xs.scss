@@ -72,25 +72,28 @@
   }
 }
 
+#block6 {
+  overflow: hidden;
 
-.block-slogan1 {
-  @include f1-xs;
-  position: relative;
-  z-index: 2;
-  text-transform: lowercase;
+  .block-slogan {
+    @include f1-xs;
+    position: relative;
+    z-index: 2;
+    text-transform: lowercase;
 
-  &::after {
-    content: "";
-    display: block;
-    height: 19px;
-    position: absolute;
-    width: calc(110% + 15px);
-    background-color: #48EAAB;
-    top: 36px;
-    left: -15px;
-    z-index: -1;
+    &::after {
+      content: "";
+      display: block;
+      height: 19px;
+      position: absolute;
+      width: calc(110% + 15px);
+      background-color: #48EAAB;
+      top: 36px;
+      left: -30px;
+      z-index: -1;
+    }
+
   }
-
 }
 
 .block-subtitle {
