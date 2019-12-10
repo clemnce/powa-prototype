@@ -6,9 +6,11 @@
     <div class="block-content">
       <h2 class="block-slogan">Repenser</h2>
       <div class="block-text">
-        <p>Le monde du travail change. Sa transformation dépasse aujourd’hui la capacité d’adaptation des personnes comme des organisations : obsolescence des compétences, précarisation de l’emploi, évolution des aspirations, carrières morcelées.</p>
-        <p>Ce sont les jeunes générations qui cumulent aujourd’hui le plus les difficultés face à ces évolutions. Nombre de ces jeunes se retrouvent dépassés, n’ont pas accès aux ressources nécessaires pour se construire et trouver une place dans cette complexité. </p>
-        <p>Face à ce constat, nous pensons qu’il est essentiel et urgent de repenser en profondeur la manière dont nous accompagnons l’arrivée des jeunes dans le monde professionnel.</p>
+        <p>Les changements du monde du travail s'accélèrent et semblent dépasser les capacités d’adaptation des individus comme des organisations : obsolescence des compétences, précarisation de l’emploi, évolution des aspirations, carrières morcelées.</p>
+        <p>Nous sommes tou.te.s concerné.e.s par ces évolutions, mais ce sont les jeunes générations qui cumulent aujourd’hui le plus les difficultés.
+          Beaucoup de jeunes se retrouvent dépassés, n’ayant pas accès aux ressources nécessaires pour se construire et trouver une place dans cette complexité. Les inégalités sociales et éducatives se creusent.
+        </p>
+        <p>Face à ces constats, nous pensons qu’il est urgent de repenser en profondeur la manière dont nous accompagnons l’arrivée des jeunes dans le monde professionnel.</p>
       </div>
     </div>
   </div>
@@ -23,9 +25,9 @@
       <div class="block-content">
         <h2 class="block-slogan">Se mobiliser</h2>
         <div class="block-text">
-          <p>Le monde du travail change. Sa transformation dépasse aujourd’hui la capacité d’adaptation des personnes comme des organisations : obsolescence des compétences, précarisation de l’emploi, évolution des aspirations, carrières morcelées.</p>
-          <p>Ce sont les jeunes générations qui cumulent aujourd’hui le plus les difficultés face à ces évolutions. Nombre de ces jeunes se retrouvent dépassés, n’ont pas accès aux ressources nécessaires pour se construire et trouver une place dans cette complexité. </p>
-          <p>Face à ce constat, nous pensons qu’il est essentiel et urgent de repenser en profondeur la manière dont nous accompagnons l’arrivée des jeunes dans le monde professionnel.</p>
+          <p>Ce sont les personnes qui fournissent, partout sur le territoire, un accompagnement de proximité aux jeunes : équipes éducatives, conseiller.e.s en insertion, éducateur.trice.s, travailleur.se.s sociaux.les, recruteur.se.s, RH, managers, formateur.trice.s, parents, associations, voire médias et artistes.</p>
+          <p>Toutes ces personnes influencent le parcours des jeunes. En plus de les aider à trouver des solutions immédiates, nous devons désormais, toutes et tous, investir sur le développement de leur pouvoir d’action, de leur autonomie, et de leur capacité à s’orienter à de multiples reprises pour sécuriser une insertion durable dans la société.  </p>
+          <p>Une mobilisation et une coopération de l’ensemble de notre communauté d’accompagnateurs et accompagnatrices sont nécessaires pour permettre aux jeunes d’inventer et de construire ces parcours professionnels complexes.</p>
         </div>
       </div>
     </div>
@@ -41,9 +43,10 @@
       <div class="block-content">
         <h2 class="block-slogan">Le collectif</h2>
         <div class="block-text">
-          <p>Le monde du travail change. Sa transformation dépasse aujourd’hui la capacité d’adaptation des personnes comme des organisations : obsolescence des compétences, précarisation de l’emploi, évolution des aspirations, carrières morcelées.</p>
-          <p>Ce sont les jeunes générations qui cumulent aujourd’hui le plus les difficultés face à ces évolutions. Nombre de ces jeunes se retrouvent dépassés, n’ont pas accès aux ressources nécessaires pour se construire et trouver une place dans cette complexité. </p>
-          <p>Face à ce constat, nous pensons qu’il est essentiel et urgent de repenser en profondeur la manière dont nous accompagnons l’arrivée des jeunes dans le monde professionnel.</p>
+          <p>Powa est un collectif composé de personnes portées par la volonté de questionner notre rapport individuel et collectif au travail, et mobilisées pour cela autour de valeurs communes.</p>
+        {% for collectif-valeur in site.data.block.collectif-valeur %}
+            <p><span class="collectif-valeur">{{ collectif-valeur.valeur }}</span> {{ collectif-valeur.content }}</p>
+        {% endfor %}        
         </div>
       </div>
     </div>
@@ -56,16 +59,29 @@
       	  <img src="assets/img/surf.jpg" />
       </div>
       <div class="block-content">
-        <h2 class="block-slogan">Se mobiliser</h2>
+        <h2 class="block-slogan">co-innover</h2>
         <div class="block-text">
-          <p>Le monde du travail change. Sa transformation dépasse aujourd’hui la capacité d’adaptation des personnes comme des organisations : obsolescence des compétences, précarisation de l’emploi, évolution des aspirations, carrières morcelées.</p>
-          <p>Ce sont les jeunes générations qui cumulent aujourd’hui le plus les difficultés face à ces évolutions. Nombre de ces jeunes se retrouvent dépassés, n’ont pas accès aux ressources nécessaires pour se construire et trouver une place dans cette complexité. </p>
-          <p>Face à ce constat, nous pensons qu’il est essentiel et urgent de repenser en profondeur la manière dont nous accompagnons l’arrivée des jeunes dans le monde professionnel.</p>
+          <p>Co-innover avec tous ceux et celles qui souhaitent améliorer les accompagnements proposés aux jeunes dans leurs problématiques d’orientation et d’insertion.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<section id="block4" class="block">
+    <div class="block-group">
+        <div class="block-image">
+            <img src="assets/img/surf.jpg" />
+        </div>
+        <div class="block-content">
+          <h2 class="block-slogan">diffuser</h2>
+          <div class="block-text">
+            <p>Diffuser le plus largement possible le résultat de ces collaborations (outils, méthodes et ressources pédagogiques) pour en garantir l’accès à un maximum de jeunes, en priorité à ceux et celles qui ne peuvent pas y accéder par eux-mêmes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 <section id="block5" class="block">
   <div class="block-group">
@@ -75,9 +91,11 @@
     <div class="block-content">
       <h2 class="block-slogan">agir ensemble</h2>
       <div class="block-text">
-        <p>Le monde du travail change. Sa transformation dépasse aujourd’hui la capacité d’adaptation des personnes comme des organisations : obsolescence des compétences, précarisation de l’emploi, évolution des aspirations, carrières morcelées.</p>
-        <p>Ce sont les jeunes générations qui cumulent aujourd’hui le plus les difficultés face à ces évolutions. Nombre de ces jeunes se retrouvent dépassés, n’ont pas accès aux ressources nécessaires pour se construire et trouver une place dans cette complexité. </p>
-        <p>Face à ce constat, nous pensons qu’il est essentiel et urgent de repenser en profondeur la manière dont nous accompagnons l’arrivée des jeunes dans le monde professionnel.</p>
+          {% for agir-ensemble in site.data.block.agir-ensemble %}
+          <h3 class="block-subtitle">{{ agir-ensemble.subtitle }}</h3>
+          <p>{{ agir-ensemble.hashtags }}</p>
+          <p>{{ agir-ensemble.content }}</p></p>
+      {% endfor %}  
       </div>
     </div>
     </div>
