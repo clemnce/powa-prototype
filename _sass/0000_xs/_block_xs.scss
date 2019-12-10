@@ -1,6 +1,6 @@
 .block, .block-color {
-  padding-top: 7.5rem;
-  padding-bottom: 7.5rem;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
 }
 
 .block-color {
@@ -71,9 +71,21 @@
   }
 }
 
+.block-subtitle {
+  @include f2-xs()
+}
+
 .block-text {
-  @include f4-xs;
+  @include f5-xs;
   p:last-child {
     margin-bottom: 0;
   }
 }
+
+
+
+.collectif-valeur {
+  @include f2-xs;
+}
+
+
