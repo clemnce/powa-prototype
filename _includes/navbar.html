@@ -1,33 +1,30 @@
-<div class="navbar-container">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <!-- Logo -->
-      <a class="navbar-brand" href="/">
-        <img class="navbar-logo" src="{{ site.url }}/assets/img/logo-powa-blanc.png">
-      </a>
-        <!-- Toggler/collapsibe Button -->
-      <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#exampleModal" data-backdrop="false" aria-controls="navbarnav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Navbar links -->
-      <div class="collapse navbar-collapse" id="navbarnav">
-    <!-- Réseaux sociaux et Contact -->
-      <div class="right-links navbar-nav ml-auto">
-        <a class="navbar-brand" href="/">
+<nav class="navbar navbar-expand-md navbar-light">
+  <!-- Logo -->
+  <a class="navbar-brand" href="/">
+    <img class="navbar-logo" src="{{ site.url }}/assets/img/logo-powa-blanc.png">
+  </a>
+    <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#exampleModal" data-backdrop="false" aria-controls="navbarnav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="navbarnav">
+<!-- Réseaux sociaux et Contact -->
+    <div class="right-links menu-social navbar-nav ml-auto">
+      <a href="{{ social-links.href }}" target="{{ social-links.target }}">
           <img src="{{ site.url }}/assets/icons/facebook-icon.svg" height="15">
-        </a>
-        <a class="navbar-brand" href="/">
+      <a href="{{ social-links.href }}" target="{{ social-links.target }}">
           <img src="{{ site.url }}/assets/icons/twitter-icon.svg" height="15">
-        </a>
-        <a class="navbar-brand" href="/">
+      </a>
+      <a href="{{ social-links.href }}" target="{{ social-links.target }}">
           <img src="{{ site.url }}/assets/icons/linkedin-icon.svg" height="15">
-        </a>
-        <a class="navbar-brand" href="/">
+      </a>
+      <a href="{{ social-links.href }}" target="{{ social-links.target }}">
           <span>contact</span>
-        </a>
-      </div> 
-      </div>
-    </nav>
+      </a>
+    </div> 
   </div>
+</nav>
   
   <!-- Menu Mobile -->  
   <div class="modal fade modal-fullscreen-menu" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -35,18 +32,18 @@
       <div class="modal-content">
         <div class="modal-body">
           <!-- Réseaux sociaux et Contact -->
-          <nav class='right-links footer-social'>
-          <ul class="menu-links">
+          <nav class='menu-links footer-social'>
+          <ul class="menu-mobile_nav">
               {% for menu in site.data.menu.menu %}
               <li class="">
                   <a class="footer-social-links" href="{{ menu.href }}" target="{{ menu.target }}">{{ menu.title }}</a>
               </li>
               {% endfor %}
             </ul>
-          <ul class="menu-social">
+          <ul class="menu-mobile_social">
               {% for social-links in site.data.footer.social-links %}
               <li class="">
-                  <a class="footer-social-links" href="{{ social-links.href }}" target="{{ social-links.target }}">{{ social-links.title }}</a>
+                  <a href="{{ social-links.href }}" target="{{ social-links.target }}">{{ social-links.title }}</a>
               </li>
               {% endfor %}
             </ul>

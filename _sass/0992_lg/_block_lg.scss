@@ -1,0 +1,9 @@
+.block-slogan, .block-slogan1 {
+  @include f1-lg;
+}
+
+.block-group {
+  @include make-row();
+  margin-left: 90px;
+  margin-right: 90px;
+}

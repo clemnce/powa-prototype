@@ -1,10 +1,20 @@
 .block, .block-color {
-  padding-top: 7.5rem;
-  padding-bottom: 7.5rem;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
 }
 
 .block-color {
   background-color: #48EAAB;
+  color: white;
+  .block-slogan {
+    &::after {
+    content: none;
+    }
+  }
+}
+
+.block {
+  @include make-container;
 }
 
 .block-image {
@@ -16,7 +26,6 @@
   position: relative;
   overflow: hidden;
   padding: 0;
-  margin: 0 15px;
 
   & > img {
     opacity: 0.5;
@@ -34,6 +43,7 @@
     transform: translate(0,-50%);
   }
 }
+
 
 .block-content {
   // Invocation des mixins du système de grille
@@ -55,16 +65,56 @@
     height: 19px;
     position: absolute;
     width: calc(110% + 15px);
-    background-color: aquamarine;
+    background-color: #48EAAB;
     top: 36px;
     left: -15px;
     z-index: -1;
   }
 }
 
-.block-text {
-  @include f4-xs;
+
+.block-slogan1 {
+  @include f1-xs;
+  position: relative;
+  z-index: 2;
+  text-transform: lowercase;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 19px;
+    position: absolute;
+    width: calc(110% + 15px);
+    background-color: #48EAAB;
+    top: 36px;
+    left: -15px;
+    z-index: -1;
+  }
+
+}
+
+.block-subtitle {
+  @include f3-xs();
+  //color: #619883;
+}
+
+.block-text, .block-textonly {
+  @include f5-xs;
   p:last-child {
     margin-bottom: 0;
   }
+}
+
+.block-textonly {
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.collectif-valeur {
+  @include f2-xs;
+}
+
+.block-hashtags {
+  @include f4-xs;
+  font-weight: 700;
 }

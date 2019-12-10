@@ -1,0 +1,9 @@
+.footer {
+  .footer-community {
+    @include make-col(6);
+  } 
+  .footer-social {
+    text-align: right;
+    @include make-col(6);
+  }
+}

@@ -100,31 +100,70 @@ $size-plus-9:			13.31829557em;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "mixins",
-        "syntax-highlighting",
-        "custom",
-        "block",
-        "hero",
-        "navbar",
-        "footer",
-        "contact"
+        "0000_xs/base_xs",
+        "0000_xs/layout_xs",
+        "0000_xs/mixins_xs",
+        "0000_xs/custom_xs",
+        "0000_xs/block_xs",
+        "0000_xs/hero_xs",
+        "0000_xs/navbar_xs",
+        "0000_xs/footer_xs",
+        "0000_xs/contact_xs"
 ;
 
 
-@include media-breakpoint-up(sm) {
-  /*
+@media (min-width: 576px) { 
   @import
-        "base_sm",
-        "layout_sm",
-        "mixins_sm",
-      //  "syntax-highlighting_sm",
-        "custom_sm",
-        "block_sm",
-        "hero_sm",
-        "navbar_sm",
-        "footer_sm",
-        "contact_sm"
-;*/
+        "0576_sm/base_sm",
+        "0576_sm/layout_sm",
+        "0576_sm/mixins_sm",
+        "0576_sm/custom_sm",
+        "0576_sm/block_sm",
+        "0576_sm/hero_sm",
+        "0576_sm/navbar_sm",
+        "0576_sm/footer_sm",
+        "0576_sm/contact_sm"
+;
+}
+
+@media (min-width: 768px) { 
+  @import
+        "0768_md/base_md",
+        "0768_md/layout_md",
+        "0768_md/mixins_md",
+        "0768_md/custom_md",
+        "0768_md/block_md",
+        "0768_md/hero_md",
+        "0768_md/navbar_md",
+        "0768_md/footer_md",
+        "0768_md/contact_md"
+;
+}
+
+@media (min-width: 992px) { 
+  @import
+        "0992_lg/base_lg",
+        "0992_lg/layout_lg",
+        "0992_lg/mixins_lg",
+        "0992_lg/custom_lg",
+        "0992_lg/block_lg",
+        "0992_lg/hero_lg",
+        "0992_lg/navbar_lg",
+        "0992_lg/footer_lg",
+        "0992_lg/contact_lg"
+;
+}
+
+@media (min-width: 1200px) { 
+  @import
+        "1200_xl/base_xl",
+        "1200_xl/layout_xl",
+        "1200_xl/mixins_xl",
+        "1200_xl/custom_xl",
+        "1200_xl/block_xl",
+        "1200_xl/hero_xl",
+        "1200_xl/navbar_xl",
+        "1200_xl/footer_xl",
+        "1200_xl/contact_xl"
+;
 }

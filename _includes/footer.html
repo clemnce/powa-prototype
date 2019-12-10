@@ -1,8 +1,7 @@
 <footer class="footer">
+  <div class="block-group">
   <div class="footer-community">
-    <a class="" href="/">
-      <img src="{{ site.url }}/assets/img/logo-powa-blanc.png" height="50">
-    </a>
+    <h3 class="contact-email">{{ site.data.footer.email }}</h3>
     <div class="footer-hashtag">
       <span>{{ site.data.footer.hashtag1 }}</span>
       <span>{{ site.data.footer.hashtag2 }}</span>
@@ -11,12 +10,13 @@
   <div class="footer-social">
     <ul>
       {% for social-links in site.data.footer.social-links %}
-      <li class="">
+      <li class="social-list">
           <a class="footer-social-links" href="{{ social-links.href }}" target="{{ social-links.target }}">{{ social-links.title }}</a>
       </li>
       {% endfor %}
     </ul>
   </div>
+</div>
   <div class="footer-credits">
       <a href="{{ social-links.href }}" target="{{ social-links.target }}">mentions légales</a>
       <a href="{{ social-links.href }}" target="{{ social-links.target }}">charte de confidentialité</a>

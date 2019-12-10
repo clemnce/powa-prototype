@@ -4,7 +4,7 @@
   color: white;
   background-color: #44F0AD;
 }
-.hero-top {
+.hero-header {
   // Invocation des mixins du système de grille
   @include make-col-ready();
   @include make-col(12);
@@ -23,6 +23,6 @@
 }
 
 .hero-text {
-  @include f3-xs;
+  @include f4-xs;
   margin-bottom: 3.75rem;
 }

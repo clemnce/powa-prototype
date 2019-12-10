@@ -20,21 +20,23 @@ footer {
     @include f1-xs;
   }  
   .footer-text {
-    @include f3-xs;
+    @include f4-xs;
   }
   a {
     @include mb3-xs;
   }
   .footer-hashtag span {
     display: block;
-    @include f2-xs;
+    @include f3-xs;
     padding-top: 0rem;
     padding-bottom: 0rem;
   }
   .footer-social {
     margin-top: 2rem;
+    text-align: left;
   }
   ul {
+    list-style: none;
     margin-left: 0;
     @include f1-xs;
   }
@@ -49,9 +51,10 @@ footer {
   }
 }
 
-.footer-social-links {
+.footer-social-list {
   @include f1-xs;
   color: white;
+  line-height: 1;
 }
 
 // MOBILE
