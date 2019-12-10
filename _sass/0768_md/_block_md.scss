@@ -1,94 +1,104 @@
-.block-content {
-  // Invocation des mixins du système de grille
-  @include make-col(6);
-}
+.block {
+  .block-group {
+    align-items: stretch;
+  }
 
-.block-content1 {
-  // Invocation des mixins du système de grille
-  @include make-col(6);
-}
+  .block-content {
+    // Invocation des mixins du système de grille
+    @include make-col(6);
 
+    padding-top: 120px;
+  }
 
-.block-slogan, .block-slogan1 {
-  @include f1-xs;
-}
+  .block-image {
+      align-self: stretch;
+      height: inherit;
 
-.block-content {
-  padding-top: 120px;
-}
+      & > img {
+        // On fait un hack pour les vieux navigateurs
+        // Les images dont la hauteur dépasse le texte seront moches
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
 
-.block-slogan {
-  position: absolute;
-  top: -90px;
-  z-index: 2;
-  text-transform: lowercase;
+        // Pour les navigateurs récents, on élimine les propriétés du hack
+        @supports (object-fit: cover) {
+          position: relative;
+          top: 0;
+          left: 0;
+          transform: none;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+       
+      }
+  }
 
-  &::after {
-    content: "";
-    display: block;
-    height: 53px;
+  .block-slogan {
+    @include f1-xs; // pas clair :-p
+
     position: absolute;
-    width: calc(110% + 15px);
-    background-color: #48EAAB;
-    top: 36px;
-    left: -15px;
-    z-index: -1;
-  }
-}
+    top: -90px;
+    z-index: 2;
+    text-transform: lowercase;
 
-// IMAGES
-
-#block1 {
-  .block-image {
-    height: 700px;
-  }
-  .block-slogan {
-    top: -44px;
-    left: -160px;
-  }
-}
-
-
-#block2 {
-  .block-image {
-    height: 891px;
-  }
-  .block-content {
-    padding-top: 0px;
-  }
-}
-
-#block3 {
-  .block-image {
-    height: 891px;
-  }
-  .block-content {
-  padding-top: 280px;
-  }
-  .block-slogan {
-    text-align: right;
-    top: -48px;
-    left: 169px;
     &::after {
       content: "";
       display: block;
-      height: 36px;
+      height: 53px;
       position: absolute;
-      width: calc(240%);
+      width: calc(110% + 15px);
       background-color: #48EAAB;
       top: 36px;
-      left: -300px;
+      left: -15px;
       z-index: -1;
     }
   }
-}
 
+  // IMAGES
 
-#block5 {
-  .block-image {
-    height: 891px;
+  &#block1 {
+    .block-slogan {
+      top: -44px;
+      left: -160px;
+    }
   }
-  .block-content {
-  padding-top: 280px;
+
+
+  &#block2 {
+    .block-content {
+      padding-top: 0px;
+    }
+  }
+
+  &#block3 {
+    .block-content {
+      padding-top: 280px;
+    }
+    .block-slogan {
+      text-align: right;
+      top: -48px;
+      left: 169px;
+      &::after {
+        content: "";
+        display: block;
+        height: 36px;
+        position: absolute;
+        width: calc(240%);
+        background-color: #48EAAB;
+        top: 36px;
+        left: -300px;
+        z-index: -1;
+      }
+    }
+  }
+
+
+  &#block5 {
+    .block-content {
+      padding-top: 280px;
+    }
   }
 }
