@@ -1,4 +1,4 @@
-<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-md navbar-light">
   <!-- Logo -->
   <a class="navbar-brand" href="/">
     <img class="navbar-logo" src="{{ site.url }}/assets/img/logo-powa-blanc.png">
@@ -10,20 +10,19 @@
   <!-- Navbar links -->
   <div class="collapse navbar-collapse" id="navbarnav">
 <!-- Réseaux sociaux et Contact -->
-  <div class="right-links navbar-nav ml-auto">
-    <a class="navbar-brand" href="/">
-      <img src="{{ site.url }}/assets/icons/facebook-icon.svg" height="15">
-    </a>
-    <a class="navbar-brand" href="/">
-      <img src="{{ site.url }}/assets/icons/twitter-icon.svg" height="15">
-    </a>
-    <a class="navbar-brand" href="/">
-      <img src="{{ site.url }}/assets/icons/linkedin-icon.svg" height="15">
-    </a>
-    <a class="navbar-brand" href="/">
-      <span>contact</span>
-    </a>
-  </div> 
+    <div class="right-links menu-social navbar-nav ml-auto">
+      <a href="{{ social-links.href }}" target="{{ social-links.target }}">
+          <img src="{{ site.url }}/assets/icons/facebook-icon.svg" height="15">
+      <a href="{{ social-links.href }}" target="{{ social-links.target }}">
+          <img src="{{ site.url }}/assets/icons/twitter-icon.svg" height="15">
+      </a>
+      <a href="{{ social-links.href }}" target="{{ social-links.target }}">
+          <img src="{{ site.url }}/assets/icons/linkedin-icon.svg" height="15">
+      </a>
+      <a href="{{ social-links.href }}" target="{{ social-links.target }}">
+          <span>contact</span>
+      </a>
+    </div> 
   </div>
 </nav>
   
@@ -33,18 +32,18 @@
       <div class="modal-content">
         <div class="modal-body">
           <!-- Réseaux sociaux et Contact -->
-          <nav class='right-links footer-social'>
-          <ul class="menu-links">
+          <nav class='menu-links footer-social'>
+          <ul class="menu-mobile_nav">
               {% for menu in site.data.menu.menu %}
               <li class="">
                   <a class="footer-social-links" href="{{ menu.href }}" target="{{ menu.target }}">{{ menu.title }}</a>
               </li>
               {% endfor %}
             </ul>
-          <ul class="menu-social">
+          <ul class="menu-mobile_social">
               {% for social-links in site.data.footer.social-links %}
               <li class="">
-                  <a class="footer-social-links" href="{{ social-links.href }}" target="{{ social-links.target }}">{{ social-links.title }}</a>
+                  <a href="{{ social-links.href }}" target="{{ social-links.target }}">{{ social-links.title }}</a>
               </li>
               {% endfor %}
             </ul>
