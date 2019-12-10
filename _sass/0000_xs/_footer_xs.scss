@@ -33,8 +33,10 @@ footer {
   }
   .footer-social {
     margin-top: 2rem;
+    text-align: left;
   }
   ul {
+    list-style: none;
     margin-left: 0;
     @include f1-xs;
   }
