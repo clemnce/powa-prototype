@@ -23,6 +23,7 @@
         transform: translate(-50%,-50%);
 
         // Pour les navigateurs récents, on élimine les propriétés du hack
+        /*
         @supports (object-fit: cover) {
           position: relative;
           top: 0;
@@ -32,6 +33,7 @@
           height: 100%;
           object-fit: cover;
         }
+        */
        
       }
   }
@@ -60,6 +62,25 @@
   // IMAGES
 
   &#block1 {
+    overflow-x: hidden;
+
+    .block-image {
+      @include make-col(4);
+      position: relative;
+      order: 2;
+      overflow: visible;
+
+      & > img { 
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: none;
+      }
+    }
+    .block-content {
+      @include make-col(8);
+      padding-right: 40px;
+    }
     .block-slogan {
       top: -44px;
       left: -160px;
