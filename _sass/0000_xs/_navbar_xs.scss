@@ -1,3 +1,17 @@
+body.modal-open {
+  padding-right: 0 !important;
+
+  .navbar-light .navbar-toggler {
+    position: relative;
+    &::before {
+      opacity: 1;
+    }
+    .navbar-toggler-icon {
+      opacity: 0;
+    }
+  }
+}
+
 .navbar { 
   margin-bottom: 0;
   padding-top: 15px;
@@ -163,15 +177,6 @@
   }
 }
 
-.modal-open .navbar-light .navbar-toggler {
-  position: relative;
-  &::before {
-    opacity: 1;
-  }
-  .navbar-toggler-icon {
-    opacity: 0;
-  }
-}
 
 .close {
 background-size: 20px;
