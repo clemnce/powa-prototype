@@ -10,7 +10,7 @@
   }
 }
 .navbar-logo { 
-  height: 50px;
+  height: 40px;
 }
 
 .navbar-toggler { 
@@ -22,12 +22,27 @@
   float: none;
 }
 
-.menu-links a{
+.menu-links a {
   font-size: 50px;
 }
 
 .menu-social a {
   font-size: 23px;
+}
+
+
+
+// MENU MOBILE
+
+.menu-mobile_nav a {
+  @include f2-xs();
+}
+
+.menu-mobile_social {
+  padding-top: 4rem;
+  a {
+    @include f3-xs();
+  }
 }
 
 // MODAL
