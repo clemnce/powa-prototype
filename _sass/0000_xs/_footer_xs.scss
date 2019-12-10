@@ -20,14 +20,14 @@ footer {
     @include f1-xs;
   }  
   .footer-text {
-    @include f3-xs;
+    @include f4-xs;
   }
   a {
     @include mb3-xs;
   }
   .footer-hashtag span {
     display: block;
-    @include f2-xs;
+    @include f3-xs;
     padding-top: 0rem;
     padding-bottom: 0rem;
   }

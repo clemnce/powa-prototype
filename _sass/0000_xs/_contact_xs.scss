@@ -11,13 +11,13 @@
     @include f1-xs; 
   }
   .contact-text {
-    @include f3-xs; 
+    @include f4-xs; 
   }
   .contact-localisation {
-    @include f2-xs; 
+    @include f3-xs; 
   }
   .contact-email {
-    @include f2-xs; 
+    @include f3-xs; 
   }
 }
 
@@ -25,14 +25,14 @@
   @include make-col-ready();
   @include make-col(12);
   label {
-  @include f3-xs; 
+  @include f4-xs; 
   color: black;
   }
   .contact-send {
     text-align: center;
   }
   button {
-  @include f3-xs;
+  @include f4-xs;
   background-color: white;
   }
 }
