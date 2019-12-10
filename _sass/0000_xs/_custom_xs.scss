@@ -53,3 +53,18 @@ a {
     transition: all 0.3s;
   }
 }
+
+//Override Bootstrap blue line
+
+.btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.form-control:focus {
+  border-color: #ced4da !important;
+  outline: 0;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
