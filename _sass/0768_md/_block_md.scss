@@ -122,4 +122,20 @@
       padding-top: 280px;
     }
   }
+  .block-slogan {
+    text-align: right;
+    top: 0px;
+    left: 169px;
+    &::after {
+      content: "";
+      display: block;
+      height: 36px;
+      position: absolute;
+      width: calc(240%);
+      background-color: #48EAAB;
+      top: 36px;
+      left: -300px;
+      z-index: -1;
+    }
+  }
 }
