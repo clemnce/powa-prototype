@@ -1,12 +1,13 @@
 .block {
   .block-group {
     align-items: stretch;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .block-content {
     // Invocation des mixins du système de grille
     @include make-col(6);
-
     padding-top: 120px;
   }
 
@@ -37,10 +38,11 @@
        
       }
   }
-
+  .block-subtitle {
+    margin-bottom: 2rem;
+  }
   .block-slogan {
-    @include f1-xs; // pas clair :-p
-
+    @include f1-md; // pas clair :-p
     position: absolute;
     top: -90px;
     z-index: 2;
@@ -49,7 +51,7 @@
     &::after {
       content: "";
       display: block;
-      height: 53px;
+      height: 50px;
       position: absolute;
       width: calc(110% + 15px);
       background-color: #48EAAB;
@@ -59,13 +61,13 @@
     }
   }
 
-  // IMAGES
+  // COMPORTEMENT DE CHAQUE BLOC: TEXT & IMAGE
 
   &#block1 {
     overflow-x: hidden;
 
     .block-image {
-      @include make-col(4);
+      @include make-col(6);
       position: relative;
       order: 2;
       overflow: visible;
@@ -78,64 +80,211 @@
       }
     }
     .block-content {
-      @include make-col(8);
+      @include make-col(6);
+      padding-top: 130px;
       padding-right: 40px;
     }
     .block-slogan {
-      top: -44px;
-      left: -160px;
+      top: 20px;
+      left: 0;
     }
   }
-
 
   &#block2 {
+    overflow-x: hidden;
+
+    .block-image {
+      @include make-col(6);
+      position: relative;
+      //overflow: visible;
+
+      /* & > img { 
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: none;
+      } */
+    }
     .block-content {
-      padding-top: 0px;
+      @include make-col(6);
+      padding-top: 0;
+      padding-right: 40px;
+    }
+    .block-slogan {
+      top: 20px;
+      left: 0;
     }
   }
 
+  // BLOC CO-INNOVER
+
   &#block3 {
+    overflow-x: hidden;
+
+    .block-image {
+      @include make-col(6);
+      position: relative;
+      overflow: visible;
+
+      & > img { 
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: none;
+      }
+    }
     .block-content {
-      padding-top: 280px;
+      @include make-col(6);
+      padding-right: 40px;
     }
     .block-slogan {
       text-align: right;
-      top: -48px;
-      left: 169px;
+      right: 30px;
       &::after {
         content: "";
-        display: block;
-        height: 36px;
+        width: calc(180%);
+        top: 66px;
+        left: -240px;
+      }
+    }
+  }
+
+  // BLOC DIFFUSER
+
+  &#block4 {
+    overflow-x: hidden;
+
+    .block-image {
+      @include make-col(6);
+      position: relative;
+      order: 2;
+      overflow: visible;
+
+      & > img { 
         position: absolute;
-        width: calc(240%);
-        background-color: #48EAAB;
-        top: 36px;
-        left: -300px;
-        z-index: -1;
+        top: 0;
+        left: 0;
+        transform: none;
+      }
+    }
+    .block-content {
+      @include make-col(6);
+      padding-right: 40px;
+    }
+    .block-slogan {
+      top: 0px;
+      left: 135px;
+      &::after {
+        content: "";
+        width: calc(150%);
+        top: 315px;
+        left: -24px;
+      }
+    }
+  }
+
+  // BLOC LE COLLECTIF
+  &#block5 {
+    overflow-x: hidden;
+
+    .block-image {
+      @include make-col(6);
+    }
+    .block-content {
+      @include make-col(6);
+      padding-top: 228px;
+      padding-right: 40px;
+    }
+    .block-slogan {
+      top: 0px;
+      .line1 {
+        display: block;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        //left: -230px; if font 89px
+      }
+      .line2 {
+        display: block;
+        position: relative;
+        top: 15px;
+        left: -200px;
+        //left: -160px; if font 89px
+      }
+      &::after {
+        content: "";
+        width: 0;
       }
     }
   }
 
 
-  &#block5 {
+  // BLOC AGIR ENSEMBLE
+  &#block6 {
+    padding-bottom: 0;
     .block-content {
-      padding-top: 280px;
+      @include make-col(12);
+      padding-right: 40px;
+    }
+    .block-slogan {
+      .line1 {
+        display: block;
+        position: relative;
+        top: 0px;
+        left: 50px;
+        //left: -230px; if font 89px
+      }
+      .line2 {
+        display: block;
+        position: relative;
+        top: 15px;
+        left: 150px;
+        //left: -160px; if font 89px
+      }
+      &::after {
+        top: 145px;
+        left: 50px;
+      }
     }
   }
-  .block-slogan {
-    text-align: right;
-    top: 0px;
-    left: 169px;
-    &::after {
-      content: "";
-      display: block;
-      height: 36px;
-      position: absolute;
-      width: calc(240%);
-      background-color: #48EAAB;
-      top: 36px;
-      left: -300px;
-      z-index: -1;
+
+  //BLOC ON AGIT ENSEMBLE
+  &#block7 {
+    padding-top: 0;
+    padding-bottom: 0;
+    .block-content {
+      @include make-col(12);
+      padding-top: 0px;
     }
+    .company-logo {
+      padding-left: 8px;
+      padding-right: 8px;
+      margin-bottom: 64px;
+    }
+    .logo-item {
+      @include make-col(2);
+    }
+    img {
+      max-width: 100%;
+    }
+    /* .block-slogan {
+      .line1 {
+        display: block;
+        position: relative;
+        top: 0px;
+        left: 50px;
+        //left: -230px; if font 89px
+      }
+      .line2 {
+        display: block;
+        position: relative;
+        top: 15px;
+        left: 150px;
+        //left: -160px; if font 89px
+      } */
+/*       &::after {
+        content: "";
+        width: 0; */
   }
+
 }
