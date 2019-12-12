@@ -115,8 +115,22 @@
       <p class="block-hashtags">#co-construction #co-innovation #conduiteduchangement</p>
       <p>Les liens entre formation, accompagnement et recrutement ne sont pas toujours fluides. POWA accompagne la création de parcours cohérents et de communautés apprenantes pour proposer des parcours cohérent vers l’emploi au sein de filières métiers ou de territoire</p>
   </div>
-
     </div>
   </div>
 </div>
+</section>
+
+<section id="block7" class="block">
+  <div class="block-content">
+    <h3 class="block-subtitle">Ils agissent avec nous</h3>
+  </div>
+  <div class="block-group">
+  {% for items in site.data.partenaires.items %}
+    <div class="logo-item">
+      <div class="company-logo">
+        <img src="/assets/img/logo/{{ items.picture }}" class="grayscale" alt="{{ items.name }}">
+      </div>	          
+    </div>
+  {% endfor %}
+  </div>
 </section>
