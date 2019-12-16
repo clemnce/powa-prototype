@@ -6,6 +6,7 @@
   .contact-informations {
     @include make-col-ready();
     @include make-col(12);
+    @include no-padding;
   }
   .contact-titre {
     @include f1-xs; 
@@ -16,14 +17,12 @@
   .contact-localisation {
     @include f3-xs; 
   }
-  .contact-email {
-    @include f3-xs; 
-  }
 }
 
 .contact-form {
   @include make-col-ready();
   @include make-col(12);
+  @include no-padding;
   label {
   @include f4-xs; 
   color: black;
