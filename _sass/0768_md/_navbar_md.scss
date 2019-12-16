@@ -1,0 +1,16 @@
+.navbar {
+  .navbar-logo {
+   position: absolute;
+   left: 304px; 
+  }
+}
+.right-links {
+  position: absolute;
+  right: 32px;
+  top: 8px;
+  a {
+    @include f6-md();
+    color: black;
+    font-size: 23px;
+  }
+}

@@ -1,8 +1,11 @@
+.block, .block-color {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+
 .block {
   .block-group {
     align-items: stretch;
-    margin-left: 20px;
-    margin-right: 20px;
   }
 
   .block-content {
@@ -38,11 +41,11 @@
        
       }
   }
-  .block-subtitle {
+/*   .block-subtitle {
     margin-bottom: 2rem;
-  }
+  } */
   .block-slogan {
-    @include f1-md; // pas clair :-p
+    @include f1-md; 
     position: absolute;
     top: -90px;
     z-index: 2;
@@ -106,9 +109,11 @@
       } */
     }
     .block-content {
-      @include make-col(6);
+      //@include make-col-offset(3);
+      @include make-col(9);
+      margin: 0 auto;
       padding-top: 0;
-      padding-right: 40px;
+      padding-right: 0px;
     }
     .block-slogan {
       top: 20px;
@@ -185,13 +190,12 @@
 
   // BLOC LE COLLECTIF
   &#block5 {
-    overflow-x: hidden;
-
     .block-image {
       @include make-col(6);
     }
     .block-content {
-      @include make-col(6);
+      @include make-col((6));
+      margin: 0 auto;
       padding-top: 228px;
       padding-right: 40px;
     }
@@ -244,6 +248,7 @@
       &::after {
         top: 145px;
         left: 50px;
+        width: calc(90%)
       }
     }
   }
