@@ -1,10 +1,10 @@
 <section id="block1" class="block">
   <div class="block-group">
     <div class="block-image">
-      <img src="assets/img/surf.jpg" />
+      <img src="assets/img/powa1.jpg"/>
     </div>
     <div class="block-content">
-      <h2 class="block-slogan">se mobiliser</h2>
+      <h2 class="block-slogan">Se mobi</h2>
       <div class="block-text">
         <p>Les changements du monde du travail s'accélèrent et semblent dépasser les capacités d’adaptation des individus comme des organisations : obsolescence des compétences, précarisation de l’emploi, évolution des aspirations, carrières morcelées.</p>
         <p>Nous sommes tou.te.s concerné.e.s par ces évolutions, mais ce sont les jeunes générations qui cumulent aujourd’hui le plus les difficultés.
@@ -16,14 +16,10 @@
   </div>
 </section>
 
-
 <section id="block2" class="block">
   <div class="block-group">
-      <div class="block-image">
-      	  <img src="assets/img/surf.jpg" />
-      </div>
       <div class="block-content">
-        <h3 class="block-subtitle">Qui peut changer la situation actuelle ?</h3>
+        <h3 class="block-subtitle">"Qui peut changer la situation actuelle ?"</h3>
         <div class="block-text">
           <p>Ce sont les personnes qui fournissent, partout sur le territoire, un accompagnement de proximité aux jeunes : équipes éducatives, conseiller.e.s en insertion, éducateur.trice.s, travailleur.se.s sociaux.les, recruteur.se.s, RH, managers, formateur.trice.s, parents, associations, voire médias et artistes.</p>
           <p>Toutes ces personnes influencent le parcours des jeunes. En plus de les aider à trouver des solutions immédiates, nous devons désormais, toutes et tous, investir sur le développement de leur pouvoir d’action, de leur autonomie, et de leur capacité à s’orienter à de multiples reprises pour sécuriser une insertion durable dans la société.  </p>
@@ -31,7 +27,6 @@
         </div>
       </div>
     </div>
-  </div>
 </section>
 
 <section id="block3" class="block">
@@ -40,13 +35,16 @@
       	  <img src="assets/img/surf.jpg" />
       </div>
       <div class="block-content">
-        <h2 class="block-slogan">co-innover</h2>
+        <h2 class="block-slogan">
+          <span class="line1">co-</span>
+          <span class="line2">innover</span>
+        </h2>
+        </h2>
         <div class="block-text">
           <p>Co-innover avec tous ceux et celles qui souhaitent améliorer les accompagnements proposés aux jeunes dans leurs problématiques d’orientation et d’insertion.</p>
         </div>
       </div>
     </div>
-  </div>
 </section>
 
 <section id="block4" class="block">
@@ -55,60 +53,75 @@
             <img src="assets/img/surf.jpg" />
         </div>
         <div class="block-content">
-          <h2 class="block-slogan">diffuser</h2>
+          <h2 class="block-slogan">Diffuser</h2>
           <div class="block-text">
             <p>Diffuser le plus largement possible le résultat de ces collaborations (outils, méthodes et ressources pédagogiques) pour en garantir l’accès à un maximum de jeunes, en priorité à ceux et celles qui ne peuvent pas y accéder par eux-mêmes.</p>
           </div>
         </div>
       </div>
-    </div>
   </section>
 
   <section id="block5" class="block block-color">
     <div class="block-group">
       <div class="block-image">
-      	  <img src="assets/img/powa1.jpg" />
+      	  <img src="assets/img/powa1.jpg"/>
       </div>
       <div class="block-content">
-        <h2 class="block-slogan">Le collectif</h2>
+        <h2 class="block-slogan">
+          <span class="line1">Le</span>
+          <span class="line2">collectif</span></h2>
         <div class="block-text">
-          <p>Powa est un collectif composé de personnes portées par la volonté de questionner notre rapport individuel et collectif au travail, et mobilisées pour cela autour de valeurs communes.</p>
+          <p class="collectif-introduction">Powa est un collectif composé de personnes portées par la volonté de questionner notre rapport individuel et collectif au travail, et mobilisées pour cela autour de valeurs communes.</p>
         {% for collectif-valeur in site.data.block.collectif-valeur %}
-            <p><span class="collectif-valeur">{{ collectif-valeur.valeur }}</span> {{ collectif-valeur.content }}</p>
+        <h3 class="collectif-valeur">{{ collectif-valeur.valeur }}</h3> 
+          <p>{{ collectif-valeur.content }}</p>
         {% endfor %}        
         </div>
       </div>
     </div>
-  </div>
 </section>
 
 
 <section id="block6" class="block">
-    <div class="block-content">
-      <h2 class="block-slogan">agir ensemble</h2>
-    </div>
+  <div class="block-content">
+    <h2 class="block-slogan">
+      <span class="line1">Agir</span>
+      <span class="line2">ensemble</span></h2>
+    </h2>
     <div class="block-group">
-        <div class="block-textonly">
-            <h3 class="block-subtitle">1. Outiller les accompagnateurs et accompagnatrices</h3>
-            <p class="block-hashtags">#formation #échangesdepratiques #ressourcespédagogiques</p>
-            <p>Les métiers de l’accompagnement évoluent vers plus de collectif et une plus grande place faite à l’autonomisation des accompagné.e.s. POWA compile et diffuse les bonnes pratiques, forme et met à disposition ses boîtes à outils.</p>
-        </div>
-        <div class="block-textonly">
-          <h3 class="block-subtitle">2. Ré-adapter l’offre d’accompagnement aux besoins des jeunes</h3>
-          <p class="block-hashtags">#sensibilisation #recherche-action #design</p>
-          <p>Les rapports des jeunes au travail sont multiples et évolutifs. La compréhension et les interactions devient parfois difficile. POWA facilite l’accès à la parole des jeunes et aide capter les besoins pour adapter les accompagnements in situ.</p>
-        </div>
-        <div class="block-textonly">
-           <a class="btn btn-powa btn-primary" href="#"role="button">télécharger le premier kit opensource</a>
-        </div>
-
-    <div class="block-textonly">
-      <h3 class="block-subtitle">3. Créer des parcours de réussite multi-acteurs</h3>
-      <p class="block-hashtags">#co-construction #co-innovation #conduiteduchangement</p>
-      <p>Les liens entre formation, accompagnement et recrutement ne sont pas toujours fluides. POWA accompagne la création de parcours cohérents et de communautés apprenantes pour proposer des parcours cohérent vers l’emploi au sein de filières métiers ou de territoire</p>
+      <div class="block-textonly">
+          <h3 class="block-subtitle">Outiller les accompagnateurs et accompagnatrices</h3>
+          <p class="block-hashtags">#formation #échangesdepratiques #ressourcespédagogiques</p>
+          <p>Les métiers de l’accompagnement évoluent vers plus de collectif et une plus grande place faite à l’autonomisation des accompagné.e.s. POWA compile et diffuse les bonnes pratiques, forme et met à disposition ses boîtes à outils.</p>
+      </div>
+      <div class="block-textonly">
+        <h3 class="block-subtitle">Ré-adapter l’offre d’accompagnement aux besoins des jeunes</h3>
+        <p class="block-hashtags">#sensibilisation #recherche-action #design</p>
+        <p>Les rapports des jeunes au travail sont multiples et évolutifs. La compréhension et les interactions devient parfois difficile. POWA facilite l’accès à la parole des jeunes et aide capter les besoins pour adapter les accompagnements in situ.</p>
+      </div>
+      <div class="block-textonly">
+          <a class="btn btn-powa btn-primary" href="#"role="button">télécharger le premier kit opensource</a>
+      </div>
+      <div class="block-textonly">
+        <h3 class="block-subtitle">Créer des parcours de réussite multi-acteurs</h3>
+        <p class="block-hashtags">#co-construction #co-innovation #conduiteduchangement</p>
+        <p>Les liens entre formation, accompagnement et recrutement ne sont pas toujours fluides. POWA accompagne la création de parcours cohérents et de communautés apprenantes pour proposer des parcours cohérent vers l’emploi au sein de filières métiers ou de territoire</p>
+      </div>
+    </div>`
   </div>
+</section>
 
+<section id="block7" class="block">
+  <div class="block-content">
+    <h3 class="block-subtitle">Nous agissons déjà ensemble</h3>
+  </div>
+  <div class="block-group">
+  {% for items in site.data.partenaires.items %}
+    <div class="logo-item">
+      <div class="company-logo">
+        <img src="/assets/img/logo/{{ items.picture }}" class="grayscale" alt="{{ items.name }}">
+      </div>	          
     </div>
+  {% endfor %}
   </div>
-</div>
 </section>

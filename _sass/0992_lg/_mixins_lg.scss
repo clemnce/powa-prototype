@@ -7,3 +7,11 @@
   font-weight: 700;
   line-height: 1;
 }
+
+@mixin f6-lg()
+{
+  font-family: 'ExcelsiorInsertioLT';
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.7;
+}

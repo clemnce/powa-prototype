@@ -1,9 +1,15 @@
 .footer {
-  .footer-community {
+  padding-top: 3rem;
+  .footer-left {
     @include make-col(6);
   } 
-  .footer-social {
-    text-align: right;
-    @include make-col(6);
+  .footer-right {
+    text-align: left;
+    @include make-col-offset(3);
+    @include make-col(3);
+  }
+  .social-list a {
+    @include f6-md();
+    line-height: 1.3;
   }
 }

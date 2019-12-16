@@ -1,6 +1,6 @@
 .block, .block-color {
   padding-top: 3.75rem;
-  padding-bottom: 3.75rem;
+  padding-bottom: 1.5rem;                           
 }
 
 .block-color {
@@ -15,6 +15,25 @@
 
 .block {
   @include make-container;
+  .block-slogan {
+    @include f1-xs;
+    position: absolute;
+    top: -90px;
+    z-index: 2;
+    text-transform: lowercase;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 50px;
+      position: absolute;
+      width: calc(110% + 15px);
+      background-color: #48EAAB;
+      top: 36px;
+      left: -15px;
+      z-index: -1;
+    }
+  }
 }
 
 .block-image {
@@ -44,39 +63,74 @@
   }
 }
 
-
 .block-content {
   // Invocation des mixins du système de grille
   @include make-col-ready();
   @include make-col(12);
-  padding-top: 60px;
+  padding-top: 40px;
 }
 
-.block-slogan {
-  @include f1-xs;
-  position: absolute;
-  top: -90px;
-  z-index: 2;
-  text-transform: lowercase;
-
-  &::after {
-    content: "";
-    display: block;
-    height: 19px;
+// COMPORTEMENT DE CHAQUE BLOC: TEXT & IMAGE
+.block {
+  &#block1 {
+  .block-slogan {
     position: absolute;
-    width: calc(110% + 15px);
-    background-color: #48EAAB;
-    top: 36px;
-    left: -15px;
-    z-index: -1;
+    top: -90px;
+    z-index: 2;
+    text-transform: lowercase;
+  
+    &::after {
+      content: "";
+      display: block;
+      height: 19px;
+      position: absolute;
+      width: calc(110% + 15px);
+      background-color: #48EAAB;
+      top: 36px;
+      left: -15px;
+      z-index: -1;
+    }
   }
 }
+
+  &#block2 {
+    overflow-x: hidden;
+
+    .block-image {
+      @include make-col(6);
+      position: relative;
+      //overflow: visible;
+
+      /* & > img { 
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: none;
+      } */
+    }
+    .block-content {
+      //@include make-col-offset(3);
+      @include make-col(12);
+      margin: 0 auto;
+      padding-top: 0;
+      padding-right: 0px;
+    }
+    .block-slogan {
+      top: 20px;
+      left: 0;
+    }
+  }
+
+
+
+
+
+
 
 #block6 {
   overflow: hidden;
 
   .block-slogan {
-    @include f1-xs;
     position: relative;
     z-index: 2;
     text-transform: lowercase;
@@ -84,7 +138,6 @@
     &::after {
       content: "";
       display: block;
-      height: 19px;
       position: absolute;
       width: calc(110% + 15px);
       background-color: #48EAAB;
@@ -94,6 +147,7 @@
     }
 
   }
+}
 }
 
 .block-subtitle {
@@ -120,4 +174,22 @@
 .block-hashtags {
   @include f4-xs;
   font-weight: 700;
+}
+
+.collectif-introduction {
+  @include f4-xs; 
+}
+
+#block7 {
+  .logo-item {
+  @include make-col-ready();
+  @include make-col(4);
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+.block-group {
+  @include make-row();
 }

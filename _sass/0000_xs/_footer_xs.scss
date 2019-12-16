@@ -3,18 +3,21 @@ footer {
   color: white;
   background-color: #44F0AD;
   padding-top: 5rem;
-  padding-bottom: 2rem;
-  .footer-community {
+  padding-bottom: 1rem;
+  .footer-left {
     @include make-col-ready();
     @include make-col(12);
+    @include no-padding;
   }
-  .footer-social {
+  .footer-right {
     @include make-col-ready();
     @include make-col(12);
+    @include no-padding;
   }
   .footer-credits {
     @include make-col-ready();
     @include make-col(12);
+    @include no-padding;
   }
   .footer-titre {
     @include f1-xs;
@@ -37,8 +40,11 @@ footer {
   }
   ul {
     list-style: none;
-    margin-left: 0;
-    @include f1-xs;
+    margin-left: 0px;
+  }
+  .social-list a {
+  margin-left: 0;
+  @include f1-xs;
   }
   .footer-bottom {
     margin-bottom: 2rem;
@@ -47,7 +53,9 @@ footer {
    a {
      text-decoration: underline;
    }
-
+  }
+  .contact-email {
+    @include f4-xs; 
   }
 }
 
@@ -55,14 +63,4 @@ footer {
   @include f1-xs;
   color: white;
   line-height: 1;
-}
-
-// MOBILE
-
-.footer {
-  @media (max-width: 767px) {
-    .cta {
-      font-size: 50px;
-    }
-  }
 }

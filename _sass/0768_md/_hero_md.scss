@@ -1,0 +1,16 @@
+#hero {
+  .hero-header {
+  @include make-col(10);
+  }
+  .hero-title {
+    padding-top: 2rem;
+    @include f1-md;
+    overflow: hidden;
+    .line4 {
+      @include f3-md;
+    }
+  }
+  .hero-bottom {
+    @include make-col(10);
+    }
+}
