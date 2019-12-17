@@ -1,4 +1,5 @@
 .contact {
+  @include make-container;
   color: white;
   background-color: #44F0AD;
   padding-top: 5rem;

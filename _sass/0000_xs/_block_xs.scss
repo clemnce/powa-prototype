@@ -1,3 +1,8 @@
+.page-content {
+  //padding-top: 3.75rem;
+  margin-bottom: 1rem;
+}
+
 .block, .block-color {
   padding-top: 3.75rem;
   padding-bottom: 1.5rem;                           
@@ -14,6 +19,7 @@
 }
 
 .block {
+  @include make-container;
   .block-slogan {
     @include f1-xs;
     position: absolute;
@@ -107,8 +113,6 @@
       //@include make-col-offset(3);
       @include make-col(12);
       margin: 0 auto;
-      padding-top: 0;
-      padding-right: 0px;
     }
     .block-slogan {
       top: 20px;
@@ -122,7 +126,7 @@
 
 
 
-#block6 {
+  &#block6 {
   overflow: hidden;
 
   .block-slogan {
