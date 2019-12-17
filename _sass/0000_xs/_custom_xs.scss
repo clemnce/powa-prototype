@@ -1,12 +1,3 @@
-// CONTAINERS
-#hero, .block, .contact, .footer {
-  @include container-xs;
-}
-
-.block, .contact, .footer {
-  @include make-container;
-}
-
 html {
 	height: 100%;
 }
