@@ -73,14 +73,14 @@
       @include make-col(6);
       position: relative;
       order: 2;
-      overflow: visible;
+      //overflow: visible;
 
-      & > img { 
+      /* & > img { 
         position: absolute;
         top: 0;
         left: 0;
         transform: none;
-      }
+      } */
     }
     .block-content {
       @include make-col(6);
