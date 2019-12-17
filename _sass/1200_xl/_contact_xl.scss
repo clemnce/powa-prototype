@@ -1,0 +1,11 @@
+.contact {
+  .contact-informations {
+  @include make-col(5)
+    .contact-text {
+      
+    }
+  }
+  .contact-form {
+  @include make-col(7);
+  }
+}
