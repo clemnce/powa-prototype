@@ -1,5 +1,4 @@
 .hero-header {
-  @include make-col-ready();
   @include make-col(9);
   margin-left: auto;
   margin-right: auto;
