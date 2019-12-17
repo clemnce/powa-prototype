@@ -1,11 +1,14 @@
 .contact {
   .contact-informations {
   @include make-col(5)
+    .contact-text {
+      @include f5-md ();
+    }
   }
   .contact-form {
   @include make-col(7);
   }
   .contact-titre {
-    @include f6-md ();
+    @include f3-md ();
   }
 }
