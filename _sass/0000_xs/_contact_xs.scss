@@ -2,28 +2,23 @@
   @include make-container;
   color: white;
   background-color: #44F0AD;
-  padding-top: 5rem;
+  padding-top: 3.75rem;
   padding-bottom: 3rem;
   .contact-informations {
     @include make-col-ready();
     @include make-col(12);
-    @include no-padding;
   }
   .contact-titre {
     @include f1-xs; 
   }
   .contact-text {
-    @include f4-xs; 
-  }
-  .contact-localisation {
-    @include f3-xs; 
+    @include f4regular-xs; 
   }
 }
 
 .contact-form {
   @include make-col-ready();
   @include make-col(12);
-  @include no-padding;
   label {
   @include f4-xs; 
   color: black;
