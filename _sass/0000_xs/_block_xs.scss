@@ -1,11 +1,11 @@
-.page-content {
-  //padding-top: 3.75rem;
-  margin-bottom: 1rem;
-}
+/* .page-content {
+  padding-top: 3.75rem;
+  margin-bottom: 3.75rem;
+} */
 
 .block, .block-color {
   padding-top: 3.75rem;
-  padding-bottom: 1.5rem;                           
+  margin-bottom: 1.5rem;                           
 }
 
 .block-color {
@@ -18,6 +18,7 @@
   }
 }
 
+// BLOCK
 .block {
   @include make-container;
   .block-slogan {
@@ -30,8 +31,8 @@
     &::after {
       content: "";
       display: block;
-      height: 19px;
       position: absolute;
+      height: 19px;
       width: calc(110% + 15px);
       background-color: #48EAAB;
       top: 36px;
@@ -42,7 +43,6 @@
 }
 
 .block-image {
-  // Invocation des mixins du système de grille
   @include make-col-ready();
   @include make-col(12);
   width: auto;
@@ -69,22 +69,18 @@
 }
 
 .block-content {
-  // Invocation des mixins du système de grille
   @include make-col-ready();
   @include make-col(12);
   padding-top: 40px;
 }
 
-// COMPORTEMENT DE CHAQUE BLOC: TEXT & IMAGE
+// BEHAVIOUR OF EACH BLOCK: TEXT BAND & IMAGE
 .block {
   &#block1 {
   .block-slogan {
     position: absolute;
     top: -90px;
-    z-index: 2;
-    text-transform: lowercase;
     white-space: nowrap;
-  
     &::after {
       content: "";
       width: calc(110% + 15px);
@@ -96,7 +92,7 @@
 
   &#block2 {
     overflow-x: hidden;
-
+    padding-top: 2rem;
     .block-image {
       @include make-col(6);
       position: relative;
@@ -110,8 +106,8 @@
       } */
     }
     .block-content {
-      //@include make-col-offset(3);
       @include make-col(12);
+      padding-top: 0px;
       margin: 0 auto;
     }
     .block-slogan {
@@ -128,29 +124,37 @@
 
   &#block6 {
   overflow: hidden;
-
+  .block-content {
+    padding-top: 120px;
+  }
   .block-slogan {
-    position: relative;
-    z-index: 2;
-    text-transform: lowercase;
-
+    top: 0px;
+    .line2 {
+      display: block;
+      position: absolute;
+      left: 70px;
+    }
     &::after {
       content: "";
       display: block;
       position: absolute;
-      width: calc(110% + 15px);
-      background-color: #48EAAB;
-      top: 36px;
-      left: -30px;
-      z-index: -1;
+      width: calc(300%);
+      top: 93px;
+      left: 60px;
     }
-
   }
 }
+  &#block7 {
+    padding-top: 0px;
+    .block-content {
+      padding-top: 0px;
+    }
+  }
 }
 
 .block-subtitle {
   @include f3-xs();
+  margin-bottom: 0.5rem;
   //color: #619883;
 }
 
@@ -162,9 +166,16 @@
 }
 
 .block-textonly {
-  padding-top: 2rem;
+  padding-top: 1rem;
   margin-bottom: 2rem;
+  &:first-child {
+    padding-top: 2rem;
+  }
+  &:last-child {
+    margin-bottom: 0rem;
+  }
 }
+
 
 .collectif-valeur {
   @include f2-xs;
@@ -176,7 +187,7 @@
 }
 
 .collectif-introduction {
-  @include f4-xs; 
+  @include f4regular-xs; 
 }
 
 #block7 {
