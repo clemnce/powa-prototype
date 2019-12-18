@@ -12,7 +12,7 @@
     }
   }
   .hero-text {
-    @include f5-md;
+    @include f6-md;
   }
   .hero-bottom {
     @include make-col(11);
