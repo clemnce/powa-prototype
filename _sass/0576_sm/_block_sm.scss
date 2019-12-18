@@ -11,7 +11,7 @@
 
 #block6 .block-content {
   // Invocation des mixins du système de grille
-  @include make-col(6);
+  @include make-col(12);
   padding-top: 60px;
 }
 
