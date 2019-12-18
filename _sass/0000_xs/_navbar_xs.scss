@@ -8,14 +8,17 @@
     margin-left: auto; 
     margin-right: auto; 
   }
-  .navbar-logo {
+  .navbar-brand {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0px);
   }
-}
-.navbar-logo { 
-  height: 40px;
+  .navbar-logo { 
+    height: 32px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0px);
+  }
 }
 
 .navbar-toggler { 
