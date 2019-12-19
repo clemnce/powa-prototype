@@ -36,7 +36,12 @@
           <ul class="menu-mobile_nav">
               {% for menu in site.data.menu.menu %}
               <li class="">
-                  <a class="footer-social-links" href="{{ menu.href }}" target="{{ menu.target }}">{{ menu.title }}</a>
+                  <a class="footer-social-links" 
+                     href="{{ menu.href }}" 
+                     target="{{ menu.target }}"
+                     data-scroll-target="{{ menu.href }}"
+                     data-scroll-modal="#exampleModal"
+                  >{{ menu.title }}</a>
               </li>
               {% endfor %}
             </ul>

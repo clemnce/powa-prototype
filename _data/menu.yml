@@ -1,5 +1,9 @@
 menu:
 - title: se mobiliser
+  href: "#block1"
 - title: co-innover & diffuser
+  href: "#block3"
 - title: le collectif
+  href: "#block5"
 - title: agir ensemble
+  href: "#block6"
