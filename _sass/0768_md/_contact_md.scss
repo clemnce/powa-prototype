@@ -1,13 +1,13 @@
 .contact {
   .contact-informations {
-  @include make-col(5)
+  @include make-col(5);
     .contact-text {
       @include f6-md ();
     }
   }
   .contact-form {
   @include make-col(7);
-  padding-top: 1rem;
+  padding-top: 5rem;
   }
   .contact-titre {
     @include f3-md ();
