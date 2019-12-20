@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-light">
   <!-- Logo -->
   <a class="navbar-brand" href="/">
-    <img class="navbar-logo" src="{{ site.url }}/assets/img/logo-powa-blanc.png">
+      <img class="navbar-logo" src="{{ "/assets/img/logo-powa-blanc.png" | prepend: site.baseurl | prepend: site.url }}" >
   </a>
     <!-- Toggler/collapsibe Button -->
   <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#exampleModal" data-backdrop="false" aria-controls="navbarnav" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,12 +12,12 @@
 <!-- Réseaux sociaux et Contact -->
     <div class="right-links menu-social navbar-nav ml-auto">
       <a href="{{ social-links.href }}" target="{{ social-links.target }}">
-          <img src="{{ site.url }}/assets/icons/facebook-icon.svg" height="20">
+          <img src="{{ "/assets/icons/facebook-icon.svg" | prepend: site.baseurl}}" height="20">
       <a href="{{ social-links.href }}" target="{{ social-links.target }}">
-          <img src="{{ site.url }}/assets/icons/twitter-icon.svg" height="20">
+          <img src="{{ "/assets/icons/twitter-icon.svg"  | prepend: site.baseurl }}" height="20">
       </a>
       <a href="{{ social-links.href }}" target="{{ social-links.target }}">
-          <img src="{{ site.url }}/assets/icons/linkedin-icon.svg" height="20">
+          <img src="{{ "/assets/icons/linkedin-icon.svg" | prepend: site.baseurl }}" height="20">
       </a>
       <a href="{{ social-links.href }}" target="{{ social-links.target }}">
           <span>contact</span>
