@@ -1,16 +1,30 @@
+@mixin container-lg()
+{
+  padding-left: 4rem !important;
+  padding-right: 4rem !important;
+}
+
 // TYPOGRAPHY
 
 @mixin f1-lg()
 {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 150px;
+  font-size: 119px;
   font-weight: 700;
   line-height: 1;
 }
 
+@mixin f5-lg()
+{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
 @mixin f6-lg()
 {
-  font-family: 'ExcelsiorInsertioLT';
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 21px;
   font-weight: 400;
   line-height: 1.7;

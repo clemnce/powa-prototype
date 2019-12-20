@@ -1,0 +1,66 @@
+.block {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  .block-slogan {
+    position: absolute;
+    top: -90px;
+    z-index: 2;
+    text-transform: lowercase;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 50px;
+      position: absolute;
+      width: calc(110% + 15px);
+      background-color: #48EAAB;
+      top: 36px;
+      left: -15px;
+      z-index: -1;
+    }
+  }
+  &#block1 {
+    .block-content {
+      padding-top: 11rem;
+    }
+    .block-slogan {
+      top: 0px;
+      white-space: nowrap;
+      &::after {
+        content: "";
+        width: calc(110% + 15px);
+        top: 83px;
+        left: -15px;
+      }
+    }
+  }
+  &#block2 {
+    .block-content {
+    @include make-col(8);
+    }
+    .block-subtitle {
+      font-size: 50px;
+    }
+  }
+  &#block6 {
+    .block-content {
+      padding-top: 20rem;
+    }
+    .block-slogan {
+      .line1 {
+        top: 0px;
+        left: 220px;
+      }
+      .line2 {
+        top: 15px;
+        left: 420px;
+      }
+      &::after {
+        content: "";
+        width: calc(140%);
+        top: 200px;
+        left: 282px;
+      }
+    }
+  }
+}

@@ -1,23 +1,21 @@
 footer {
+  @include make-container;
   border-top: 1px solid white;
   color: white;
   background-color: #44F0AD;
-  padding-top: 5rem;
-  padding-bottom: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 0.5rem;
   .footer-left {
     @include make-col-ready();
     @include make-col(12);
-    @include no-padding;
   }
   .footer-right {
     @include make-col-ready();
     @include make-col(12);
-    @include no-padding;
   }
   .footer-credits {
     @include make-col-ready();
     @include make-col(12);
-    @include no-padding;
   }
   .footer-titre {
     @include f1-xs;
@@ -42,9 +40,14 @@ footer {
     list-style: none;
     margin-left: 0px;
   }
-  .social-list a {
-  margin-left: 0;
-  @include f1-xs;
+  .social-list  {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    a {
+    @include f1-xs;
+    margin-left: 0;
+    line-height: 1.1;
+    }
   }
   .footer-bottom {
     margin-bottom: 2rem;
@@ -55,12 +58,7 @@ footer {
    }
   }
   .contact-email {
-    @include f4-xs; 
+    @include f4-xs;
+    color: black;
   }
-}
-
-.footer-social-list {
-  @include f1-xs;
-  color: white;
-  line-height: 1;
 }

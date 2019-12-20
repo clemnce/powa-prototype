@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+  {% include html_head.html %}
 
   <body class="default">
     {% include navbar.html %}
@@ -11,10 +11,8 @@
     </div>
     {% include contact.html %}
     {% include footer.html %}
-    {% if jekyll.environment == "production" %}
-      {% include analytics.html %}
-      {% include cookie-consent.html %}
-    {% endif %}
+    
+    {% include javascript_tail.html %}
   </body>
 
 </html>

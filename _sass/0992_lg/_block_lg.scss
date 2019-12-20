@@ -1,11 +1,6 @@
-.block-slogan, .block-slogan1 {
-  @include f1-lg;
-}
 
 .block-group {
   @include make-row();
-  margin-left: 90px;
-  margin-right: 90px;
 }
 
 .block {
@@ -24,10 +19,21 @@
     padding-top: 11rem;
     padding-bottom: 5rem;
     }
+    .block-slogan {
+      position: absolute;
+      top: 0px;
+      white-space: nowrap;
+      &::after {
+        content: "";
+        width: calc(110% + 15px);
+        top: 72px;
+        left: -15px;
+      }
+    }
   }
   &#block2 {
     .block-content {
-    @include make-col(5);
+    @include make-col(8);
     }
     .block-subtitle {
       font-size: 50px;

@@ -1,4 +1,6 @@
 #hero {
+  @include make-container;
+  //@include container-xs;
   padding: 2rem 0;
   color: white;
   background-color: #44F0AD;
@@ -6,26 +8,28 @@
     // Invocation des mixins du système de grille
     @include make-col-ready();
     @include make-col(12);
-    @include no-padding;
   }
 
   .hero-bottom {
     // Invocation des mixins du système de grille
     @include make-col-ready();
     @include make-col(12);
-    @include no-padding;
     margin-top: 2rem;
   }
 
   .hero-title {
     @include f1-xs;
-    .line1, .line2, .line3, .line4 {
+    .line1, .line2, .line3 {
+      display: inline;
+    }
+    .line4 {
       display: block;
+      font-weight: 400;
     }
   }
 
   .hero-text {
-    @include f4-xs;
+    @include f4regular-xs;
     margin-bottom: 2rem;
   }
 }
