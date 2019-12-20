@@ -7,11 +7,11 @@
 
 # Site settings
 title: POWA
-email: your-email@domain.com
+email: contact@collectifpowa.org
 description: > # this means to ignore newlines until "baseurl:"
   description
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.domain.com" # the base hostname & protocol for your site
+baseurl: "/powa-prototype" # the subpath of your site, e.g. /blog
+url: "https://collectif-powa.github.io"
 
 # Build settings
 markdown: kramdown
