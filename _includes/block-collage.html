@@ -126,7 +126,7 @@
   {% for items in site.data.partenaires.items %}
     <div class="logo-item">
       <div class="company-logo">
-        <img src="/assets/img/logo/{{ items.picture }}" class="grayscale" alt="{{ items.name }}">
+          <img src="{{ items.picture | prepend: "/assets/img/logo/" | prepend: site.baseurl | prepend: site.url }}" class="grayscale" alt="{{ items.name }}">
       </div>	          
     </div>
   {% endfor %}
