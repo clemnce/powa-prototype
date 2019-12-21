@@ -4,6 +4,13 @@
   padding-bottom: 15px;
   background-color: #44F0AD;
   flex-wrap: nowrap;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 9999;
   a { 
     margin-left: auto; 
     margin-right: auto; 
@@ -15,9 +22,6 @@
   }
   .navbar-logo { 
     height: 32px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0px);
   }
 }
 
@@ -138,7 +142,7 @@ body.modal-open {
 
 .modal {
   position: fixed;
-  top: 76px;
+  top: 60px;
   right: 0;
   bottom: 0;
   left: 0;
