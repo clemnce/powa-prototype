@@ -1,6 +1,5 @@
 #hero {
   @include make-container;
-  //@include container-xs;
   padding: 2rem 0;
   color: white;
   background-color: #44F0AD;
@@ -19,11 +18,10 @@
 
   .hero-title {
     @include f1-xs;
-    .line1, .line2, .line3 {
+    .line1, .line2, .line3, .line4 {
       display: inline;
     }
     .line4 {
-      display: block;
       font-weight: 400;
     }
   }
