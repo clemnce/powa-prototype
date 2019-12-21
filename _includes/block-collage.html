@@ -62,28 +62,29 @@
       </div>
   </section>
 
-  <section id="block5" class="block block-color">
-<!--       <div class="block-image">
+<section id="block5" class="block block-color">
+<!--<div class="block-image">
       	  <img src="assets/img/powa1.jpg"/>
       </div> -->
-      <div class="block-content">
-        <h2 class="block-slogan">
-          <span class="line1">Le</span>
-          <span class="line2">collectif</span></h2>
-        <div class="block-text">
-          <p class="collectif-introduction">Powa est un collectif composé de personnes portées par la volonté de questionner notre rapport individuel et collectif au travail, et mobilisées pour cela autour de valeurs communes.</p>
-          <div class="block-group">
-              {% for collectif-valeur in site.data.block.collectif-valeur %}
-              <div class="block-textonly">
-                <h3 class="collectif-valeur">{{ collectif-valeur.valeur }}</h3> 
-                <p>{{ collectif-valeur.content }}</p>
-              </div>
-              {% endfor %} 
-            </div>
-            </div>     
-        </div>
+  <div class="block-group">
+    <div class="block-content">
+      <h2 class="block-slogan">
+        <span class="line1">Le</span>
+        <span class="line2">collectif</span>
+      </h2>
+      <div class="block-text">
+        <p class="collectif-introduction">Powa est un collectif composé de personnes portées par la volonté de questionner notre rapport individuel et collectif au travail, et mobilisées pour cela autour de valeurs communes.</p>
       </div>
     </div>
+  </div>
+  <div class="block-group">
+    {% for collectif-valeur in site.data.block.collectif-valeur %}
+    <div class="block-textonly">
+      <h3 class="collectif-valeur">{{ collectif-valeur.valeur }}</h3> 
+      <p>{{ collectif-valeur.content }}</p>
+    </div>
+    {% endfor %} 
+  </div>     
 </section>
 
 
