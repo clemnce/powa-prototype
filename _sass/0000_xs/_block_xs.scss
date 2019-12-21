@@ -5,7 +5,7 @@
 
 .block, .block-color {
   padding-top: 3.75rem;
-  margin-bottom: 1.5rem;                           
+  padding-bottom: 3.75rem;                           
 }
 
 .block-color {
@@ -118,8 +118,14 @@
 
 
 
-
-
+  &#block5 {
+  .block-content {
+    padding-top: 80px;
+  }
+  .block-slogan {
+    top: 0px;
+  }
+}
 
 
   &#block6 {
