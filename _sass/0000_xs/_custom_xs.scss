@@ -24,7 +24,7 @@ a {
   cursor: pointer;
   transition: all 0.3s;
   &:hover {
-    color: inherit;
+    color: #B49EE6;
     text-decoration: none;
     transition: all 0.3s;
   }
@@ -35,24 +35,54 @@ a {
   }
 }
 
-.btn-powa {
+
+
+.btnpowa-transparent {
+  @include f3-xs;
+  color: #B49EE6;
+  background-color: #44F0AD;
+  border-radius: 0;
+  border: 1px solid #B49EE6;
+  &:hover {
+    color: white;
+    border: 0;
+    background-color: #B49EE6;
+    text-decoration: none;
+    //transition: all 0.3s;
+  }
+  &:focus {
+    color: white;
+    border: 0;
+    background-color: #B49EE6;
+    text-decoration: none;
+    //transition: all 0.3s;
+  }
+}
+
+
+.btnpowa-color {
+  @include f3-xs;
   text-align: left;
-  width: 250px;
+  width: 80%;
   color: white;
   background-color: #44F0AD;
   padding: 1rem;
   border-radius: 0;
   border: 0;
   white-space: normal;
-  @include f2-xs;
+  padding-right: 100px;
+  line-height: 1.5;
+  display: block;
+  box-shadow: 0px 10px 0px black;
+  margin: 0 auto;
   &:hover {
-    color: inherit;
+    color: #B49EE6;
     background-color: #44F0AD;
     text-decoration: none;
     transition: all 0.3s;
   }
   &:focus {
-    color: inherit;
+    color: #B49EE6;
     background-color: #44F0AD;
     text-decoration: none;
     transition: all 0.3s;
