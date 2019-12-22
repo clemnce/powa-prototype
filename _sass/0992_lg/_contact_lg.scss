@@ -4,5 +4,9 @@
   }
   .contact-form {
   @include make-col(6);
+    form {
+      max-width: 650px;
+      margin: 0 auto;
+    }
   }
 }
