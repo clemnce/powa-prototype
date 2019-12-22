@@ -8,6 +8,10 @@ footer {
   .footer-left {
     @include make-col-ready();
     @include make-col(12);
+    .footer-title {
+      @include f2-xs; 
+      color: black;
+    }
   }
   .footer-right {
     @include make-col-ready();
