@@ -1,8 +1,23 @@
 title: Ils agissent déjà avec nous
 
 items:
+- name: Apec
+  picture: article1_logo.png
+
+- name: Mission Locale de la Vallée de l'Oise
+  picture: mlvo_logo.png
+
+- name: Article 1
+  picture: article1_logo.png
+
+- name: Teame
+  picture: teame_logo.png
+
 - name: Artefact
   picture: artefact_logo.png
+
+- name: Cojob
+  picture: cojob_logo.png
 
 - name: Artefact
   picture: artefact_logo.png
@@ -19,20 +34,5 @@ items:
 - name: Artefact
   picture: artefact_logo.png
 
-- name: Artefact
-  picture: artefact_logo.png
-
-- name: Artefact
-  picture: artefact_logo.png
-
-- name: Artefact
-  picture: artefact_logo.png
-
-- name: Artefact
-  picture: artefact_logo.png
-
-- name: Artefact
-  picture: artefact_logo.png
-
-- name: Artefact
-  picture: artefact_logo.png
+- name: Pôle Ressources 95
+  picture: poleressources95_logo.png
