@@ -67,6 +67,7 @@
 
   &#block1 {
     overflow-x: hidden;
+    overflow-y: overlay;
 
     .block-image {
       @include make-col(6);

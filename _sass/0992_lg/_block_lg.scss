@@ -39,4 +39,33 @@
       font-size: 50px;
     }
   }
+  &#block3 {
+    .block-image {
+      overflow: hidden;
+
+      & > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &#block4 {
+    .block-image {
+      overflow: hidden;
+
+      & > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
 }
