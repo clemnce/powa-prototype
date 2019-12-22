@@ -7,9 +7,9 @@
   }
   .contact-form {
   @include make-col(7);
-  padding-top: 5rem;
+  padding-top: 1rem;
   }
   .contact-titre {
-    @include f3-md ();
+    @include f4-md ();
   }
 }
