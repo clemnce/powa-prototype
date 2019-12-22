@@ -9,4 +9,11 @@
       margin: 0 auto;
     }
   }
+  .contact-meetus {
+    @include make-col(6);
+  }
+  .contact-titre {
+    @include f3-lg ();
+    color: white;
+  }
 }
