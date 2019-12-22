@@ -6,10 +6,6 @@
     padding-top: 2rem;
     @include f1-md;
     overflow: hidden;
-    .line4 {
-      @include f3-md;
-      font-weight: 400;
-    }
   }
   .hero-text {
     @include f6-md;

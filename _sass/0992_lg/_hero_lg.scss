@@ -1,17 +1,14 @@
 #hero {
-.hero-header {
-  @include make-col(11);
-}
-
-.hero-bottom {
-  @include make-col(8);
-}
-
-.hero-title {
-  @include f1-lg;
-  margin-bottom: 32px;
-  .line4 {
-    font-size: 89px;
+  .hero-header {
+    @include make-col(12);
+    margin: 0 auto;
   }
-}
+  .hero-bottom {
+    @include make-col(7);
+    margin: 0 auto;
+  }
+  .hero-title {
+    @include f1-lg;
+    margin-bottom: 32px;
+  }
 }

@@ -1,16 +1,13 @@
 #hero {
   .hero-header {
-    @include make-col(11);
+    @include make-col(12);
   }
   .hero-bottom {
     @include make-col-ready();
-    @include make-col(8);
+    @include make-col(7);
   }
   
   .hero-title {
     margin-bottom: 32px;
-    .line4 {
-      font-size: 112px;
-    }
   }
-  }
+}
