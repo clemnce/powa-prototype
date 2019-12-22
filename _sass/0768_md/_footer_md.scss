@@ -1,11 +1,10 @@
 .footer {
   padding-top: 3rem;
   .footer-left {
-    @include make-col(6);
+    @include make-col(9);
   } 
   .footer-right {
     text-align: left;
-    @include make-col-offset(3);
     @include make-col(3);
   }
   .social-list a {
