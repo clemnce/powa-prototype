@@ -2,7 +2,7 @@ title: Ils agissent déjà avec nous
 
 items:
 - name: Apec
-  picture: article1_logo.png
+  picture: apec_logo.png
 
 - name: Mission Locale de la Vallée de l'Oise
   picture: mlvo_logo.png
@@ -13,8 +13,8 @@ items:
 - name: Teame
   picture: teame_logo.png
 
-- name: Artefact
-  picture: artefact_logo.png
+- name: Plateforme i
+  picture: plateformei_logo.png
 
 - name: Cojob
   picture: cojob_logo.png
@@ -22,17 +22,17 @@ items:
 - name: Artefact
   picture: artefact_logo.png
 
-- name: Artefact
-  picture: artefact_logo.png
+- name: Estaca
+  picture: estaca_logo.png
 
-- name: Artefact
-  picture: artefact_logo.png
+- name: Pôle Léonard de Vinci
+  picture: poleleonarddevinci_logo.png
 
-- name: Artefact
-  picture: artefact_logo.png
+- name: Université Paris sud
+  picture: universiteparissud_logo.png
 
-- name: Artefact
-  picture: artefact_logo.png
+- name: Collectiv Z
+  picture: collectivz_logo.png
 
 - name: Pôle Ressources 95
   picture: poleressources95_logo.png
