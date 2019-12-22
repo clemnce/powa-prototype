@@ -1,5 +1,7 @@
 #hero {
   @include make-container;
+  // Compense navbar height
+  margin-top: 90px;
   padding: 2rem 0;
   color: white;
   background-color: #44F0AD;
