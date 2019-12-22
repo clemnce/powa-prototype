@@ -65,3 +65,20 @@ footer {
     color: black;
   }
 }
+
+.social-buttons-list a {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  background-color: #cccecf;
+  border-radius: 100%;
+  color: #fff;
+  overflow: hidden;
+  align-items: center;
+    justify-items: center;
+}
+
+.social-buttons-list img {
+  width: 18px;
+  height: 18px;
+}
