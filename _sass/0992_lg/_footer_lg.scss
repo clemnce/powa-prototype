@@ -6,4 +6,7 @@
     @include make-col(6);
     margin-top: 0rem;
   }
+  .footer-titre {
+    @include f3-lg ();
+  }
 }
