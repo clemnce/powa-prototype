@@ -1,11 +1,11 @@
 #hero {
   .hero-header {
     @include make-col(12);
-    margin: 0 auto;
+    margin: 0;
   }
   .hero-bottom {
     @include make-col(7);
-    margin: 0 auto;
+    margin: 0;
   }
   .hero-title {
     @include f1-lg;
