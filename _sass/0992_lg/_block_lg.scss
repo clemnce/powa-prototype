@@ -40,7 +40,11 @@
     }
   }
   &#block3 {
+    .block-content {
+      @include make-col(4);
+    }
     .block-image {
+      @include make-col(8);
       overflow: hidden;
 
       & > img {
@@ -55,7 +59,11 @@
   }
 
   &#block4 {
+    .block-content {
+      @include make-col(4);
+    }
     .block-image {
+      @include make-col(8);
       overflow: hidden;
 
       & > img {
