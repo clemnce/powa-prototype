@@ -5,13 +5,12 @@ footer {
   background-color: #44F0AD;
   padding-top: 3rem;
   padding-bottom: 0.5rem;
+  .footer-title {
+    @include f2-xs; 
+  }
   .footer-left {
     @include make-col-ready();
     @include make-col(12);
-    .footer-title {
-      @include f2-xs; 
-      color: black;
-    }
   }
   .footer-right {
     @include make-col-ready();
