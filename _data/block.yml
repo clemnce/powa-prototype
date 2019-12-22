@@ -1,13 +1,13 @@
 collectif-valeur:
-- valeur: inclusion
+- valeur: "#inclusion"
   content: Garantir l’accès à un accompagnement de qualité à un maximum de jeunes, quelle que soit leur situation économique, sociale, géographique
-- valeur: émancipation
+- valeur: "#émancipation"
   content: Offrir les opportunités à chacun.e de prendre conscience de sa valeur puis transmettre l’état d’esprit et les compétences qui permettent de l’exprimer
-- valeur: confiance
+- valeur: "#confiance"
   content: Fédérer une communauté diversifiée et la plus représentative possible des différentes parties prenantes pour avancer ensemble
-- valeur: complémentarité
+- valeur: "#complémentarité"
   content: Créer les conditions de l’intelligence collective pour valoriser et diffuser les réussites existantes et respecter les réalités de chacun.e
-- valeur: cohérence
+- valeur: "#cohérence"
   content: L’utilité sociale est au coeur de nos actions qui reposent sur un modèle économique qui s’adapte aux ressources de chaque partenaire et projet
 
 agir-ensemble:
