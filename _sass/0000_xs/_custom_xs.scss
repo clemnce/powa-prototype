@@ -39,9 +39,12 @@ a {
 
 .btnpowa-transparent {
   @include f3-xs;
+
   color: #B49EE6;
   background-color: #44F0AD;
   border-radius: 0;
+  box-shadow: 0 10px 0 #B49EE6;
+
   &:hover {
     color: white;
     border: 0;
@@ -61,6 +64,8 @@ a {
 
 .btnpowa-color {
   @include f3-xs;
+
+  box-shadow: 0 10px 0 black;
   text-align: left;
   width: 80%;
   color: white;
