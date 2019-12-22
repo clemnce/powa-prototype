@@ -134,12 +134,13 @@
     }
     .block-slogan {
       text-align: right;
+      top: -50px;
       right: 30px;
       &::after {
         content: "";
-        width: calc(180%);
-        top: 66px;
-        left: -240px;
+        width: calc(123%);
+        top: 38px;
+        left: -80px;
       }
     }
   }
@@ -172,7 +173,7 @@
       &::after {
         content: "";
         width: calc(150%);
-        top: 315px;
+        top: 50px;
         left: -24px;
       }
     }
