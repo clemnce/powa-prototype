@@ -7,9 +7,17 @@
   .contact-informations {
     @include make-col-ready();
     @include make-col(12);
+    .contact-links a {
+      @include f3-xs; 
+      display: block;
+    }
   }
   .contact-titre {
-    @include f1-xs; 
+    @include f2-xs; 
+    color: black;
+  }
+  .contact-titre2 {
+      padding-top: 3rem;
   }
   .contact-text {
     @include f4regular-xs; 
@@ -21,10 +29,10 @@
   @include make-col(12);
   label {
   @include f4-xs; 
-  color: black;
+  color: #363636;
   }
   .form-control {
-    border: 2px solid #000000;
+    border: 1px solid #8888;
     border-radius: 3px;
   }
   .contact-send {
