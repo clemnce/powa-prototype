@@ -6,6 +6,10 @@
 .block, .block-color {
   padding-top: 3.75rem;
   padding-bottom: 3.75rem;                           
+
+  .block-slogan {
+    hyphens: auto;
+  }
 }
 
 .block-color {
@@ -168,6 +172,7 @@
 .block-subtitle {
   @include f2-xs();
   margin-bottom: 0.5rem;
+  hyphens: auto;
   //color: #619883;
 }
 
