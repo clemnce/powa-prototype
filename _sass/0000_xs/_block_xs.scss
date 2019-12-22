@@ -21,6 +21,10 @@
 // BLOCK
 .block {
   @include make-container;
+  .block-textonly {
+    @include make-col-ready();
+    @include make-col(12); 
+  }
   .block-slogan {
     @include f1-xs;
     position: absolute;
@@ -72,6 +76,9 @@
   @include make-col-ready();
   @include make-col(12);
   padding-top: 40px;
+  .block-description {
+  @include f3-xs();
+  }
 }
 
 // BEHAVIOUR OF EACH BLOCK: TEXT BAND & IMAGE
@@ -131,7 +138,7 @@
   &#block6 {
   overflow: hidden;
   .block-content {
-    padding-top: 120px;
+    padding-top: 140px;
   }
   .block-slogan {
     top: 0px;
@@ -196,7 +203,7 @@
 #block7 {
   .logo-item {
   @include make-col-ready();
-  @include make-col(4);
+  @include make-col(6);
   }
   img {
     max-width: 100%;
