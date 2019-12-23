@@ -1,10 +1,12 @@
 footer {
   @include make-container;
+
   border-top: 1px solid white;
   color: white;
   background-color: #44F0AD;
   padding-top: 3rem;
   padding-bottom: 0.5rem;
+
   .footer-title {
     @include f2-xs; 
   }
@@ -20,9 +22,6 @@ footer {
     @include make-col-ready();
     @include make-col(12);
   }
-  .footer-titre {
-    @include f1-xs;
-  }  
   .footer-text {
     @include f4-xs;
   }
@@ -39,10 +38,28 @@ footer {
     margin-top: 2rem;
     text-align: left;
   }
-  ul {
+  .footer-bottom {
+    margin-bottom: 2rem;
+  }
+
+  .footer-credits {
+   a {
+     text-decoration: underline;
+   }
+  }
+
+  .contact-email {
+    @include f4-xs;
+    color: black;
+  }
+
+  /* SOCIAL LINKS */
+  .social-list, 
+  .social-buttons-list {
     list-style: none;
     margin-left: 0px;
   }
+
   .social-list  {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -52,34 +69,24 @@ footer {
     line-height: 1.1;
     }
   }
-  .footer-bottom {
-    margin-bottom: 2rem;
-  }
-  .footer-credits {
-   a {
-     text-decoration: underline;
-   }
-  }
-  .contact-email {
-    @include f4-xs;
-    color: black;
+
+  .social-buttons-list {
+    img {
+      width: 18px;
+      height: 18px;
+    }
+    a {
+      display: inline-flex;
+      width: 40px;
+      height: 40px;
+      background-color: #cccecf;
+      border-radius: 100%;
+      color: #fff;
+      overflow: hidden;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+    }
   }
 }
 
-.social-buttons-list a {
-  display: inline-flex;
-  width: 40px;
-  height: 40px;
-  background-color: #cccecf;
-  border-radius: 100%;
-  color: #fff;
-  overflow: hidden;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
-}
-
-.social-buttons-list img {
-  width: 18px;
-  height: 18px;
-}
