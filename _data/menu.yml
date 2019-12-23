@@ -1,9 +1,11 @@
 menu:
 - title: se mobiliser
   href: "#block1"
-- title: nos méthodes
-  href: "#block3"
 - title: le collectif
   href: "#block5"
-- title: nos actions
+- title: méthodes
+  href: "#block3"
+- title: actions
   href: "#block6"
+- title: contact
+  href: "#contact"
