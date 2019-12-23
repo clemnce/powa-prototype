@@ -11,11 +11,14 @@ hashtag2: "#powaspirit"
 
 social-links:
 - title: facebook
+  icon: facebook
   href: https://fr-fr.facebook.com/CollectifPOWA/
   target: _blank
 - title: twitter
+  icon: twitter
   href: https://fr-fr.facebook.com/CollectifPOWA/
   target: _blank
 - title: linkedin
+  icon: linkedin
   href: https://fr.linkedin.com/company/collectifpowa
   target: _blank
