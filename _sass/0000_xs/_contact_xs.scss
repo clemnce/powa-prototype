@@ -14,7 +14,6 @@
   }
   .contact-titre {
     @include f2-xs; 
-    color: black;
   }
   .contact-titre2 {
       padding-top: 1rem;
@@ -40,6 +39,5 @@
   }
   button {
   @include f4-xs;
-  background-color: white;
   }
 }
