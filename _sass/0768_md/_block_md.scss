@@ -11,6 +11,9 @@
   .block-textonly {
     @include make-col(6); 
   }
+  .block-button {
+    margin: auto 0;
+  }
   .block-content {
     @include make-col(6);
     padding-top: 120px;
