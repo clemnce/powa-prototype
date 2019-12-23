@@ -1,7 +1,6 @@
 .navbar { 
   margin-bottom: 0;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 20px 2rem;
   background-color: #44F0AD;
   flex-wrap: nowrap;
   justify-content: flex-end;
@@ -9,17 +8,17 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 90px;
+  //height: 60px;
   z-index: 9999;
   a { 
     margin-left: auto; 
     margin-right: auto; 
   }
-  .navbar-brand {
+/*   .navbar-brand {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0px);
-  }
+  } */
   .navbar-logo { 
     height: 32px;
   }
