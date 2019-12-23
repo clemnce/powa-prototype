@@ -1,15 +1,20 @@
 #hero {
+  @include make-row();
   .hero-header {
-    @include make-col(11);
-    margin: 0 auto;
+    @include make-container;
   }
   .hero-bottom {
+    @include make-container;
+  }
+  .hero-title {
+    @include make-col(11);
+    margin: 0 auto;
+    @include f2-lg;
+    margin-bottom: 32px;
+  }
+  .hero-text {
     @include make-col(7);
     padding-top: 3rem;
     margin: 0 auto;
-  }
-  .hero-title {
-    @include f2-lg;
-    margin-bottom: 32px;
   }
 }

@@ -1,27 +1,24 @@
 #hero {
-  @include make-container;
-  max-width: 1200px;
+  @include make-row();
   // Compense navbar height
   margin-top: 60px;
   padding: 2rem 0;
   color: white;
   background-color: #44F0AD;
   .hero-header {
-    // Invocation des mixins du système de grille
-    @include make-col-ready();
-    @include make-col(12);
+    @include make-container;
     margin: 0 auto;
   }
 
   .hero-bottom {
-    // Invocation des mixins du système de grille
-    @include make-col-ready();
-    @include make-col(12);
+    @include make-container;
     margin-top: 2rem;
     margin: 0 auto;
   }
 
   .hero-title {
+    @include make-col-ready();
+    @include make-col(12);
     @include f2-xs;
     .line1, .line2, .line3 {
       display: block;
@@ -32,6 +29,8 @@
   }
 
   .hero-text {
+    @include make-col-ready();
+    @include make-col(12);
     @include f4regular-xs;
     margin-bottom: 2rem;
   }

@@ -1,13 +1,19 @@
 #hero {
+  @include make-row();
   .hero-header {
-    @include make-col(12);
+    @include make-container;
   }
   .hero-bottom {
-    @include make-col-ready();
+    @include make-container;
+  }
+  .hero-title {
+    @include make-col(9);
+    margin-bottom: 32px;
+  }
+  .hero-text {
     @include make-col(7);
   }
-  
-  .hero-title {
-    margin-bottom: 32px;
+  .hero-header {
+    @include make-col(12);
   }
 }

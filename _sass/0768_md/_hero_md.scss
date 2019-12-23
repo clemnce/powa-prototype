@@ -1,6 +1,16 @@
 #hero {
+  @include make-row();
   .hero-header {
-  @include make-col(11);
+    @include make-container;
+  }
+  .hero-bottom {
+    @include make-container;
+  }
+  .hero-title {
+    @include make-col(11);
+  }
+  .hero-text {
+    @include make-col(9);
   }
   .hero-title {
     padding-top: 2rem;
@@ -9,8 +19,6 @@
   }
   .hero-text {
     @include f6-md;
-  }
-  .hero-bottom {
     @include make-col(11);
   }
 }
