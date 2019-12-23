@@ -1,5 +1,6 @@
 #hero {
   @include make-container;
+  max-width: 1200px;
   // Compense navbar height
   margin-top: 60px;
   padding: 2rem 0;

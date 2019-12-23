@@ -1,5 +1,6 @@
 .contact {
   @include make-container;
+  max-width: 1200px;
   color: white;
   background-color: #44F0AD;
   padding-top: 3.75rem;
