@@ -17,6 +17,7 @@ footer {
   .footer-right {
     @include make-col-ready();
     @include make-col(12);
+    overflow: hidden; // to show bugs
   }
   .footer-credits {
     @include make-col-ready();
@@ -71,16 +72,19 @@ footer {
   }
 
   .social-buttons-list {
-    img {
-      width: 18px;
-      height: 18px;
+    display: flex;
+
+    .social-buttons-item {
+      margin-right: 10px;
     }
+
     a {
-      display: inline-flex;
+      display: flex;
+      font-size: 30px;
       width: 40px;
       height: 40px;
       background-color: #cccecf;
-      border-radius: 100%;
+      border-radius: 20px;
       color: #fff;
       overflow: hidden;
       align-items: center;
