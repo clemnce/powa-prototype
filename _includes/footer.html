@@ -1,20 +1,20 @@
 <footer class="footer">
   <div class="block-group">
     <div class="footer-left">
+      <div class="footer-hashtag">
+        <a href="#block1">se mobiliser</a>
+        <a href="#block3">le collectif</a>
+        <a href="#block5">nos méthodes</a>
+        <a href="#block6">nos actions</a>
+
+<!--         <span>{{ site.data.footer.hashtag1 }}</span>
+        <span>{{ site.data.footer.hashtag2 }}</span> -->
+      </div>
       <h2 class="footer-title">rejoignez la communauté</h2>
       <div class="footer-hashtag">
-        <span>{{ site.data.footer.hashtag1 }}</span>
-        <span>{{ site.data.footer.hashtag2 }}</span>
+        <span>#collectifpowa</span>
+        <span>#powaspirit</span>
       </div>
-    </div>
-    <div class="footer-right">
-      <ul class="social-list">
-        {% for social-links in site.data.footer.social-links %}
-        <li class="social-item">
-            <a href="{{ social-links.href }}" target="{{ social-links.target }}">{{ social-links.title }}</a>
-        </li>
-        {% endfor %}
-      </ul>
       <ul class="social-buttons-list">
         {% for social-links in site.data.footer.social-links %}
         <li class="social-buttons-item">
@@ -24,6 +24,8 @@
         </li>
         {% endfor %}
       </ul>
+    </div>
+    <div class="footer-right">
     </div>
   <div class="footer-credits">
       <a href="{{ social-links.href }}" target="{{ social-links.target }}">mentions légales</a>
