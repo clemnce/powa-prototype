@@ -1,3 +1,12 @@
+.navbar {
+  padding: 1rem 2rem;
+  .link-menu {
+    @include f4-xs();
+    padding: 0 0.5rem;
+  }
+}
+
+
 .right-links {
   position: absolute;
   right: 32px;
@@ -7,4 +16,5 @@
     color: black;
     font-size: 23px;
   }
+  
 }
