@@ -9,6 +9,7 @@
 
   .block-slogan {
     hyphens: auto;
+    white-space: nowrap;
   }
 }
 
@@ -16,7 +17,7 @@
   background-color: #48EAAB;
   color: white;
   .block-slogan::after {
-      content: none;
+    content: none;
   }
 }
 
@@ -125,7 +126,25 @@
     }
   }
 
+  &#block3 {
+    .block-slogan {
+      &::after {
+        content: "";
+        display: none;
+        position: absolute;
+      }
+    }
+  }
 
+  &#block4 {
+    .block-slogan {
+      &::after {
+        content: "";
+        display: none;
+        position: absolute;
+      }
+    }
+  }
 
   &#block5 {
   .block-content {
