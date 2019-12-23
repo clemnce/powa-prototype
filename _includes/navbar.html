@@ -9,20 +9,14 @@
   </button>
   <!-- Navbar links -->
   <div class="collapse navbar-collapse" id="navbarnav">
-<!-- Réseaux sociaux et Contact -->
-    <div class="right-links menu-social navbar-nav ml-auto">
-      <a href="{{ social-links.href }}" target="{{ social-links.target }}">
-          <img src="{{ "/assets/icons/facebook-icon.svg" | prepend: site.baseurl}}" height="20">
-      <a href="{{ social-links.href }}" target="{{ social-links.target }}">
-          <img src="{{ "/assets/icons/twitter-icon.svg"  | prepend: site.baseurl }}" height="20">
-      </a>
-      <a href="{{ social-links.href }}" target="{{ social-links.target }}">
-          <img src="{{ "/assets/icons/linkedin-icon.svg" | prepend: site.baseurl }}" height="20">
-      </a>
-      <a href="{{ social-links.href }}" target="{{ social-links.target }}">
-          <span>contact</span>
-      </a>
-    </div> 
+    <ul class="navbar-nav ml-auto">
+      {% for menu in site.data.menu.menu %}
+        <li class="nav-item">
+          <a class="link-menu" href="{{ menu.href }}" target="{{ menu.target }}">{{ menu.title }}</a>
+        </li>
+      {% endfor %}
+      </ul>
+
   </div>
 </nav>
   
@@ -52,10 +46,11 @@
               </li>
               {% endfor %}
           </ul>
+          <div>
             <ul class="social-buttons-list">
               <li class="social-buttons-item">
                   <a href="{{ social-links.href }}" target="{{ social-links.target }}">{{ social-links.title }}
-                    <img src="{{ "/assets/icons/facebook-icon.svg" | prepend: site.baseurl}}" height="20">
+                    <i class="fab fa-facebook"></i>
                   </a>
               </li>
               <li class="social-buttons-item">
@@ -69,6 +64,7 @@
               </a>
           </li>
             </ul>
+          </div>
           </nav>
         </div>
       </div>
