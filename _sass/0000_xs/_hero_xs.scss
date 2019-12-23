@@ -34,4 +34,12 @@
     @include f4regular-xs;
     margin-bottom: 2rem;
   }
+  .hero-subtitle {
+    @include f4regular-xs;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  .hero-subtitle:nth-child(2) {
+      padding-top: 3rem;
+    }
 }
