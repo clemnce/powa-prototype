@@ -14,12 +14,12 @@ description: > # this means to ignore newlines until "baseurl:"
   sur leur parcours professionel
 
 # development
-# baseurl: "/powa-prototype" # the subpath of your site, e.g. /blog
-# url: "https://collectif-powa.github.io"
+baseurl: "/powa-prototype" # the subpath of your site, e.g. /blog
+url: "https://collectif-powa.github.io"
 
 # production
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://collectifpowa.org"
+# baseurl: "/" # the subpath of your site, e.g. /blog
+# url: "https://collectifpowa.org"
 
 # Build settings
 markdown: kramdown
