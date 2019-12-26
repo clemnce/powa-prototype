@@ -12,10 +12,10 @@
   }
   &#block1 {
     .block-image {
-    @include make-col(7);
+    @include make-col(6);
     }
     .block-content {
-    @include make-col(5);
+    @include make-col(6);
     padding-top: 11rem;
     padding-bottom: 5rem;
     }
@@ -41,11 +41,11 @@
   }
   &#block3 {
     .block-content {
-      @include make-col(4);
+      @include make-col(6);
       padding-bottom: 16rem;
     }
     .block-image {
-      @include make-col(8);
+      @include make-col(6);
       overflow: hidden;
 
       & > img {
@@ -61,11 +61,11 @@
 
   &#block4 {
     .block-content {
-      @include make-col(4);
+      @include make-col(5);
       padding-bottom: 16rem;
     }
     .block-image {
-      @include make-col(8);
+      @include make-col(7);
       overflow: hidden;
 
       & > img {
