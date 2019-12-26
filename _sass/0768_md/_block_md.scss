@@ -10,6 +10,7 @@
   }
   .block-textonly {
     @include make-col(6); 
+    padding: 0 4rem;
   }
   .block-button {
     margin: auto 0;
@@ -48,8 +49,6 @@
   }
   .block-slogan {
     @include f1-md; 
-    position: absolute;
-    top: -90px;
     z-index: 2;
     text-transform: lowercase;
 
@@ -73,7 +72,7 @@
     overflow-y: overlay;
 
     .block-image {
-      @include make-col(6);
+      @include make-col(12);
       position: relative;
       order: 2;
       //overflow: visible;
@@ -86,7 +85,7 @@
       } */
     }
     .block-content {
-      @include make-col(6);
+      @include make-col(12);
       padding-top: 130px;
       padding-right: 40px;
     }
@@ -191,7 +190,6 @@
     .block-content {
       @include make-col(12);
       margin: 0 auto;
-      padding-top: 228px;
       padding-right: 40px;
     }
     .block-column1 {
@@ -203,7 +201,7 @@
       @include make-col(6);  
     }
     .block-slogan {
-      top: 0px;
+    margin-bottom: 1.5rem;
       .line1 {
         display: block;
         position: relative;
@@ -226,12 +224,13 @@
 
   // BLOC AGIR ENSEMBLE
   &#block6 {
-    padding-bottom: 0;
+    padding-top: 0px;
     .block-content {
       @include make-col(12);
       padding-top: 230px;
     }
     .block-slogan {
+      margin-bottom: 1.5rem;
       .line1 {
         display: block;
         position: relative;
@@ -304,9 +303,6 @@
 .block-textonly {
   padding-top: 1rem;
   margin-bottom: 2rem;
-  &:first-child {
-    padding-top: 1rem;
-  }
   &:last-child {
     margin-bottom: 0rem;
   }
