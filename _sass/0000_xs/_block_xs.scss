@@ -3,7 +3,7 @@
   margin-bottom: 3.75rem;
 } */
 
-.block, .block-color {
+.block {
   padding-top: 3.75rem;
   padding-bottom: 3.75rem;                           
 
@@ -23,16 +23,12 @@
 
 // BLOCK
 .block {
-  @include make-container;
-  max-width: 1200px;
   .block-textonly {
     @include make-col-ready();
     @include make-col(12); 
   }
   .block-slogan {
     @include f1-xs;
-    position: absolute;
-    top: -90px;
     z-index: 2;
     text-transform: lowercase;
 
@@ -60,7 +56,7 @@
   padding: 0;
 
   & > img {
-    opacity: 0.6;
+    opacity: 0.9;
     position: relative;
     width: auto;
     height: 100%;
@@ -122,6 +118,7 @@
       margin: 0 auto;
     }
     .block-slogan {
+      position: absolute;
       top: 20px;
       left: 0;
     }
@@ -129,6 +126,8 @@
 
   &#block3 {
     .block-slogan {
+      position: absolute;
+      top: -90px;
       &::after {
         content: "";
         display: none;
@@ -151,9 +150,6 @@
   .block-content {
     padding-top: 80px;
   }
-  .block-slogan {
-    top: 0px;
-  }
 }
 
 
@@ -163,7 +159,6 @@
     padding-top: 140px;
   }
   .block-slogan {
-    top: 0px;
     .line2 {
       display: block;
       position: absolute;
@@ -241,4 +236,5 @@
 
 .block-group {
   @include make-row();
+  max-width: 1400px;
 }
