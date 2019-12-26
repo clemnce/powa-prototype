@@ -8,12 +8,12 @@
   }
   .hero-title {
     @include make-col(9);
+    margin: 0 auto;
     margin-bottom: 32px;
   }
   .hero-text {
-    @include make-col(7);
-  }
-  .hero-header {
-    @include make-col(12);
+    @include make-col(9);
+    margin: 0 auto;
+    padding-right: 13rem;
   }
 }
