@@ -2,8 +2,6 @@
   padding-top: 5rem;
   padding-bottom: 5rem;
   .block-slogan {
-    position: absolute;
-    top: -90px;
     z-index: 2;
     text-transform: lowercase;
 
@@ -42,11 +40,17 @@
       font-size: 50px;
     }
   }
+  &#block5 {
+    .block-content {
+      padding-top: 0rem;
+    }
+  }
   &#block6 {
     .block-content {
-      padding-top: 20rem;
+      padding-top: 3rem;
     }
     .block-slogan {
+      margin-bottom: 1.5rem;
       .line1 {
         top: 0px;
         left: 220px;
@@ -57,9 +61,9 @@
       }
       &::after {
         content: "";
-        width: calc(140%);
-        top: 200px;
-        left: 282px;
+        width: calc(80%);
+        top: 130px;
+        left: 190px;
       }
     }
   }
