@@ -24,12 +24,14 @@ a {
   cursor: pointer;
   transition: all 0.3s;
   &:hover {
-    color: #B49EE6;
+    //color: #B49EE6;
+    color: #51816E;
     text-decoration: none;
     transition: all 0.3s;
   }
   &:focus {
-    color: #B49EE6;
+    //color: #B49EE6;
+    color: #51816E;
     text-decoration: none;
     transition: all 0.3s;
   }
@@ -40,19 +42,19 @@ a {
 .btnpowa-transparent {
   @include f3-xs;
   color: white;
-  background-color: #B49EE6;
+  background-color: #51816E;
   border-radius: 0;
   &:hover {
     color: #44F0AD;
     border: 0;
-    background-color: #B49EE6;
+    background-color: #51816E;
     text-decoration: none;
     //transition: all 0.3s;
   }
   &:focus {
     color: white;
     border: 0;
-    background-color: #B49EE6;
+    background-color: #51816E;
     text-decoration: none;
     //transition: all 0.3s;
   }
@@ -64,7 +66,7 @@ a {
   text-align: left;
   width: 70%;
   color: white;
-  background-color: #B49EE6;
+  background-color: #51816E;
   padding: 1rem;
   border-radius: 0;
   border: 0;
@@ -74,14 +76,14 @@ a {
   display: block;
   margin: 0 auto;
   &:hover {
-    color: #44F0AD;;
-    background-color: #B49EE6;
+    color: #44F0AD;
+    background-color: #51816E;
     text-decoration: none;
     //transition: all 0.3s;
   }
   &:focus {
     color: #B49EE6;
-    background-color: #44F0AD;
+    background-color: #51816E;
     text-decoration: none;
     //transition: all 0.3s;
   }
