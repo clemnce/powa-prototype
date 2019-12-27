@@ -12,8 +12,8 @@ cta-text2: |
   :)
 placeholder-mail: "C’est plus simple pour se parler"
 palceholder-message: |
-  Une question, une envie de faire des choses ensemble, une suggestion, une
-  idée, un cri du coeur. Exprimez-vous ici !
+  "Une question, une envie de faire des choses ensemble, une suggestion, une
+  idée, un cri du coeur. Exprimez-vous ici&nbsp;!""
 localisation: Paris • Lyon • Toulouse
 email: contact@collectifpowa.org
 hashtag1: "#collectifpowa"
@@ -21,18 +21,15 @@ hashtag2: "#powaspirit"
 
 social-links:
   - title: facebook
-    icon: facebook
+    icon: facebook-f
     href: https://fr-fr.facebook.com/CollectifPOWA/
     target: _blank
   - title: twitter
     icon: twitter
-    href: https://fr-fr.facebook.com/CollectifPOWA/
+    href: https://twitter.com/CollectifPowa
     target: _blank
   - title: linkedin
-    icon: linkedin
+    icon: linkedin-in
     href: https://fr.linkedin.com/company/collectifpowa
     target: _blank
-  - title: instagram
-    icon: instagram
-    href: "#FIXME"
-    target: _blank
+
