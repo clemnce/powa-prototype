@@ -226,7 +226,6 @@
 
   // BLOC AGIR ENSEMBLE
   &#block6 {
-    padding-top: 0px;
     .block-content {
       @include make-col(12);
       padding-top: 0px;
@@ -274,7 +273,7 @@
       margin-bottom: 64px;
     }
     .logo-item {
-      @include make-col(3);
+      @include make-col(2);
     }
     img {
       max-width: 100%;
