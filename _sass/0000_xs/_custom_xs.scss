@@ -25,7 +25,9 @@ a {
   transition: all 0.3s;
   &:hover {
     //color: #B49EE6;
-    color: #51816E;
+    //color: #51816E;
+    //color: #99e0db;
+    color: #386b67;
     text-decoration: none;
     transition: all 0.3s;
   }
@@ -42,17 +44,17 @@ a {
 .btnpowa-transparent {
   @include f3-xs;
   color: white;
-  background-color: #51816E;
+  background-color: #99e0db;
   border-radius: 0;
   &:hover {
-    color: #44F0AD;
+    color: #51816E;
     border: 0;
-    background-color: #51816E;
+    background-color: #99e0db;
     text-decoration: none;
     //transition: all 0.3s;
   }
   &:focus {
-    color: white;
+    color: #51816E;
     border: 0;
     background-color: #51816E;
     text-decoration: none;
@@ -82,8 +84,8 @@ a {
     //transition: all 0.3s;
   }
   &:focus {
-    color: #B49EE6;
-    background-color: #51816E;
+    color: #51816E;
+    background-color: #99e0db;
     text-decoration: none;
     //transition: all 0.3s;
   }
