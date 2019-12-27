@@ -1,4 +1,4 @@
 // CONTAINERS
-#hero, .block, .contact, .footer {
+.navbar, #hero, .block, .contact, .footer {
   @include container-xl;
 }
