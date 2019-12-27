@@ -9,14 +9,22 @@
   </button>
   <!-- Navbar links -->
   <div class="collapse navbar-collapse" id="navbarnav">
-    <ul class="navbar-nav ml-auto">
+    <ul class="navbar-nav mr-auto">
       {% for menu in site.data.menu.menu %}
         <li class="nav-item">
           <a class="link-menu" href="{{ menu.href }}" target="{{ menu.target }}">{{ menu.title }}</a>
         </li>
       {% endfor %}
       </ul>
-
+      <ul class="social-buttons-list">
+        {% for social-links in site.data.footer.social-links %}
+        <li class="social-buttons-item">
+            <a href="{{ social-links.href }}" target="{{ social-links.target }}">
+              <i class="fab fa-{{ social-links.icon }}"></i>
+            </a>
+        </li>
+        {% endfor %}
+      </ul>
   </div>
 </nav>
   
@@ -39,18 +47,11 @@
               </li>
               {% endfor %}
             </ul>
-          <ul class="menu-mobile_social">
-              {% for social-links in site.data.footer.social-links %}
-              <li class="">
-                  <a href="{{ social-links.href }}" target="{{ social-links.target }}">{{ social-links.title }}</a>
-              </li>
-              {% endfor %}
-          </ul>
           <div>
             <ul class="social-buttons-list">
               <li class="social-buttons-item">
                   <a href="{{ social-links.href }}" target="{{ social-links.target }}">{{ social-links.title }}
-                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-facebook-f"></i>
                   </a>
               </li>
               <li class="social-buttons-item">
