@@ -5,12 +5,13 @@
 
 
 .block {
+  padding-left: 2rem;
+  padding-right: 2rem;
   .block-group {
     align-items: stretch;
   }
   .block-textonly {
     @include make-col(6); 
-    padding: 0 4rem;
   }
   .block-button {
     margin: auto 0;
@@ -191,6 +192,7 @@
       @include make-col(12);
       margin: 0 auto;
       padding-right: 40px;
+      padding-top: 0px;
     }
     .block-column1 {
       @include make-col-ready ();
@@ -227,7 +229,7 @@
     padding-top: 0px;
     .block-content {
       @include make-col(12);
-      padding-top: 230px;
+      padding-top: 0px;
     }
     .block-slogan {
       margin-bottom: 1.5rem;

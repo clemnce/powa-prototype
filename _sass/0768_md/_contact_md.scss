@@ -1,4 +1,6 @@
 .contact {
+  padding-left: 2rem;
+  padding-right: 2rem;
   .contact-informations {
   @include make-col(10);
     .contact-text {
