@@ -33,7 +33,7 @@ footer {
     @include mb3-xs;
   } */
   .footer-hashtag span {
-    @include f3-xs;
+    @include f4-xs;
     padding-top: 0rem;
     padding-bottom: 0rem;
   }
@@ -85,9 +85,9 @@ footer {
       font-size: 30px;
       width: 40px;
       height: 40px;
-      background-color: #44F0AD;
-      border-radius: 20px;
-      color: #fff;
+      color: #44F0AD;
+      background-color: white;
+      border-radius: 100%;
       overflow: hidden;
       align-items: center;
       justify-items: center;

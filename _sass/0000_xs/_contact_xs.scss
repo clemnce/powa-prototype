@@ -26,9 +26,10 @@
 .contact-form {
   @include make-col-ready();
   @include make-col(12);
+  padding-top: 1rem;
   label {
   @include f4-xs; 
-  color: #363636;
+  color: white;
   }
   .form-control {
     border: 1px solid #8888;
