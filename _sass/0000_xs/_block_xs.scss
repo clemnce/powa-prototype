@@ -6,7 +6,6 @@
 .block {
   padding-top: 3.75rem;
   padding-bottom: 3.75rem;                           
-
   .block-slogan {
     hyphens: auto;
     white-space: nowrap;
@@ -93,10 +92,9 @@
     white-space: nowrap;
     &::after {
       content: "";
-      display: none;
-      width: calc(79% + 15px);
+      width: calc(66% + 15px);
       top: 70px;
-      left: -15px;
+      left: 15px;
     }
   }
 }
@@ -124,7 +122,6 @@
     .block-slogan {
       &::after {
       content: "";
-      display: none;
       position: absolute;
       top: 20px;
       left: 0;
@@ -138,8 +135,10 @@
       //top: -90px;
       &::after {
         content: "";
-        display: none;
         position: absolute;
+        width: calc(60% + 15px);
+        top: 70px;
+        left: 15px;
       }
     }
   }
@@ -148,8 +147,10 @@
     .block-slogan {
       &::after {
         content: "";
-        display: none;
         position: absolute;
+        width: calc(45% + 15px);
+        top: 70px;
+        left: 15px;
       }
     }
   }
@@ -165,11 +166,10 @@
     }
     &::after {
       content: "";
-      display: none;
       position: absolute;
-      width: calc(300%);
-      top: 93px;
-      left: 60px;
+      width: calc(76% + 15px);
+      top: 66px;
+      left: 15px;
     }
   }
 }
@@ -181,8 +181,10 @@
     .block-slogan {
       &::after {
         content: "";
-        display: none;
       }    
+    }
+    .block-subtitle {
+      font-size: 34px;
     }
     .logo-item {
       @include make-col-ready();
@@ -201,7 +203,7 @@
 .block-subtitle {
   @include f3-xs();
   margin-bottom: 0.5rem;
-  hyphens: auto;
+  //hyphens: auto;
   line-height: 1.2;
   //color: #619883;
 }
