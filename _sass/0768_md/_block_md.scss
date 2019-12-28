@@ -14,11 +14,12 @@
     @include make-col(6); 
   }
   .block-button {
+    padding: 0;
     margin: auto 0;
   }
   .block-content {
     @include make-col(6);
-    padding-top: 120px;
+    //padding-top: 120px;
   }
 
   .block-image {
@@ -88,11 +89,16 @@
     .block-content {
       @include make-col(12);
       padding-top: 130px;
-      padding-right: 40px;
     }
     .block-slogan {
-      top: 20px;
-      left: 0;
+      //top: 20px;
+      //left: 0;
+      &::after {
+        content: "";
+        width: calc(70%);
+        top: 180px;
+        left: 15px;
+      }
     }
   }
 
@@ -113,6 +119,12 @@
     .block-slogan {
       top: 20px;
       left: 0;
+      &::after {
+        content: "";
+        width: calc(123%);
+        top: 38px;
+        left: -80px;
+      }
     }
   }
 
@@ -140,11 +152,14 @@
       text-align: right;
       top: -50px;
       right: 30px;
+      .line2 {
+        display: block;
+      }
       &::after {
         content: "";
-        width: calc(123%);
-        top: 38px;
-        left: -80px;
+        width: calc(139%);
+        top: -15px;
+        left: -158px;
       }
     }
   }
@@ -152,6 +167,7 @@
   // BLOC DIFFUSER
 
   &#block4 {
+    padding-top: 0rem;
     overflow-x: hidden;
 
     .block-image {
@@ -170,15 +186,16 @@
     .block-content {
       @include make-col(6);
       padding-right: 40px;
+      padding-bottom: 2rem;
     }
     .block-slogan {
       top: 0px;
       left: 135px;
       &::after {
         content: "";
-        width: calc(150%);
-        top: 50px;
-        left: -24px;
+        width: calc(83%);
+        top: 82px;
+        left: 15px;
       }
     }
   }
@@ -236,7 +253,6 @@
         display: block;
         position: relative;
         top: 0px;
-        left: 50px;
         //left: -230px; if font 89px
       }
       .line2 {
@@ -250,10 +266,13 @@
         content: "";
         display: block;
         position: absolute;
-        width: calc(140%);
-        top: 152px;
-        left: 50px;
+        width: calc(80%);
+        top: 50px;
+        left: 15px;
       }
+    }
+    .block-textonly {
+      padding: 0 2rem;
     }
   }
 
