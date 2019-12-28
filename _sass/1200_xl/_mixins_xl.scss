@@ -3,3 +3,11 @@
   padding-left: 6rem !important;
   padding-right: 6rem !important;
 }
+
+@mixin f2-xl()
+{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 89px;
+  font-weight: 700;
+  line-height: 1;
+}
