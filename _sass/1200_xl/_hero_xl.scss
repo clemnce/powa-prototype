@@ -8,6 +8,7 @@
   }
   .hero-title {
     @include make-col(9);
+    @include f2-xl;
     margin: 0 auto;
     margin-bottom: 32px;
   }
