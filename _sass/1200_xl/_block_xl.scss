@@ -26,9 +26,9 @@
       white-space: nowrap;
       &::after {
         content: "";
-        width: calc(110% + 15px);
-        top: 83px;
-        left: -15px;
+        width: calc(120% + 15px);
+        top: 69px;
+        left: 0px;
       }
     }
   }
@@ -40,6 +40,32 @@
       font-size: 50px;
     }
   }
+  &#block3 {
+    .block-slogan {
+      position: relative;
+      top: -122px;
+      right: 45px;
+      .line2 {
+        display: inline;
+      }
+    }
+    &::after {
+      content: "";
+      width: calc(130%);
+      top: 64px;
+      left: -158px;
+    }
+  }
+  &#block4 {
+    .block-slogan {
+      &::after {
+        content: "";
+        width: calc(83%);
+        top: 130px;
+        left: 15px;
+      }
+    }
+  }
   &#block5 {
     .block-content {
       padding-top: 0rem;
@@ -49,21 +75,16 @@
     .block-content {
       padding-top: 3rem;
     }
+    .block-textonly {
+      padding: 0 4rem;
+    }
     .block-slogan {
       margin-bottom: 1.5rem;
-      .line1 {
-        top: 0px;
-        left: 220px;
-      }
-      .line2 {
-        top: 15px;
-        left: 420px;
-      }
       &::after {
         content: "";
-        width: calc(80%);
+        width: calc(60%);
         top: 130px;
-        left: 190px;
+        left: 15px;
       }
     }
   }
