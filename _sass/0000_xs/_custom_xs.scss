@@ -45,12 +45,12 @@ a {
 .btnpowa-transparent {
   @include f3-xs;
   color: white;
-  background-color: #99e0db;
+  background-color: #F8887F;
   border-radius: 0;
   &:hover {
     color: #51816E;
     border: 0;
-    background-color: #99e0db;
+    background-color: #F8887F;
     text-decoration: none;
     //transition: all 0.3s;
   }
