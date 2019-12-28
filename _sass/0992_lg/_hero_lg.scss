@@ -7,12 +7,14 @@
     @include make-container;
   }
   .hero-title {
-    @include make-col(11);
-    @include f2-lg;
+    @include make-col(9);
+    @include f3-lg;
+    margin: 0 auto;
     margin-bottom: 32px;
   }
   .hero-text {
-    @include make-col(7);
+    @include make-col(9);
+    margin: 0 auto;
     padding-top: 3rem;
   }
 }
