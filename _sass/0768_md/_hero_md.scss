@@ -7,18 +7,16 @@
     @include make-container;
   }
   .hero-title {
-    @include make-col(11);
-  }
-  .hero-text {
     @include make-col(9);
-  }
-  .hero-title {
+    margin: 0 auto;
     padding-top: 2rem;
-    @include f2-md;
+    @include f3-md;
     overflow: hidden;
   }
   .hero-text {
+    @include make-col(9);
     @include f6-md;
-    @include make-col(11);
+    padding-top: 2rem;
+    margin: 0 auto;
   }
 }
