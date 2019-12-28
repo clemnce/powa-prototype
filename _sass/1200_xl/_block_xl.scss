@@ -48,7 +48,6 @@
       .line2 {
         display: inline;
       }
-    }
     &::after {
       content: "";
       width: calc(130%);
@@ -56,6 +55,7 @@
       left: -158px;
     }
   }
+}
   &#block4 {
     .block-slogan {
       &::after {
