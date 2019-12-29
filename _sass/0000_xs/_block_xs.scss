@@ -157,22 +157,31 @@
 
 
   &#block6 {
-  overflow: hidden;
-  .block-slogan {
-    .line2 {
-      display: block;
-      position: absolute;
-      left: 70px;
+    overflow: hidden;
+    .block-slogan {
+      .line2 {
+        display: block;
+        position: absolute;
+        left: 70px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: calc(76% + 15px);
+        top: 66px;
+        left: 15px;
+      }
     }
-    &::after {
-      content: "";
-      position: absolute;
-      width: calc(76% + 15px);
-      top: 66px;
-      left: 15px;
+
+    .block-button > .btn {
+      padding-right: 6rem;
+      background-image: url(../assets/img/download-solid-white.svg);
+      background-size: 2rem 2rem;
+      background-position: calc(100% - 30px) center ;
+      background-repeat: no-repeat;
     }
   }
-}
+
   &#block7 {
     padding-top: 0px;
     .block-content {
