@@ -76,7 +76,12 @@
       padding-top: 3rem;
     }
     .block-textonly {
-      padding: 0 4rem;
+      &:nth-child(2n) {
+        padding-left: 4rem;
+      }
+      &:nth-child(2n+1) {
+        padding-right: 4rem;
+      }
     }
     .block-slogan {
       margin-bottom: 1.5rem;
