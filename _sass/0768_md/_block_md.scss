@@ -135,7 +135,6 @@
     .block-image {
       @include make-col(6);
       position: relative;
-      overflow: visible;
 
       & > img { 
         position: absolute;
@@ -174,7 +173,7 @@
       @include make-col(6);
       position: relative;
       order: 2;
-      // overflow: visible;
+      overflow: hidden;
 
       & > img { 
         position: absolute;
@@ -272,7 +271,11 @@
       }
     }
     .block-textonly {
+<<<<<<< HEAD
       padding: 0;
+=======
+      padding-right: 2rem;
+>>>>>>> 801e008cc9ec21f82fa3f99f435756df96f11067
     }
   }
 
