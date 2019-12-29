@@ -174,7 +174,7 @@
       @include make-col(6);
       position: relative;
       order: 2;
-      overflow: visible;
+      // overflow: visible;
 
       & > img { 
         position: absolute;
@@ -272,7 +272,7 @@
       }
     }
     .block-textonly {
-      padding: 0 2rem;
+      padding: 0;
     }
   }
 
