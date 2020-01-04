@@ -271,6 +271,11 @@
       }
     }
     .block-textonly {
+      padding-top: 1rem;
+      margin-bottom: 1rem;
+      &:last-child {
+        margin-bottom: 0rem;
+      }
       &:nth-child(2n) {
         padding-left: 2rem;
       }

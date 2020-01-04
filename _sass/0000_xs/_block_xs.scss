@@ -78,8 +78,9 @@
   @include make-col-ready();
   @include make-col(12);
   padding-top: 2rem;
-  .block-description {
-  @include f4-xs();
+  .block-introduction {
+  @include f4regular-xs();
+  margin-bottom: 1rem !important;
   }
 }
 
@@ -154,8 +155,12 @@
       }
     }
   }
-
-
+  &#block5 {
+    .block-textonly {
+      padding-top: 0rem;
+      margin-bottom: 1.5rem;
+    }
+  }
   &#block6 {
     overflow: hidden;
     .block-slogan {
@@ -172,7 +177,13 @@
         left: 15px;
       }
     }
-
+      .block-textonly {
+        padding-top: 1rem;
+        margin-bottom: 2rem;
+        &:last-child {
+          margin-bottom: 0rem;
+        }
+      }
     .block-button > .btn {
       padding-right: 6rem;
       background-image: url(../assets/img/download-solid-white.svg);
@@ -224,17 +235,10 @@
   }
 }
 
-.block-textonly {
-  padding-top: 1rem;
-  margin-bottom: 2rem;
-  &:last-child {
-    margin-bottom: 0rem;
-  }
-}
 
 
 .collectif-valeur {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
   @include f2-xs;
 }
 
