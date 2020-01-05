@@ -25,11 +25,11 @@ items:
 - name: Estaca
   picture: estaca_logo.png
 
-- name: Pôle Léonard de Vinci
-  picture: poleleonarddevinci_logo.jpg
-
 - name: Université Paris sud
   picture: universiteparissud_logo.png
+
+- name: Pôle Léonard de Vinci
+  picture: poleleonarddevinci_logo.jpg
 
 - name: Territoires Chomeurs Longues Durée
   picture: tzcld_logo.png
