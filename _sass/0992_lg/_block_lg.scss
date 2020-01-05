@@ -1,9 +1,14 @@
-
 .block-group {
   @include make-row();
 }
 
+.block-color {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+} 
+
 .block {
+  margin-bottom: 5rem;
   .block-slogan {
     @include f1-lg;
   }
@@ -31,6 +36,9 @@
       }
     }
   }
+  &#block1 {
+    padding-top: 5rem;
+  }
   &#block2 {
     .block-content {
     @include make-col(8);
@@ -40,6 +48,7 @@
     }
   }
   &#block3 {
+    padding-top: 5rem;
     .block-content {
       @include make-col(6);
       padding-bottom: 4rem;

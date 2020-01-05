@@ -9,7 +9,6 @@
   .hero-title {
     @include make-col(9);
     margin: 0 auto;
-    padding-top: 2rem;
     @include f3-md;
     overflow: hidden;
   }

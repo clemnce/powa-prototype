@@ -1,6 +1,4 @@
 .block {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
   .block-slogan {
     z-index: 2;
     text-transform: lowercase;
@@ -42,8 +40,8 @@
   }
   &#block3 {
     .block-slogan {
-      position: relative;
-      top: -122px;
+      position: absolute;
+      top: -92px;
       right: 45px;
       .line2 {
         display: inline;
@@ -54,6 +52,9 @@
       top: 64px;
       left: -158px;
     }
+  }
+  .block-content {
+    padding-bottom: 23rem;
   }
 }
   &#block4 {
@@ -70,6 +71,14 @@
     .block-content {
       padding-top: 0rem;
     }
+    .block-textonly {
+      &:nth-child(2n) {
+        padding-left: 4rem;
+      }
+      &:nth-child(2n+1) {
+        padding-right: 4rem;
+      }
+    }
   }
   &#block6 {
     .block-content {
@@ -77,10 +86,10 @@
     }
     .block-textonly {
       &:nth-child(2n) {
-        padding-left: 4rem;
+        padding-left: 5rem;
       }
       &:nth-child(2n+1) {
-        padding-right: 4rem;
+        padding-right: 5rem;
       }
     }
     .block-slogan {

@@ -1,4 +1,6 @@
 .footer {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   .footer-community {
     @include make-col(6);
   }

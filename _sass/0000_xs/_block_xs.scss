@@ -3,9 +3,7 @@
   margin-bottom: 3.75rem;
 } */
 
-.block {
-  padding-top: 3.75rem;
-  padding-bottom: 3.75rem;                           
+.block {                         
   .block-slogan {
     hyphens: auto;
     white-space: nowrap;
@@ -13,6 +11,8 @@
 }
 
 .block-color {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   background-color: #48EAAB;
   color: white;
   .block-slogan::after {
@@ -25,6 +25,7 @@
 
 // BLOCK
 .block {
+  margin-bottom: 4rem;  
   @include make-container;
   .block-textonly {
     @include make-col-ready();
@@ -87,6 +88,7 @@
 // BEHAVIOUR OF EACH BLOCK: TEXT BAND & IMAGE
 .block {
   &#block1 {
+    padding-top: 4rem;
   .block-slogan {
     //position: absolute;
     //top: -90px;
@@ -177,13 +179,16 @@
         left: 15px;
       }
     }
-      .block-textonly {
-        padding-top: 1rem;
-        margin-bottom: 2rem;
-        &:last-child {
-          margin-bottom: 0rem;
-        }
+    .block-text {
+     margin-bottom: 8px; 
+    }
+    .block-textonly {
+      padding-top: 1rem;
+      margin-bottom: 2rem;
+      &:last-child {
+        margin-bottom: 0rem;
       }
+    }
     .block-button > .btn {
       padding-right: 6rem;
       background-image: url(../assets/img/download-solid-white.svg);
@@ -209,11 +214,10 @@
     .logo-item {
       @include make-col-ready();
       @include make-col(6);
-  
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: 10px;
+      margin-bottom: 1rem;
     }
     img {
       max-width: 100%;
