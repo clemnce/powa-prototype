@@ -8,6 +8,11 @@ body {
   overflow-x: hidden;
 }
 
+.block-group {
+  @include make-row();
+  max-width: 1600px;
+}
+
 .grayscale {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -67,7 +72,7 @@ a {
 .btnpowa-color {
   @include f3-xs;
   text-align: left;
-  width: 70%;
+  width: 80%;
   color: white;
   background-color: #99e0db;
   padding: 1rem;

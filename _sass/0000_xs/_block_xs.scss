@@ -262,9 +262,4 @@
 .collectif-introduction {
   @include f4regular-xs; 
 }
-
-.block-group {
-  @include make-row();
-  max-width: 1400px;
-}
 }
