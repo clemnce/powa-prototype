@@ -3,11 +3,12 @@
   padding-right: 2rem;
   padding-top: 3rem;
   .footer-left {
-    @include make-col(9);
+    @include make-col(8);
+    margin-bottom: 1rem;
   } 
   .footer-right {
     text-align: left;
-    @include make-col(3);
+    @include make-col(4);
   }
   .social-list a {
     @include f4-md();

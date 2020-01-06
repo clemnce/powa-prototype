@@ -2,13 +2,14 @@
   padding-left: 2rem;
   padding-right: 2rem;
   .contact-informations {
-  @include make-col(10);
+  @include make-col(12);
     .contact-text {
       @include f6-md ();
     }
   }
   .contact-form {
-  @include make-col(10);
+  @include make-col(12);
+  max-width: 580px;
   padding-top: 1rem;
   }
   .contact-meetus {
