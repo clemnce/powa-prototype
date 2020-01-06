@@ -152,9 +152,17 @@
         content: "";
         position: absolute;
         width: calc(45% + 15px);
-        top: 70px;
+        top: 34px;
         left: 15px;
       }
+    }
+    .block-image {
+      position: relative;
+      order: 2;
+    }
+    .block-content {
+      padding-top: 0rem;
+      padding-bottom: 2rem;
     }
   }
   &#block5 {
