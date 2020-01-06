@@ -93,11 +93,11 @@
       }
     }
     .block-slogan {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
       &::after {
         content: "";
-        width: calc(60%);
-        top: 130px;
+        width: calc(80%);
+        top: 64px;
         left: 15px;
       }
     }
