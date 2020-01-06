@@ -11,6 +11,9 @@
       @include f3-xs; 
       display: block;
     }
+    .contact-mail {
+      margin-bottom: 0.5rem;
+    }
   }
   .contact-titre {
     @include f2-xs; 
