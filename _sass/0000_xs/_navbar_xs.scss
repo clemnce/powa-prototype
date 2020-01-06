@@ -1,6 +1,6 @@
 .navbar { 
   margin-bottom: 0;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 15px;
   background-color: #48EAAB;
   flex-wrap: nowrap;
   justify-content: flex-end;
@@ -182,8 +182,7 @@ body.modal-open {
     height: 100%;
 
     background-color: transparent;
-    background-image: url(https://i.stack.imgur.com/mSXoO.png);
-    //background-image: url("/assets/img/photos/powa_semobiliser.jpg" | prepend: site.baseurl);
+    background-image: url(../assets/icons/close.svg);
     background-size: 100% 100%;
   }
 
