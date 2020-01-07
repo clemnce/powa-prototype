@@ -8,11 +8,11 @@
   }
   .hero-title {
     @include make-col(9);
+    @include f2-sm;
+    font-size: 32px;
+    line-height: 1.25;
   }
   .hero-text {
     @include make-col(9);
-  }
-  .hero-title {
-    @include f1-sm;
   }
 }
