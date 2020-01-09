@@ -3,6 +3,15 @@
   margin-bottom: 3.75rem;
 } */
 
+.block-button {
+  .title-button {
+    @include f3-xs;
+    line-height: 1.3;
+  }
+}
+
+
+
 .block {                         
   .block-slogan {
     hyphens: auto;
@@ -35,7 +44,6 @@
     @include f1-xs;
     z-index: 2;
     text-transform: lowercase;
-
     &::after {
       content: "";
       display: block;
@@ -96,7 +104,7 @@
     &::after {
       content: "";
       width: calc(66% + 15px);
-      top: 70px;
+      top: 64px;
       left: 15px;
     }
   }
@@ -169,6 +177,9 @@
     .block-textonly {
       padding-top: 0rem;
       margin-bottom: 1.5rem;
+      p {
+        display: inline;
+      }
     }
   }
   &#block6 {
@@ -198,10 +209,10 @@
       }
     }
     .block-button > .btn {
-      padding-right: 6rem;
+      padding-left: 4rem;
       background-image: url(../assets/img/download-solid-white.svg);
       background-size: 2rem 2rem;
-      background-position: calc(100% - 30px) center ;
+      background-position: 1rem center ;
       background-repeat: no-repeat;
     }
   }
@@ -251,11 +262,13 @@
 
 .collectif-valeur {
   margin-bottom: 0.2rem;
-  @include f2-xs;
+  @include f3-xs;
+  line-height: 25.2px;
 }
 
 .block-hashtags {
-  @include f4-xs;
+  @include f5-xs;
+  font-weight: 700;
   color: #48EAAB;
 }
 
