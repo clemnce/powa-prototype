@@ -1,7 +1,7 @@
 <section id="block1" class="block">
   <div class="block-group">
     <div class="block-image">
-      <img src="{{ "/assets/img/photos/powa-semobiliser.jpg" | prepend: site.baseurl }}" />
+      <img src="{{ "/assets/img/photos/powa-semobiliser-bw.jpg" | prepend: site.baseurl }}" />
     </div>
     <div class="block-content">
       <h2 class="block-slogan">Se mobiliser</h2>
@@ -19,7 +19,7 @@
 <section id="block2" class="block">
   <div class="block-group">
     <div class="block-content">
-      <h3 class="block-subtitle">Qui peut changer la situation actuelle&nbsp;?</h3>
+      <h3 class="block-subtitle">Qui peut changer la situation&nbsp;?</h3>
       <div class="block-text">
         <p>Ce sont les personnes qui fournissent, partout sur le territoire, un accompagnement de proximité aux jeunes : équipes éducatives, conseiller.e.s en insertion, éducateur.trice.s, travailleur.se.s sociaux.les, recruteur.se.s, RH, managers, formateur.trice.s, parents, associations, voire médias et artistes.</p>
         <p>Toutes ces personnes influencent le parcours des jeunes. En plus de les aider à trouver des solutions immédiates, nous devons désormais, toutes et tous, investir sur le développement de leur pouvoir d’action, de leur autonomie, et de leur capacité à s’orienter à de multiples reprises pour sécuriser une insertion durable dans la société.  </p>
@@ -32,7 +32,7 @@
 <section id="block3" class="block">
   <div class="block-group">
       <div class="block-image">
-        <img src="{{ "/assets/img/photos/powa-coinnover.jpg" | prepend: site.baseurl }}" />
+        <img src="{{ "/assets/img/photos/powa-coinnover-bw.jpg" | prepend: site.baseurl }}" />
       </div>
       <div class="block-content">
         <h2 class="block-slogan">
@@ -48,7 +48,7 @@
 <section id="block4" class="block">
     <div class="block-group">
         <div class="block-image">
-            <img src="{{ "/assets/img/photos/powa-diffuser.jpg" | prepend: site.baseurl }}" />
+            <img class="grayscale" src="{{ "/assets/img/photos/powa-diffuser-bw.jpg" | prepend: site.baseurl }}" />
         </div>
         <div class="block-content">
           <h2 class="block-slogan">Diffuser</h2>
@@ -60,9 +60,9 @@
   </section>
 
 <section id="block5" class="block block-color">
-  	<!--<div class="block-image">
-      <img src="{{ "/assets/img/powa1.jpg" | prepend: site.baseurl}}" />
-        </div> -->
+  	<div class="block-image">
+      <img class="grayscale" src="{{ "/assets/img/photos/powa-collectif.jpg" | prepend: site.baseurl}}" />
+    </div>
     <div class="block-group">
       <div class="block-content">
         <div class="block-header">
@@ -78,7 +78,7 @@
     <div class="block-group">
       {% for collectif-valeur in site.data.block.collectif-valeur %}
       <div class="block-textonly">
-        <h3 class="collectif-valeur">{{ collectif-valeur.valeur }}</h3> 
+        <span class="collectif-valeur">{{ collectif-valeur.valeur }}</span> 
         <p>{{ collectif-valeur.content }}</p>
       </div>
       {% endfor %} 
@@ -115,7 +115,7 @@
     </div>
     <div class="block-textonly">
       <div class="block-button">
-        <h2 class="title-button">initiez un atelier powa</h2>
+        <h2 class="title-button">initier un atelier powa</h2>
         <p>le kit de l'atelier Prendre de la hauteur </p>
         <a class="btn btnpowa-color btn-primary" role="button" href="https://urlz.fr/bmUF" target="_blank">je télécharge le premier kit d'atelier</a>
       </div>
