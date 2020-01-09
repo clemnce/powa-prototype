@@ -1,5 +1,37 @@
 
 .block {
+  &#block1 {
+    .block-slogan {
+      &::after {
+        content: "";
+        width: calc(35% + 15px);
+      }
+    }
+  }
+  &#block3 {
+    .block-slogan {
+      &::after {
+        content: "";
+        width: calc(31% + 15px);
+      }
+    }
+  }
+  &#block6 {
+    .block-slogan {
+      &::after {
+        content: "";
+        width: calc(41% + 15px);
+      }
+    }
+  }
+  &#block4 {
+    .block-slogan {
+      &::after {
+        content: "";
+        width: calc(23% + 15px);
+      }
+    }
+  }
   &#block7 {
     .logo-item {
       @include make-col-ready();
