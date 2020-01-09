@@ -30,10 +30,7 @@ a {
   cursor: pointer;
   transition: all 0.3s;
   &:hover {
-    //color: #B49EE6;
-    //color: #51816E;
-    //color: #99e0db;
-    color: #386b67;
+    color: #7252bf;
     text-decoration: none;
     transition: all 0.3s;
   }
@@ -44,58 +41,93 @@ a {
     transition: all 0.3s;
   }
 }
-
-
 
 .btnpowa-transparent {
   @include f3-xs;
   color: white;
-  background-color: #F8887F;
+  background-color: #7252BF;
   border-radius: 0;
   &:hover {
-    color: #51816E;
-    border: 0;
-    background-color: #F8887F;
+    color: #48EAAB;
+    background-color:#7252BF;
     text-decoration: none;
     //transition: all 0.3s;
   }
   &:focus {
-    color: #51816E;
-    border: 0;
-    background-color: #51816E;
+    color: #48EAAB;
+    background-color: #9E81E2;
     text-decoration: none;
     //transition: all 0.3s;
   }
 }
 
+.block-button {
+  text-align: left;
+  background-color: #7252BF;
+  color: white;
+  padding: 1rem;
+  line-height: 1.5;
+  white-space: normal;
+  width: 100%;
+  margin: 0 auto;
+}
 
 .btnpowa-color {
-  @include f3-xs;
+  @include f5-xs;
   text-align: left;
-  width: 80%;
-  color: white;
-  background-color: #99e0db;
+  background-color: #48EAAB;
   padding: 1rem;
   border-radius: 0;
   border: 0;
   white-space: normal;
   //padding-right: 100px;
   line-height: 1.5;
-  display: block;
   margin: 0 auto;
   &:hover {
     color: #51816E;
-    background-color: #99e0db;
+    background-color: #48EAAB;
     text-decoration: none;
     //transition: all 0.3s;
   }
   &:focus {
     color: #51816E;
-    background-color: #99e0db;
+    background-color: #48EAAB;
     text-decoration: none;
     //transition: all 0.3s;
   }
 }
+
+//Social icons
+
+.social-buttons-list {
+  display: flex;
+
+  .social-buttons-item {
+    margin-right: 10px;
+  }
+
+  a {
+    display: flex;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    color: #48EAAB;
+    background-color: white;
+    border-radius: 100%;
+    overflow: hidden;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    &:hover {
+      color: white;
+      background-color: #7252BF;
+    }
+  }
+}
+
+
+
+
 
 //Override Bootstrap blue line
 
