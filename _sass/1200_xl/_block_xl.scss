@@ -39,10 +39,13 @@
     }
   }
   &#block3 {
+    .block-content {
+      padding-bottom: 20rem;
+      padding-left: 4rem;
+    }
     .block-slogan {
-      position: absolute;
-      top: -92px;
-      right: 45px;
+      top: 0px;
+      right: 0px;
       .line2 {
         display: inline;
       }
@@ -53,11 +56,14 @@
       left: -158px;
     }
   }
-  .block-content {
-    padding-bottom: 23rem;
+  .block-text {
+    padding-top: 3rem;
   }
 }
   &#block4 {
+    .block-content {
+      padding-right: 4rem;
+    }
     .block-slogan {
       &::after {
         content: "";
@@ -65,6 +71,9 @@
         top: 130px;
         left: 15px;
       }
+    }
+    .block-text {
+      padding-top: 3rem;
     }
   }
   &#block5 {
