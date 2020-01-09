@@ -34,7 +34,7 @@
     @include make-col-ready();
     @include make-col(12);
     @include f4regular-xs;
-    margin-top: 2rem;
+    padding-top: 2rem;
     p {
       &:last-child {
         margin-bottom: 0rem;
