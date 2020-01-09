@@ -5,10 +5,12 @@
   .footer-left {
     @include make-col(8);
     margin-bottom: 1rem;
+    order: 1;
   } 
   .footer-right {
     text-align: left;
     @include make-col(4);
+    order: 2;
   }
   .social-list a {
     @include f4-md();
