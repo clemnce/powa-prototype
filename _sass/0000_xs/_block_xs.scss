@@ -94,15 +94,15 @@
 }
 }
 
-.block-content {
-  @include make-col-ready();
-  @include make-col(12);
-  padding-top: 2rem;
+  .block-content {
+    @include make-col-ready();
+    @include make-col(12);
+    padding-top: 2rem;
+  }
   .block-introduction {
   @include f4regular-xs();
   margin-bottom: 2rem;
   }
-}
 
 // BEHAVIOUR OF EACH BLOCK: TEXT BAND & IMAGE
 .block {
@@ -114,10 +114,13 @@
       &::after {
         content: "";
         position: absolute;
-        width: calc(100% - 15px);
+        width: calc(92%);
         top: 64px;
         left: 15px;
       }
+    }
+    .block-image {
+      z-index: -1;
     }
   }
   &#block2 {
