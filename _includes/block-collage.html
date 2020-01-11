@@ -36,12 +36,14 @@
 
 <section id="block1a" class="block block-color">
   <div class="block-group">
+    <div class="block-contehnt">
       <div class="block-header">
         <h2 class="block-slogan">
           <span class="line1">Le collectif</span>
         </h2>
-        <p class="block-introduction">POWA est un collectif d’une vingtaine de personnes spécialisées dans l’innovation pédagogique, l’analyse et l’accompagnement des nouveaux rapports au travail et le développement de collectifs apprenants. Nos collaborations et nos méthodes pédagogiques se construisent autour de 5 valeurs :</p>
+        <p class="block-introduction">POWA est un collectif d’une vingtaine de personnes spécialisées dans l’innovation pédagogique, l’analyse et l’accompagnement des nouveaux rapports au travail et le développement de collectifs apprenants. Nos collaborations et nos méthodes pédagogiques se construisent autour de 5 valeurs&nbsp;:</p>
       </div>
+    </div>
   </div>
   <div class="block-group">
     <div class="block-image">
@@ -49,15 +51,13 @@
     </div>
     <div class="block-content">
       <div class="block-valeurs">
-        <div class="block-group">
-          {% for collectif-valeur in site.data.block.collectif-valeur %}
-          <div class="block-textonlyd">
-            <span class="collectif-valeur">{{ collectif-valeur.valeur }}</span> 
-            <p>{{ collectif-valeur.content }}</p>
-          </div>
-          {% endfor %} 
-        </div> 
-      </div>
+        {% for collectif-valeur in site.data.block.collectif-valeur %}
+        <div class="block-textonlyd">
+          <span class="collectif-valeur">{{ collectif-valeur.valeur }}</span> 
+          <p>{{ collectif-valeur.content }}</p>
+        </div>
+        {% endfor %} 
+      </div> 
     </div>
   </div>
 </section>
@@ -153,9 +153,7 @@
   <div class="block-group">
     <div class="block-content">
       <div class="block-header">
-        <h2 class="block-slogan">
-          <span class="line1">Agir ensemble</span>
-        </h2>
+        <h2 class="block-slogan">Agir ensemble</h2>
         <p class="block-introduction">POWA co-innove avec toutes les personnes et organisations qui souhaitent faire évoluer les pédagogies de l’orientation et de l’accompagnement vers l’emploi. Les outils, contenus et savoirs-faire issus des ces collaborations sont ensuite diffusés le plus largement possible à la communauté des accompagnateurs et accompagnatrices.</p>
         <p class="block-introduction">3 modes de collaborations se détachent : combinés, personnalisés et adaptés aux besoins de chaque partenaire.</p>
       </div>
@@ -179,8 +177,8 @@
     </div>
     <div class="block-textonly">
       <div class="block-button">
-        <h2 class="title-button">animer un atelier powa</h2>
-        <p>Nous diffusons en open-source nos outils pédagogiques: tester le premier kit Prendre de la hauteur</p>
+        <h2 class="title-button">découvrez nos outils pédagogiques pour animer un atelier powa</h2>
+        <p>Nous diffusons en open-source nos kits d'atelier: tester le premier kit Prendre de la hauteur</p>
         <a class="btn btnpowa-color btn-primary" role="button" href="https://urlz.fr/bmUF" target="_blank">je télécharge le kit d'atelier</a>
       </div>
     </div>
