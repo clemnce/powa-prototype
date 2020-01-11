@@ -1,5 +1,9 @@
+#newsletter {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .footer {
-  padding-top: 2rem;
   padding-bottom: 1rem;
   .footer-community {
     @include make-col(6);

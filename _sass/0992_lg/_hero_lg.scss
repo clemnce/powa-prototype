@@ -8,12 +8,12 @@
     @include make-container;
   }
   .hero-title {
-    @include make-col(9);
+    @include make-col(12);
     @include f3-lg;
     margin: 0 auto;
   }
   .hero-text {
-    @include make-col(9);
+    @include make-col(12);
     margin: 0 auto;
     padding-top: 2rem;
   }

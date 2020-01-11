@@ -15,6 +15,11 @@
   .block-text, .block-textonly {
     @include f6-lg();
   }
+  .block-header {
+    @include make-col-ready();
+    @include make-col(8);
+    margin: 0 auto;
+  }
   &#block1 {
     .block-image {
     @include make-col(6);
@@ -88,13 +93,19 @@
     }
   }
   &#block5 {
+    .block-image {
+      @include make-col(6);
+      }
+      .block-content {
+      @include make-col(6);
+      }
     .block-textonly {
       padding-top: 0rem;
       margin-bottom: 1.5rem;
     }
     .block-introduction {
-      @include make-col-ready();
-      @include make-col(9);
+      //@include make-col-ready();
+      //@include make-col(9);
       margin: 0 auto;
     }
   }

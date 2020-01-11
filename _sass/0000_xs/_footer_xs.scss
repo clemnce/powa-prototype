@@ -1,15 +1,22 @@
+#newsletter {
+  .newsletter-banner {
+    background-color: $secondary-color;
+    color: white;
+    padding: 2rem;
+  }
+}
+
 footer {
   @include make-container;
-  border-top: 1px solid white;
   color: white;
   background-color: #48EAAB;
-  padding-top: 3rem;
   padding-bottom: 0.5rem;
   .block-group {
     display: flex;
   }
   .footer-title {
     @include f2-xs; 
+    margin: 0;
   }
   .footer-left {
     @include make-col-ready();
@@ -42,8 +49,10 @@ footer {
     margin-top: 2rem;
     text-align: left;
   }
-  .footer-bottom {
+  .block-footer {
+    padding-top: 2rem;
     margin-bottom: 2rem;
+    border-top: 1px solid white;
   }
 
   .footer-credits {
@@ -73,7 +82,8 @@ footer {
     line-height: 1.1;
     }
   }
-
-  
 }
 
+.newsletter-form {
+  max-width: 450px;
+}

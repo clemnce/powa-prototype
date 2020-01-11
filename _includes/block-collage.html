@@ -1,35 +1,99 @@
 <section id="block1" class="block">
   <div class="block-group">
     <div class="block-image">
-      <img src="{{ "/assets/img/photos/powa-semobiliser-bw.jpg" | prepend: site.baseurl }}" />
+      <img src="{{ "/assets/img/photos/powa-diffuser-bw.jpg" | prepend: site.baseurl }}" />
     </div>
     <div class="block-content">
-      <h2 class="block-slogan">Se mobiliser</h2>
+      <h2 class="block-slogan">
+        <span class="line1">notre raison</span>
+        <span class="line2">d'être</span>
+      </h2>
       <div class="block-text">
         <p>Les changements du monde du travail s'accélèrent et semblent dépasser les capacités d’adaptation des individus comme des organisations : obsolescence des compétences, précarisation de l’emploi, évolution des aspirations, carrières morcelées.</p>
         <p>Nous sommes tou.te.s concerné.e.s par ces évolutions, mais ce sont les jeunes générations qui cumulent aujourd’hui le plus les difficultés.
           Beaucoup de jeunes se retrouvent dépassés, n’ayant pas accès aux ressources nécessaires pour se construire et trouver une place dans cette complexité. Les inégalités sociales et éducatives se creusent.
         </p>
-        <p>Face à ces constats, nous pensons qu’il est urgent de repenser en profondeur la manière dont nous accompagnons l’arrivée des jeunes dans le monde professionnel.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="block2" class="block">
+<section id="block1a" class="block">
+  <div class="block-group">
+    <div class="block-image">
+      <img src="{{ "/assets/img/photos/powa-semobiliser-bw.jpg" | prepend: site.baseurl }}" />
+    </div>
+    <div class="block-content">
+      <h3 class="block-subtitle">mobilisons-nous</h3>
+      <div class="block-text">
+        <p>Equipes éducatives, actrices et acteurs de l’orientation, de l’insertion, du travail social, du recrutement et des RH, du management, de la formation&nbsp;; mais aussi parents, associations, voire médias et artistes. Nous jouons un rôle clé dans l’orientation et l’insertion des jeunes.</p>
+        <p>Nous sommes convaincus, qu’ensemble, nous avons le pouvoir d’inverser la tendance et de permettre à un maximum de jeunes d’être acteurs de leur parcours.</p>
+        <p>Pour cela, nous devons créer une culture de l’orientation continue et faire évoluer nos pratiques. En plus de les aider à trouver des solutions immédiates, il devient essentiel développer leur pouvoir d’action, leur autonomie, et leur capacité à naviguer dans un monde incertain pour garantir une insertion sociale et professionnelle durable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="block1a" class="block block-color">
+  <div class="block-group">
+      <div class="block-header">
+        <h2 class="block-slogan">
+          <span class="line1">Le collectif</span>
+        </h2>
+        <p class="block-introduction">POWA est un collectif d’une vingtaine de personnes spécialisées dans l’innovation pédagogique, l’analyse et l’accompagnement des nouveaux rapports au travail et le développement de collectifs apprenants. Nos collaborations et nos méthodes pédagogiques se construisent autour de 5 valeurs :</p>
+      </div>
+  </div>
+  <div class="block-group">
+    <div class="block-image">
+      <img class="grayscale" src="{{ "/assets/img/photos/powa-coinnover-bw.jpg" | prepend: site.baseurl }}" />
+    </div>
+    <div class="block-content">
+      <div class="block-valeurs">
+        <div class="block-group">
+          {% for collectif-valeur in site.data.block.collectif-valeur %}
+          <div class="block-textonlyd">
+            <span class="collectif-valeur">{{ collectif-valeur.valeur }}</span> 
+            <p>{{ collectif-valeur.content }}</p>
+          </div>
+          {% endfor %} 
+        </div> 
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- <section id="block1a" class="block">
+  <div class="block-group">
+    <div class="block-image">
+      <img src="{{ "/assets/img/photos/powa-collectif-bw.jpg" | prepend: site.baseurl }}" />
+    </div>
+    <div class="block-content">
+      <h3 class="block-subtitle">mobilisons-nous</h3>
+      <div class="block-text">
+        <p>Equipes éducatives, actrices et acteurs de l’orientation, de l’insertion, du travail social, du recrutement et des RH, du management, de la formation&nbsp;; mais aussi parents, associations, voire médias et artistes. Nous jouons un rôle clé dans l’orientation et l’insertion des jeunes.</p>
+        <p>Nous sommes convaincus, qu’ensemble, nous avons le pouvoir d’inverser la tendance et de permettre à un maximum de jeunes d’être acteurs de leur parcours.</p>
+        <p>Pour cela, nous devons créer une culture de l’orientation continue et faire évoluer nos pratiques. En plus de les aider à trouver des solutions immédiates, il devient essentiel développer leur pouvoir d’action, leur autonomie, et leur capacité à naviguer dans un monde incertain pour garantir une insertion sociale et professionnelle durable.</p>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- <section id="block2" class="block">
   <div class="block-group">
     <div class="block-content">
-      <h3 class="block-subtitle">Qui peut changer la situation&nbsp;?</h3>
+      <h3 class="block-subtitle">mobilisons-nous</h3>
       <div class="block-text">
-        <p>Ce sont les personnes qui fournissent, partout sur le territoire, un accompagnement de proximité aux jeunes : équipes éducatives, conseiller.e.s en insertion, éducateur.trice.s, travailleur.se.s sociaux.les, recruteur.se.s, RH, managers, formateur.trice.s, parents, associations, voire médias et artistes.</p>
-        <p>Toutes ces personnes influencent le parcours des jeunes. En plus de les aider à trouver des solutions immédiates, nous devons désormais, toutes et tous, investir sur le développement de leur pouvoir d’action, de leur autonomie, et de leur capacité à s’orienter à de multiples reprises pour sécuriser une insertion durable dans la société.  </p>
-        <p>Une mobilisation et une coopération de l’ensemble de notre communauté d’accompagnateurs et accompagnatrices sont nécessaires pour permettre aux jeunes d’inventer et de construire ces parcours professionnels complexes.</p>
+        <p>Equipes éducatives, actrices et acteurs de l’orientation, de l’insertion, du travail social, du recrutement et des RH, du management, de la formation ; mais aussi parents, associations, voire médias et artistes. Nous jouons un rôle clé dans l’orientation et l’insertion des jeunes.</p>
+        <p>Nous sommes convaincus, qu’ensemble, nous avons le pouvoir d’inverser la tendance et de permettre à un maximum de jeunes d’être acteurs de leur parcours.</p>
+        <p>Pour cela, nous devons créer une culture de l’orientation continue et faire évoluer nos pratiques. En plus de les aider à trouver des solutions immédiates, il devient essentiel développer leur pouvoir d’action, leur autonomie, et leur capacité à naviguer dans un monde incertain pour garantir une insertion sociale et professionnelle durable.</p>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
-<section id="block3" class="block">
+<!-- <section id="block3" class="block">
   <div class="block-group">
       <div class="block-image">
         <img src="{{ "/assets/img/photos/powa-coinnover-bw.jpg" | prepend: site.baseurl }}" />
@@ -57,23 +121,23 @@
           </div>
         </div>
       </div>
-  </section>
+  </section>  -->
 
-<section id="block5" class="block block-color">
-  	<div class="block-image">
+<!-- <section id="block5" class="block block-color">
+  <div class="block-group">
+    <div class="block-image">
       <img class="grayscale" src="{{ "/assets/img/photos/powa-collectif.jpg" | prepend: site.baseurl}}" />
     </div>
-    <div class="block-group">
-      <div class="block-content">
-        <div class="block-header">
-          <h2 class="block-slogan">
-            <span class="line1">Le collectif</span>
-          </h2>
-          <div class="block-text">
-            <p class="block-introduction">Powa est un collectif composé de personnes portées par la volonté de questionner notre rapport individuel et collectif au travail, et mobilisées pour cela autour de valeurs communes.</p>
-          </div>
+    <div class="block-content">
+      <div class="block-header">
+        <h2 class="block-slogan">
+          <span class="line1">Le collectif</span>
+        </h2>
+        <div class="block-text">
+          <p class="block-introduction">POWA est un collectif d’une vingtaine de personnes spécialisées dans l’innovation pédagogique, l’analyse et l’accompagnement des nouveaux rapports au travail et le développement de collectifs apprenants. Nos collaborations et nos méthodes pédagogiques se construisent autour de 5 valeurs :</p>
         </div>
       </div>
+    </div>
     </div>
     <div class="block-group">
       {% for collectif-valeur in site.data.block.collectif-valeur %}
@@ -83,7 +147,7 @@
       </div>
       {% endfor %} 
     </div>     
-  </section>
+  </section> -->
 
 <section id="block6" class="block">
   <div class="block-group">
@@ -92,32 +156,32 @@
         <h2 class="block-slogan">
           <span class="line1">Agir ensemble</span>
         </h2>
-        <h3 class="block-introduction">3 modes d’action à combiner, personnaliser ou faire évoluer 
-          selon les besoins.</h3>
+        <p class="block-introduction">POWA co-innove avec toutes les personnes et organisations qui souhaitent faire évoluer les pédagogies de l’orientation et de l’accompagnement vers l’emploi. Les outils, contenus et savoirs-faire issus des ces collaborations sont ensuite diffusés le plus largement possible à la communauté des accompagnateurs et accompagnatrices.</p>
+        <p class="block-introduction">3 modes de collaborations se détachent : combinés, personnalisés et adaptés aux besoins de chaque partenaire.</p>
       </div>
     </div>
   </div>
   <div class="block-group">
     <div class="block-textonly">
-        <h3 class="block-subtitle">Outiller les accom&shy;pa&shy;gna&shy;teurs et accom&shy;pa&shy;gna&shy;trices</h3>
+        <h3 class="block-contenttitle"><span>Outiller</span> les accom&shy;pa&shy;gna&shy;teurs et accom&shy;pa&shy;gna&shy;trices</h3>
         <p class="block-text">Les métiers de l’accompagnement évoluent vers plus de collectif et une plus grande place faite à l’autonomisation des accompagné.e.s. POWA compile et diffuse les bonnes pratiques, forme et met à disposition ses boîtes à outils.</p>
         <p class="block-hashtags">#formation #échangesdepratiques #ressourcespédagogiques</p>
     </div>
     <div class="block-textonly">
-      <h3 class="block-subtitle">Ré-adapter l’offre d’accom&shy;pa&shy;gne&shy;ment aux besoins des jeunes</h3>
+      <h3 class="block-contenttitle"><span>Ré-adapter</span> l’offre d’accom&shy;pa&shy;gne&shy;ment aux besoins des jeunes</h3>
       <p class="block-text">Les rapports des jeunes au travail sont multiples et évolutifs. La compréhension et les interactions devient parfois difficile. POWA facilite l’accès à la parole des jeunes et aide capter les besoins pour adapter les accompagnements in situ.</p>
       <p class="block-hashtags">#sensibilisation #recherche-action #design</p>
     </div>
     <div class="block-textonly">
-      <h3 class="block-subtitle">Créer des parcours de réussite multi-acteurs</h3>
-      <p class="block-text">Les liens entre formation, accompagnement et recrutement ne sont pas toujours fluides. POWA accompagne la création de parcours cohérents et de communautés apprenantes pour proposer des parcours cohérent vers l’emploi au sein de filières métiers ou de territoire.</p>
+      <h3 class="block-contenttitle"><span>Créer</span> des parcours de réussite multi-acteurs</h3>
+      <p class="block-text">POWA accompagne la création ou la restructuration de parcours d'insertion cohérents au sein de filières métiers ou de territoire grâce à l'intelligence collective et au montage de communautés apprenantes.</p>
       <p class="block-hashtags">#co-construction #co-innovation #conduiteduchangement</p>
     </div>
     <div class="block-textonly">
       <div class="block-button">
-        <h2 class="title-button">initier un atelier powa</h2>
-        <p>le kit de l'atelier Prendre de la hauteur </p>
-        <a class="btn btnpowa-color btn-primary" role="button" href="https://urlz.fr/bmUF" target="_blank">je télécharge le premier kit d'atelier</a>
+        <h2 class="title-button">animer un atelier powa</h2>
+        <p>Nous diffusons en open-source nos outils pédagogiques: tester le premier kit Prendre de la hauteur</p>
+        <a class="btn btnpowa-color btn-primary" role="button" href="https://urlz.fr/bmUF" target="_blank">je télécharge le kit d'atelier</a>
       </div>
     </div>
   </div>

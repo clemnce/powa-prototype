@@ -4,7 +4,6 @@ html {
 
 body {
   font-size: 16px;
-  height: 100%;
   overflow-x: hidden;
 }
 
@@ -43,7 +42,7 @@ a {
 }
 
 .btnpowa-transparent {
-  @include f3-xs;
+  @include f4-xs;
   color: white;
   background-color: #7252BF;
   border-radius: 0;
@@ -65,7 +64,7 @@ a {
   text-align: left;
   background-color: #7252BF;
   color: white;
-  padding: 1rem;
+  padding: 1.5rem;
   line-height: 1.5;
   white-space: normal;
   width: 100%;

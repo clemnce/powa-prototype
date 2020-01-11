@@ -10,8 +10,6 @@
   }
 }
 
-
-
 .block {                         
   .block-slogan {
     hyphens: auto;
@@ -56,6 +54,19 @@
       z-index: -1;
     }
   }
+  .block-subtitle {
+    @include f1-xs;
+    margin-bottom: 0.5rem;
+    //hyphens: auto;
+    line-height: 1.2;
+  }
+  .block-contenttitle {
+    @include f3-xs();
+    margin-bottom: 0.5rem;
+    //hyphens: auto;
+    line-height: 1.2;
+    //color: #619883;
+  }
 }
 
 .block-image {
@@ -97,19 +108,18 @@
 .block {
   &#block1 {
     padding-top: 4rem;
-  .block-slogan {
-    //position: absolute;
-    //top: -90px;
-    white-space: nowrap;
-    &::after {
-      content: "";
-      width: calc(66% + 15px);
-      top: 64px;
-      left: 15px;
+    .block-slogan {
+      font-size: 47px;
+      white-space: nowrap;
+      &::after {
+        content: "";
+        position: absolute;
+        width: calc(100% - 15px);
+        top: 64px;
+        left: 15px;
+      }
     }
   }
-}
-
   &#block2 {
     padding-top: 0rem;
     overflow-x: hidden;
@@ -174,6 +184,24 @@
     }
   }
   &#block5 {
+    .block-slogan {
+      color: $secondary-color;
+    }
+    .block-textonly {
+      padding-top: 0rem;
+      margin-bottom: 1.5rem;
+      p {
+        display: inline;
+      }
+    }
+  }
+  &#block5a {
+    .block-introduction {
+      margin-bottom: 2rem;
+    }
+    .block-valeurs {
+      padding-top: 2rem;
+    }
     .block-textonly {
       padding-top: 0rem;
       margin-bottom: 1.5rem;
@@ -243,14 +271,14 @@
     }
 }
 
-.block-subtitle {
+/* .block-subtitle {
   @include f3-xs();
   margin-bottom: 0.5rem;
   //hyphens: auto;
   line-height: 1.2;
   //color: #619883;
 }
-
+ */
 .block-text, .block-textonly {
   @include f5-xs;
   p:last-child {
