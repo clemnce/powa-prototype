@@ -82,15 +82,14 @@
       @include make-col(6);
     }
     .block-slogan {
-      //top: 20px;
-      //left: 0;
+      font-size: 89px;
       .line2 {
         display: block;
         text-align: right;
       }
       &::after {
         content: "";
-        width: calc(60%);
+        width: calc(120%);
         top: 80px;
         left: 15px;
       }
