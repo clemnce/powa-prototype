@@ -58,13 +58,14 @@
       z-index: -1;
     }
   }
-
+  .block-subtitle {
+    @include f3-md;
+  }
   // COMPORTEMENT DE CHAQUE BLOC: TEXT & IMAGE
 
   &#block1 {
     overflow-x: hidden;
     overflow-y: overlay;
-
     .block-image {
       @include make-col(6);
       position: relative;
@@ -101,6 +102,17 @@
     }
     .block-content {
     @include make-col(6);
+    }
+    .block-content {
+      @include make-col(6);
+      &.block-content1 {
+        @include make-col-ready();
+        @include make-col(12);
+        padding-bottom: 0;
+      }
+    }
+    .block-textonly {
+      @include make-col(12); 
     }
   }
   &#block2 {

@@ -21,30 +21,26 @@
     margin: 0 auto;
   }
   &#block1 {
+    padding-top: 5rem;
     .block-image {
     @include make-col(6);
     }
     .block-content {
     @include make-col(6);
-    padding-top: 11rem;
+    padding-top: 16rem;
     padding-bottom: 5rem;
     }
     .block-slogan {
+      font-size: 119px;
       position: absolute;
       top: 0px;
       white-space: nowrap;
       &::after {
         content: "";
         width: calc(110% + 15px);
-        top: 72px;
+        top: 68px;
         left: -15px;
       }
-    }
-  }
-  &#block1 {
-    padding-top: 5rem;
-    .block-slogan {
-      font-size: 119px;
     }
   }
   &#block2 {
@@ -116,5 +112,11 @@
     .block-button {
       width: 80%;
     }
+    .block-slogan {
+      &::after {
+        content: "";
+        top: 68px;
+      }
   }
+}
 }

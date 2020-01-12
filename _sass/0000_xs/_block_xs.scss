@@ -48,14 +48,14 @@
       position: absolute;
       height: 19px;
       width: calc(110% + 15px);
-      background-color: #48EAAB;
+      background-color: $primary-color;
       top: 36px;
       left: -15px;
       z-index: -1;
     }
   }
   .block-subtitle {
-    @include f1-xs;
+    @include f2-xs;
     margin-bottom: 0.5rem;
     //hyphens: auto;
     line-height: 1.2;
@@ -121,6 +121,11 @@
     }
     .block-image {
       z-index: -1;
+    }
+  }
+  &#block1a {
+    .block-valeurs {
+      padding-top: 2rem;
     }
   }
   &#block2 {
@@ -284,9 +289,6 @@
  */
 .block-text, .block-textonly {
   @include f5-xs;
-  p:last-child {
-    margin-bottom: 0;
-  }
 }
 
 
