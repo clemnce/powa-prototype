@@ -10,7 +10,7 @@ footer {
   @include make-container;
   color: white;
   background-color: #48EAAB;
-  padding-bottom: 0.5rem;
+  padding-bottom: 2rem;
   .block-group {
     display: flex;
   }
@@ -42,8 +42,7 @@ footer {
   } */
   .footer-hashtag {
     @include f4-xs;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
+    padding: 0;
   }
   .footer-social {
     margin-top: 2rem;
@@ -51,7 +50,6 @@ footer {
   }
   .block-footer {
     padding-top: 2rem;
-    margin-bottom: 2rem;
     border-top: 1px solid white;
   }
 
@@ -64,23 +62,6 @@ footer {
   .contact-email {
     @include f4-xs;
     color: black;
-  }
-
-  /* SOCIAL LINKS */
-  .social-list, 
-  .social-buttons-list {
-    list-style: none;
-    margin-left: 0px;
-  }
-
-  .social-list  {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    a {
-    @include f1-xs;
-    margin-left: 0;
-    line-height: 1.1;
-    }
   }
 }
 
