@@ -5,10 +5,10 @@
 
 .footer {
   padding-bottom: 1rem;
-  .footer-community {
+  .footer-left {
     @include make-col(6);
   }
-  .footer-social {
+  .footer-right {
     @include make-col(6);
     margin-top: 0rem;
   }
