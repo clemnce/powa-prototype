@@ -29,13 +29,14 @@ a {
   cursor: pointer;
   transition: all 0.3s;
   &:hover {
-    color: #7252bf;
+    //color: #7252bf;
+    color: #8247FF;
     text-decoration: none;
     transition: all 0.3s;
   }
   &:focus {
     //color: #B49EE6;
-    color: #51816E;
+    color: #7252bf;
     text-decoration: none;
     transition: all 0.3s;
   }
@@ -43,18 +44,19 @@ a {
 
 .btnpowa-transparent {
   @include f4-xs;
+  font-weight: 700;
   color: white;
-  background-color: #7252BF;
+  background-color: $secondary-color;
   border-radius: 0;
   &:hover {
     color: #48EAAB;
-    background-color:#7252BF;
+    background-color: $secondary-color;
     text-decoration: none;
     //transition: all 0.3s;
   }
   &:focus {
     color: #48EAAB;
-    background-color: #9E81E2;
+    background-color: $secondary-color;
     text-decoration: none;
     //transition: all 0.3s;
   }
@@ -62,7 +64,7 @@ a {
 
 .block-button {
   text-align: left;
-  background-color: #7252BF;
+  background-color: $secondary-color;
   color: white;
   padding: 1.5rem;
   line-height: 1.5;
@@ -73,8 +75,9 @@ a {
 
 .btnpowa-color {
   @include f5-xs;
+  font-weight: 700;
   text-align: left;
-  background-color: #48EAAB;
+  background-color: $primary-color;
   padding: 1rem;
   border-radius: 0;
   border: 0;
@@ -83,14 +86,14 @@ a {
   line-height: 1.5;
   margin: 0 auto;
   &:hover {
-    color: #51816E;
-    background-color: #48EAAB;
+    color: $secondary-color;
+    background-color: $primary-color;
     text-decoration: none;
     //transition: all 0.3s;
   }
   &:focus {
-    color: #51816E;
-    background-color: #48EAAB;
+    color: $secondary-color;
+    background-color: $primary-color;
     text-decoration: none;
     //transition: all 0.3s;
   }
@@ -99,6 +102,7 @@ a {
 //Social icons
 
 .social-buttons-list {
+  padding-top: 0.75rem;
   display: flex;
 
   .social-buttons-item {
@@ -108,8 +112,8 @@ a {
   a {
     display: flex;
     font-size: 30px;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     color: #48EAAB;
     background-color: white;
     border-radius: 100%;
@@ -123,7 +127,21 @@ a {
     }
   }
 }
+  .social-list, 
+  .social-buttons-list {
+    list-style: none;
+    margin-left: 0px;
+  }
 
+  .social-list  {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    a {
+    @include f1-xs;
+    margin-left: 0;
+    line-height: 1.1;
+    }
+  }
 
 
 
