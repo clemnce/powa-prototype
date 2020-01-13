@@ -126,6 +126,12 @@
   &#block1a {
     .block-valeurs {
       padding-top: 2rem;
+      .block-textonly {
+        margin-bottom: 2rem;
+        p {
+          display: inline;
+        }
+      }
     }
   }
   &#block2 {
