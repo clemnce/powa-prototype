@@ -67,4 +67,7 @@ footer {
 
 .newsletter-form {
   max-width: 450px;
+  .form-control {
+    height: initial;
+  }
 }
