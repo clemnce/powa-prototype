@@ -16,6 +16,7 @@ footer {
   }
   .footer-title {
     @include f2-xs; 
+    padding-top: 1rem;
     margin: 0;
   }
   .footer-left {

@@ -9,6 +9,12 @@
 .footer {
   padding-left: 2rem;
   padding-right: 2rem;
+  .footer-title {
+    padding-top: 0rem;
+    &:nth-child(3) {
+      padding-top: 1rem;
+    }
+  }
   .footer-left {
     @include make-col(6);
     margin-bottom: 1rem;
