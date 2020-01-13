@@ -128,6 +128,9 @@
       padding-top: 2rem;
       .block-textonly {
         margin-bottom: 2rem;
+        &:last-child {
+        margin-bottom: 0rem;
+        }
         p {
           display: inline;
         }
@@ -305,13 +308,13 @@
   line-height: 25.2px;
 }
 
-.block-hashtags {
-  @include f5-xs;
-  font-weight: 700;
-  color: #48EAAB;
-}
+  .block-hashtags {
+    @include f5-xs;
+    font-weight: 700;
+    color: #48EAAB;
+  }
 
-.collectif-introduction {
-  @include f4regular-xs; 
-}
+  .collectif-introduction {
+    @include f4regular-xs; 
+  }
 }
