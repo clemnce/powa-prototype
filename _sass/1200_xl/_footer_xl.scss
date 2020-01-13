@@ -1,0 +1,8 @@
+.footer {
+  .footer-left {
+    @include make-col(5);
+  }
+  .footer-right {
+    @include make-col(7);
+  }
+}

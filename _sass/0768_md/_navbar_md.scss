@@ -2,7 +2,8 @@
   padding: 0.5rem 2rem;
   .link-menu {
     @include f4-xs();
-    padding: 0 0.5rem;
+    padding: 0;
+    padding-left: 1.5rem;
   }
 }
 

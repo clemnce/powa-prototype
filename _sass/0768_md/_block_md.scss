@@ -11,11 +11,14 @@
     @include make-col(6);
     //padding-top: 120px;
   }
-
+  .block-header {
+    @include make-col-ready();
+    @include make-col(10);
+    margin: 0 auto;
+  }
   .block-image {
       align-self: stretch;
       height: inherit;
-
       & > img {
         // On fait un hack pour les vieux navigateurs
         // Les images dont la hauteur dépasse le texte seront moches
@@ -43,7 +46,6 @@
     @include f1-md; 
     z-index: 2;
     text-transform: lowercase;
-
     &::after {
       content: "";
       display: block;
@@ -56,15 +58,16 @@
       z-index: -1;
     }
   }
-
+  .block-subtitle {
+    @include f3-md;
+  }
   // COMPORTEMENT DE CHAQUE BLOC: TEXT & IMAGE
 
   &#block1 {
     overflow-x: hidden;
     overflow-y: overlay;
-
     .block-image {
-      @include make-col(12);
+      @include make-col(6);
       position: relative;
       order: 2;
       //overflow: visible;
@@ -77,20 +80,41 @@
       } */
     }
     .block-content {
-      @include make-col(12);
+      @include make-col(6);
     }
     .block-slogan {
-      //top: 20px;
-      //left: 0;
+      font-size: 89px;
+      .line2 {
+        display: block;
+        text-align: right;
+      }
       &::after {
         content: "";
-        width: calc(60%);
+        width: calc(120%);
         top: 80px;
         left: 15px;
       }
     }
   }
-
+  &#block1a {
+    .block-image {
+      @include make-col(6);
+    }
+    .block-content {
+    @include make-col(6);
+    }
+    .block-content {
+      @include make-col(6);
+      &.block-content1 {
+        @include make-col-ready();
+        @include make-col(12);
+        padding-bottom: 0;
+      }
+    }
+    .block-textonly {
+      @include make-col(12); 
+    }
+  }
   &#block2 {
     overflow-x: hidden;
 
@@ -189,10 +213,21 @@
   }
 
   // BLOC LE COLLECTIF
+  &#block5a {
+    .block-image {
+      @include make-col(6);
+    }
+    .block-content {
+    @include make-col(6);
+    }
+  }
   &#block5 {
 /*     .block-image {
       @include make-col(6);
     } */
+    .block-image {
+      height: auto;
+    }
     .block-content {
       @include make-col(12);
       margin: 0 auto;
@@ -248,12 +283,8 @@
       @include make-col(12);
       padding-top: 0px;
     }
-    .block-header {
-      @include make-col-ready();
-      @include make-col(9);
-      margin: 0 auto;
-    }
     .block-slogan {
+      text-align: center;
       margin-bottom: 1.5rem;
       .line1 {
         display: block;
@@ -279,6 +310,7 @@
     .block-textonly {
       padding-top: 1rem;
       margin-bottom: 1rem;
+      margin: auto;
       &:last-child {
         margin-bottom: 0rem;
       }
@@ -332,10 +364,4 @@
 }
 
 
-.block-textonly {
-  padding-top: 1rem;
-  margin-bottom: 2rem;
-  &:last-child {
-    margin-bottom: 0rem;
-  }
-}
+

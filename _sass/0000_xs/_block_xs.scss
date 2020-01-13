@@ -10,8 +10,6 @@
   }
 }
 
-
-
 .block {                         
   .block-slogan {
     hyphens: auto;
@@ -50,11 +48,24 @@
       position: absolute;
       height: 19px;
       width: calc(110% + 15px);
-      background-color: #48EAAB;
+      background-color: $primary-color;
       top: 36px;
       left: -15px;
       z-index: -1;
     }
+  }
+  .block-subtitle {
+    @include f2-xs;
+    margin-bottom: 0.5rem;
+    //hyphens: auto;
+    line-height: 1.2;
+  }
+  .block-contenttitle {
+    @include f3-xs();
+    margin-bottom: 0.5rem;
+    //hyphens: auto;
+    line-height: 1.2;
+    //color: #619883;
   }
 }
 
@@ -83,33 +94,46 @@
 }
 }
 
-.block-content {
-  @include make-col-ready();
-  @include make-col(12);
-  padding-top: 2rem;
+  .block-content {
+    @include make-col-ready();
+    @include make-col(12);
+    padding-top: 2rem;
+  }
   .block-introduction {
   @include f4regular-xs();
   margin-bottom: 2rem;
   }
-}
 
 // BEHAVIOUR OF EACH BLOCK: TEXT BAND & IMAGE
 .block {
   &#block1 {
     padding-top: 4rem;
-  .block-slogan {
-    //position: absolute;
-    //top: -90px;
-    white-space: nowrap;
-    &::after {
-      content: "";
-      width: calc(66% + 15px);
-      top: 64px;
-      left: 15px;
+    .block-slogan {
+      font-size: 47px;
+      white-space: nowrap;
+      &::after {
+        content: "";
+        position: absolute;
+        width: calc(92%);
+        top: 64px;
+        left: 15px;
+      }
+    }
+    .block-image {
+      z-index: -1;
     }
   }
-}
-
+  &#block1a {
+    .block-valeurs {
+      padding-top: 2rem;
+      .block-textonly {
+        margin-bottom: 2rem;
+        p {
+          display: inline;
+        }
+      }
+    }
+  }
   &#block2 {
     padding-top: 0rem;
     overflow-x: hidden;
@@ -174,6 +198,24 @@
     }
   }
   &#block5 {
+    .block-slogan {
+      color: $secondary-color;
+    }
+    .block-textonly {
+      padding-top: 0rem;
+      margin-bottom: 1.5rem;
+      p {
+        display: inline;
+      }
+    }
+  }
+  &#block5a {
+    .block-introduction {
+      margin-bottom: 2rem;
+    }
+    .block-valeurs {
+      padding-top: 2rem;
+    }
     .block-textonly {
       padding-top: 0rem;
       margin-bottom: 1.5rem;
@@ -243,19 +285,16 @@
     }
 }
 
-.block-subtitle {
+/* .block-subtitle {
   @include f3-xs();
   margin-bottom: 0.5rem;
   //hyphens: auto;
   line-height: 1.2;
   //color: #619883;
 }
-
+ */
 .block-text, .block-textonly {
   @include f5-xs;
-  p:last-child {
-    margin-bottom: 0;
-  }
 }
 
 

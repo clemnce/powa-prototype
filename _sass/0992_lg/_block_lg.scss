@@ -15,29 +15,33 @@
   .block-text, .block-textonly {
     @include f6-lg();
   }
+  .block-header {
+    @include make-col-ready();
+    @include make-col(8);
+    margin: 0 auto;
+  }
   &#block1 {
+    padding-top: 5rem;
     .block-image {
     @include make-col(6);
     }
     .block-content {
     @include make-col(6);
-    padding-top: 11rem;
+    padding-top: 16rem;
     padding-bottom: 5rem;
     }
     .block-slogan {
+      font-size: 119px;
       position: absolute;
       top: 0px;
       white-space: nowrap;
       &::after {
         content: "";
         width: calc(110% + 15px);
-        top: 72px;
+        top: 68px;
         left: -15px;
       }
     }
-  }
-  &#block1 {
-    padding-top: 5rem;
   }
   &#block2 {
     .block-content {
@@ -88,13 +92,19 @@
     }
   }
   &#block5 {
+    .block-image {
+      @include make-col(6);
+      }
+      .block-content {
+      @include make-col(6);
+      }
     .block-textonly {
       padding-top: 0rem;
       margin-bottom: 1.5rem;
     }
     .block-introduction {
-      @include make-col-ready();
-      @include make-col(9);
+      //@include make-col-ready();
+      //@include make-col(9);
       margin: 0 auto;
     }
   }
@@ -102,5 +112,11 @@
     .block-button {
       width: 80%;
     }
+    .block-slogan {
+      &::after {
+        content: "";
+        top: 68px;
+      }
   }
+}
 }

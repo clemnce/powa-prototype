@@ -1,15 +1,28 @@
+#newsletter {
+  .newsletter-banner {
+    @include make-col-ready();
+    @include make-col(8); 
+    margin: 0 auto;
+  }
+}
+
 .footer {
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-top: 3rem;
+  .footer-title {
+    padding-top: 0rem;
+    &:nth-child(3) {
+      padding-top: 1rem;
+    }
+  }
   .footer-left {
-    @include make-col(8);
+    @include make-col(6);
     margin-bottom: 1rem;
     order: 1;
   } 
   .footer-right {
     text-align: left;
-    @include make-col(4);
+    @include make-col(6);
     order: 2;
   }
   .social-list a {

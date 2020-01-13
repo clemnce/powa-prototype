@@ -17,7 +17,8 @@
   }
   &#block1 {
     .block-content {
-      padding-top: 11rem;
+      padding-top: 16rem;
+      padding-right: 4rem;
     }
     .block-slogan {
       top: 0px;
@@ -28,6 +29,12 @@
         top: 69px;
         left: 0px;
       }
+    }
+  }
+  &#block1a {
+    .block-content {
+      padding-left: 4rem;
+      padding-bottom: 5rem;
     }
   }
   &#block2 {
@@ -105,9 +112,9 @@
       margin-bottom: 1rem;
       &::after {
         content: "";
-        width: calc(80%);
+        width: calc(91%);
         top: 64px;
-        left: 15px;
+        left: 46px;
       }
     }
   }

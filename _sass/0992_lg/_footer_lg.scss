@@ -1,10 +1,13 @@
+#newsletter {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .footer {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-  .footer-community {
+  .footer-left {
     @include make-col(6);
   }
-  .footer-social {
+  .footer-right {
     @include make-col(6);
     margin-top: 0rem;
   }

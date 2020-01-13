@@ -38,6 +38,15 @@
               </li>
               {% endfor %}
             </ul>
+            <ul class="social-buttons-list">
+              {% for social-links in site.data.footer.social-links %}
+              <li class="social-buttons-item">
+                  <a href="{{ social-links.href }}" target="{{ social-links.target }}">
+                    <i class="fab fa-{{ social-links.icon }}"></i>
+                  </a>
+              </li>
+              {% endfor %}
+            </ul>
 <!--           <div>
             <ul class="social-buttons-list">
               <li class="social-buttons-item">
