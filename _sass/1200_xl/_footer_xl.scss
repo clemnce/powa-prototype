@@ -1,4 +1,8 @@
-#newsletter {
-  padding-left: 6rem;
-  padding-right: 6rem;
+.footer {
+  .footer-left {
+    @include make-col(5);
+  }
+  .footer-right {
+    @include make-col(7);
+  }
 }
