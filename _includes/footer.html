@@ -20,13 +20,17 @@
         <h2 class="footer-title">recevez nos actus</h2>
         <div class="footer-email">
       	  <form id="newsletter-form" name="contact-form" novalidate>
-            <p><input type="email"
-          		 	 		  class="newsletter-control" 
+            <div class="input-group">
+            <input type="email"
+          		 	 		  class="newsletter-control form-control" 
           		 	 		  id="newsletter-email" 
           		 	 		  placeholder="votre email" 
 				 	 		        data-validation-required-message="Veuillez indiquer votre email"
-          		 	 		  required />
-            <button type="submit" class="btn btnpowa-transparent">envoyer</button></p>
+                        required />
+            <span class="input-group-btn">
+            <button type="submit" class="btn btnpowa-transparent">envoyer</button>
+            </span>
+          </div>
       	  </form>
           <div id="newsletter-success"></div>
         </div>
