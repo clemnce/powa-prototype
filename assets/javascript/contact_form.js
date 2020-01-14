@@ -1,7 +1,7 @@
 /* jslint browser:true, white:true */
 /* global $ */
 $(function () {
-  $('input,textarea').not('[type=submit]').jqBootstrapValidation({
+  $('#contact-form input,#contact-form textarea').not('[type=submit]').jqBootstrapValidation({
     preventSubmit: true,
     submitError: function ($form, event, errors) {
       // additional error messages or events
@@ -10,8 +10,8 @@ $(function () {
       event.preventDefault() // prevent default submit behaviour
 
       // get values from FORM
-      var email = $('#form-email').val()
-      var message = $('#form-message').val()
+      var email = $('#contact-email').val()
+      var message = $('#contact-message').val()
       var today = new Date()
 
       // Check for white space in name for Success/Fail message
@@ -27,12 +27,12 @@ $(function () {
         cache: false,
         success: function () {
           // Success message
-          $('#success').html("<div class='alert alert-success'>")
-          $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+          $('#contact-success').html("<div class='alert alert-success'>")
+          $('#contact-success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             .append('</button>')
-          $('#success > .alert-success')
+          $('#contact-success > .alert-success')
             .append('<strong>Votre message a été envoyé !</strong>')
-          $('#success > .alert-success')
+          $('#contact-success > .alert-success')
             .append('</div>')
 
           // clear all fields
@@ -40,11 +40,11 @@ $(function () {
         },
         error: function () {
           // Fail message
-          $('#success').html("<div class='alert alert-danger'>")
-          $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+          $('#contact-success').html("<div class='alert alert-danger'>")
+          $('#contact-success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             .append('</button>')
-          $('#success > .alert-danger').append('<strong>Désolé, apparemment le serveur mail ne répond pas. Veuillez ré-essayer plus tard !')
-          $('#success > .alert-danger').append('</div>')
+          $('#contact-success > .alert-danger').append('<strong>Désolé, apparemment le serveur mail ne répond pas. Veuillez ré-essayer plus tard !')
+          $('#contact-success > .alert-danger').append('</div>')
           // clear all fields
           $('#contact-form').trigger('reset')
         }
