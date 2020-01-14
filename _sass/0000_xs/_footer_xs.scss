@@ -6,7 +6,7 @@
   }
 }
 
-footer {
+.footer {
   @include make-container;
   color: white;
   background-color: #48EAAB;
@@ -64,11 +64,13 @@ footer {
     @include f4-xs;
     color: black;
   }
-}
-
-.newsletter-form {
-  max-width: 450px;
   .form-control {
-    height: initial;
+    margin-right: 0.5rem;
+  }
+  #newsletter-form {
+    max-width: 450px;
+    input {
+      height: initial;
+    }
   }
 }
