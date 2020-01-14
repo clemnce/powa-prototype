@@ -37,6 +37,12 @@
       padding-bottom: 5rem;
     }
   }
+  &#block2a {
+    .block-content {
+      padding-left: 4rem;
+      padding-bottom: 5rem;
+    }
+  }
   &#block2 {
     .block-content {
     @include make-col(8);

@@ -137,6 +137,20 @@
       }
     }
   }
+  &#block2a {
+    .block-valeurs {
+      padding-top: 2rem;
+      .block-textonly {
+        margin-bottom: 2rem;
+        &:last-child {
+        margin-bottom: 0rem;
+        }
+        p {
+          display: inline;
+        }
+      }
+    }
+  }
   &#block2 {
     padding-top: 0rem;
     overflow-x: hidden;

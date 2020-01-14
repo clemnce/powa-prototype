@@ -115,6 +115,25 @@
       @include make-col(12); 
     }
   }
+  &#block2a {
+    .block-image {
+      @include make-col(6);
+    }
+    .block-content {
+    @include make-col(6);
+    }
+    .block-content {
+      @include make-col(6);
+      &.block-content1 {
+        @include make-col-ready();
+        @include make-col(12);
+        padding-bottom: 0;
+      }
+    }
+    .block-textonly {
+      @include make-col(12); 
+    }
+  }
   &#block2 {
     overflow-x: hidden;
 
