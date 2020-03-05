@@ -36,7 +36,7 @@ The resulting files will be located in the `_site` directory.
 
 ## Credits
 
-* Author : Clémence PIETOT 
+* Author : Clémence Piétot <clemence.pietot@gmail.com>
 * Contributors:
   * Glenn ROLLAND <glenux@glenux.net>
 
